@@ -7,37 +7,38 @@
         <meta name="description" content="An interactive Harry Potter quiz.">
 	    <title>Harry Potter Quiz</title>
     	<script src="https://kit.fontawesome.com/98131a9f62.js" crossorigin="anonymous"></script>
-	    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
     </head>
 
-    <body>
+    <body id="index">
         <header>
-            <div>
-                Instructions
-            </div>
-            <div>
-                Music Settings
-            </div>
-            <h1>Harry Potter Quiz</h1>
+            <nav id="navButtons">
+                <div>
+                    <button>Instructions</button>
+                </div>
+                <div>
+                    <button>Music Settings</button>
+                </div>
+            </nav>
+            <img src="assets/images/logo.png" alt="Harry Potter logo" id="logo">
         </header>
-        <section>
-            <div>
+        <section class="overlay">
+            <div id="gryffindor">
                 Gryffindor
             </div>
-            <div>
+            <div id="slytherin">
                 Slytherin
             </div>
-            <div>
+            <div id="hufflepuff">
                 Hufflepuff
             </div>
-            <div>
+            <div id="ravenclaw">
                 Ravenclaw
             </div>
         </section>
-        <footer>
+<!--        <footer>
             Copyright info
-        </footer>
+        </footer> -->
         <script src="assets/scripts/script.js"></script>
     </body>
 </html>

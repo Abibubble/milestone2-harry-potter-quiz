@@ -99,7 +99,7 @@ The main features that I wanted to include are:
 * Slytherin
 
 ### Typography
-Harry Potter font??????
+I used this [Harry Potter font](http://www.fontsaddict.com/font/harry-potter.html) from Fonts Addict. This tied everything into the theme of the quiz.
 
 ### Imagery
 The large background hero image is designed to be striking and catch the user's attention, making it clear at first glance what the quiz is related to. 
@@ -128,8 +128,8 @@ I created wireframes for desktop, mobile and tablet, and a user navigation map f
 Bootstrap was used to help with the responsiveness and styling of the website. ?????????????????????????
 #### Hover.css:
 Hover.css was used????????????
-#### Google Fonts:
-Google fonts was used to import the 'SOME TYPE OF FONT' font into the style.css file which is used on all pages throughout the project.
+#### Fonts Addict:
+[Harry Potter font](http://www.fontsaddict.com/font/harry-potter.html) was used from Fonts Addict
 #### Font Awesome:
 Font Awesome was used on all pages to add social media icons and the copyright icon. ???????????????????????????????
 #### jQuery:
@@ -316,10 +316,15 @@ HAPPY OR NOT?
 ### Code
 * [Bootstrap4](https://getbootstrap.com/): Bootstrap Library used throughout to make site responsive using the Bootstrap Grid System.
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
+* [Fonts Addict](http://www.fontsaddict.com/font/harry-potter.html): Harry Potter font.
+https://fontmeme.com/fonts/harry-p-font/
 
 ### Content
 * All text content written by the developer, Abi Harrison.
 * All other code was written by the developer, Abi Harrison.
+* Background photo on Homepage by <a href="/photographer/Devoncs-46326">Devon Cartwright-Smith</a> from <a href="https://freeimages.com/">FreeImages</a>
+* Gryffindor image by <a href="https://pixabay.com/users/larahughes-341057/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526">Lara Hughes</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526">Pixabay</a>
+* Harry Potter logo from https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg
 
 ### Media
 * All media belongs to Harry Potter LOOK INTO COPYRIGHT THINGS, ETC.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

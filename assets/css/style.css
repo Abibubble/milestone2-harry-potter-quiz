@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    color: lightgray;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ------------------------------------------------------------------------------------------- Background Image */
+
+#index {
+    width: 100%;
+    height: auto;
+    background: url("/assets/images/cloisters.jpg") no-repeat bottom right fixed; /* Background image for homepage */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+/* ------------------------------------------------------------------------------------------- Navigation */
+
+#navButtons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90vw;
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+#logo {
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* ------------------------------------------------------------------------------------------- House selectors */
+
+.overlay {
+    position: absolute;
+    top: 600px;
+    left: auto;
+    height: 60%;
+    width: 75%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* ------------------------------------------------------------------------------------------- Footer */
+
+footer {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
