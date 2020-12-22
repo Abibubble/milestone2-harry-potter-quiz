@@ -325,6 +325,7 @@ https://fontmeme.com/fonts/harry-p-font/
 * Background photo on Homepage by <a href="/photographer/Devoncs-46326">Devon Cartwright-Smith</a> from <a href="https://freeimages.com/">FreeImages</a>
 * Gryffindor image by <a href="https://pixabay.com/users/larahughes-341057/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526">Lara Hughes</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526">Pixabay</a>
 * Harry Potter logo from https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg
+* Colour picker - https://imagecolorpicker.com/en/
 
 ### Media
 * All media belongs to Harry Potter LOOK INTO COPYRIGHT THINGS, ETC.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -333,3 +334,6 @@ https://fontmeme.com/fonts/harry-p-font/
 * My mentor, Antonio Rodriguez, for continuous helpful feedback and support.
 * Eve Crabb and Tom Crabb, for their support and help through my learning.
 * The team at Code Institute, for teaching me the necessary skills to create this site.
+
+
+goldenrod for gold behind logo
