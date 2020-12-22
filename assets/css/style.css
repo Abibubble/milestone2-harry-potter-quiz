@@ -10,10 +10,10 @@ body {
 
 /* ------------------------------------------------------------------------------------------- Background Image */
 
-#index {
+body {
     width: 100%;
     height: auto;
-    background: url("/assets/images/cloisters.jpg") no-repeat bottom right fixed; /* Background image for homepage */
+    background: url("/assets/images/cloisters.jpg") no-repeat bottom right fixed; /* Background image */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,13 +39,34 @@ body {
     left: 100px;
 }
 
+.button {
+    background-color: rgba(218,165,32,0.9);
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    text-align: center;
+    border: 2px solid #000;
+    box-shadow: 1px 1px 2px black, 0 0 5px rgb(255,255,255);
+}
+
 #logo {
     z-index: 1;
     margin: 0 auto;
     margin-top: 100px;
+    background-color: rgba(218,165,32,0.5);
+    border-radius: 25px;
+    padding: 25px;
 }
 
 /* ------------------------------------------------------------------------------------------- House selectors */
+
+.choose-house {
+    position: absolute;
+    top: 450px;
+    left: 35%;
+    font-size: 60px;
+    text-shadow: 2px 2px 3px black
+}
 
 .overlay {
     position: absolute;
@@ -53,22 +74,49 @@ body {
     left: auto;
     height: 60%;
     width: 75%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 25px;
     z-index: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-/* ------------------------------------------------------------------------------------------- Footer */
+.house {
+    width: 23%;
+    height: 80%;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10%;
+    border-radius: 25px;
+    border: 2px solid #000;
+    box-shadow: 1px 1px 2px black, 0 0 5px rgb(255,255,255);
+}
 
-footer {
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    margin-top: auto;
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 0;
+.house-text {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#gryffindor {
+    background-color: #d74f40;
+    color: #fbb928;
+}
+
+#slytherin {
+    background-color: #005d4a;
+    color: #a7acaf;
+}
+
+#hufflepuff {
+    background-color: #fbb92f;
+    color: #07080c;
+}
+
+#ravenclaw {
+    background-color: #203268;
+    color: #886031;
 }
