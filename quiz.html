@@ -27,36 +27,41 @@
             </nav>
         </header>
         <section>
-            <h1>Question</h1>
+            <h1 id="question-text">Question</h1>
         </section>
-        <section>
-            <div>
-                Answer 1
-            </div>
-            <div>
-                Answer 2
-            </div>
-            <div>
-                Answer 3
-            </div>
-            <div>
-                Answer 4
-            </div>
+        <section class="overlay answer-overlay">
+            <a class="answer-selector" href="index.html">
+                <div id="answer1" class="answer answer-color">
+                    <p class="answer-text">Answer 1</p>
+                </div>
+            </a>
+            <a class="answer-selector" href="#">
+                <div id="answer2" class="answer answer-color">
+                    <p class="answer-text">Answer 2</p>
+                </div>
+            </a>
+            <a class="answer-selector" href="#">
+                <div id="answer3" class="answer answer-color">
+                    <p class="answer-text">Answer 3</p>
+                </div>
+            </a>
+            <a class="answer-selector" href="#">
+                <div id="answer4" class="answer answer-color">
+                    <p class="answer-text">Answer 4</p>
+                </div>
+            </a>
         </section>
-        <section>
+        <section class="progress-position">
             <div>
-                Progress /10 questions
+                Current score
             </div>
-            <div>
-                Progress bar
+            <div class="progress-overlay">
+                <progress max="10" value="5"></progress>
             </div>
             <div>
                 Timer
             </div>
         </section>
-        <footer>
-            Copyright info
-        </footer>
         <script src="assets/scripts/script.js"></script>
     </body>
 </html>
