@@ -14,9 +14,14 @@
     <body>
         <header>
             <nav id="navButtons">
-                <a href="instructions.html">
+                <a href="howtoplay.html">
                     <div>
                         <p class="button"><i class="fas fa-info-circle"></i><br>Instructions</p>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div>
+                        <p class="button"><i class="fas fa-home"></i><br>Home</p>
                     </div>
                 </a>
                 <a href="settings.html">
@@ -31,22 +36,22 @@
         </section>
         <section class="overlay answer-overlay">
             <a class="answer-selector" href="index.html">
-                <div id="answer1" class="answer answer-color">
+                <div id="answer1" class="answer" onclick="checkAnswer('1')">
                     <p class="answer-text">Answer 1 (Home)</p>
                 </div>
             </a>
             <a class="answer-selector" href="good.html">
-                <div id="answer2" class="answer answer-color">
+                <div id="answer2" class="answer" onclick="checkAnswer('2')">
                     <p class="answer-text">Answer 2 (Good)</p>
                 </div>
             </a>
             <a class="answer-selector" href="bad.html">
-                <div id="answer3" class="answer answer-color">
+                <div id="answer3" class="answer" onclick="checkAnswer('3')">
                     <p class="answer-text">Answer 3 (Bad)</p>
                 </div>
             </a>
             <a class="answer-selector" href="#">
-                <div id="answer4" class="answer answer-color">
+                <div id="answer4" class="answer" onclick="checkAnswer('4')">
                     <p class="answer-text">Answer 4</p>
                 </div>
             </a>
@@ -58,8 +63,8 @@
             <div class="progress-overlay">
                 <progress max="10" value="5"></progress>
             </div>
-            <div>
-                Timer
+            <div id="timer">
+                <div id="counter">180</div> <!--3 minutes timer total for the quiz-->
             </div>
         </section>
         <script src="assets/scripts/script.js"></script>
