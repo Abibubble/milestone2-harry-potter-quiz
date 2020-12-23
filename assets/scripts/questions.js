@@ -1,5 +1,6 @@
-let questions = [
-  gryffindor = [   
+let house; // Set which house they chose
+
+let gryffindorQuestions = [ 
   {
     question: "Which animal represents your house?",
     optionA: "Lion",
@@ -80,8 +81,9 @@ let questions = [
     optionD: "Dean Thomas",
     correct: "A",
   },
-  ],
-  slytherin = [   
+];
+
+let slytherinQuestions = [   
   {
     question: "Which animal represents your house?",
     optionA: "Lion",
@@ -162,8 +164,9 @@ let questions = [
     optionD: "Daring and Nerve",
     correct: "C",
   },
-  ],
-  hufflepuff = [   
+];
+
+let hufflepuffQuestions = [   
   {
     question: "Which animal represents your house?",
     optionA: "Lion",
@@ -244,8 +247,9 @@ let questions = [
     optionD: "Dance",
     correct: "B",
   },
-  ],
-  ravenclaw = [   
+];
+
+let ravenclawQuestions = [   
   {
     question: "Which animal represents your house?",
     optionA: "Lion",
@@ -326,5 +330,64 @@ let questions = [
     optionD: "",
     correct: "",
   },
-  ],
 ];
+
+function chooseQuestionSet() { // CHECK THAT THIS CHOOSES QUESTION SET BY HOUSE
+    let questionsSet;
+    if (house === "gryffindor") {
+        questionsSet = gryffindorQuestions;
+    } else if (house === "slytherin") {
+        questionsSet = slytherinQuestions;
+    } else if (house === "hufflepuff") {
+        questionsSet = hufflepuffQuestions;
+    } else if (house === "ravenclaw") {
+        questionsSet = ravenclawQuestions;
+    } else {
+        alert("No house chosen. Please choose a house!");
+    }
+}
+
+function randomiseQuestionOrder() {
+    let randomNumber = Math.floor(Math.random() * 10);
+    let currentQuestion = questionsSet[randomNumber];
+}
+
+function populateQuestion() {
+    let questionText = document.getElementById("question-text");
+    questionText.innerText = currentQuestion.question;
+
+    let answerOne = document.getElementById("answer-one");
+    answerOne.innerText = currentQuestion.optionA;
+
+    let answerTwo = document.getElementById("answer-two");
+    answerTwo.innerText = currentQuestion.optionB;
+
+    let answerThree = document.getElementById("answer-three");
+    answerThree.innerText = currentQuestion.optionC;
+
+    let answerFour = document.getElementById("answer-four");
+    answerFour.innerText = currentQuestion.optionD;
+}
+
+// Check the answer given by the user and move to the next question
+
+function checkAnswer(num) {
+    let currentQuestionResponse; // id of clicked answer
+   if (currentQuestionResponse == currentQuestion.correct) { //if id of clicked answer is equal to the question correct answer
+       score++; // Add to the score
+   };
+   if (currentQuestion < questionsSet.length) { // if the current question isn't the final question
+       currentQuestion++; // move to the next question
+   } else {
+       // clear timer
+       // move to score screen
+   }
+}
+
+function timer() {
+
+}
+
+function showScorePage() {
+
+}
