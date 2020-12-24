@@ -11,6 +11,7 @@ function setHouse(house) {
 
     answers.classList.add(`${house}`);
 
+    chooseQuestionSet(house);
     // Move to next section (hide this one, show next one)
 }
 
@@ -363,19 +364,8 @@ let ravenclawQuestions = [
 
 let questionsSet;
 
-function chooseQuestionSet() { // CHECK THAT THIS CHOOSES QUESTION SET BY HOUSE
-    if (houseChosen === "gryffindor") {
-        questionsSet = gryffindorQuestions;
-    } else if (houseChosen === "slytherin") {
-        questionsSet = slytherinQuestions;
-    } else if (houseChosen === "hufflepuff") {
-        questionsSet = hufflepuffQuestions;
-    } else if (houseChosen === "ravenclaw") {
-        questionsSet = ravenclawQuestions;
-    } else {
-        alert("No house chosen. Please choose a house!");
-    }
-    // Move to next scene???
+function chooseQuestionSet(houseChosen) { // CHECK THAT THIS CHOOSES QUESTION SET BY HOUSE
+    questionsSet = `${houseChosen}Questions`;
 }
 
 // ---------------------------------------------------------------- Randomises the order of the questions
