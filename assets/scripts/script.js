@@ -1,9 +1,7 @@
 // Sets color scheme depending on which House is chosen on index.html
 
-const houseChosen;
-
 function chooseHouse(obj) {
-    houseChosen = obj.id;
+    const houseChosen = obj.id;
 
     console.log(houseChosen); // Gets the correct id - gryffindor
     console.log(this); // Yet this isn't working? - Window, etc.
