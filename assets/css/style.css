@@ -112,22 +112,22 @@ a {
     height: 100%;
 }
 
-.gryffindor-color {
+.gryffindor .answer, .gryffindor-color {
     background-color: #d74f40;
     color: #fbb928;
 }
 
-.slytherin-color {
+.slytherin .answer, .slytherin-color {
     background-color: #005d4a;
     color: #a7acaf;
 }
 
-.hufflepuff-color {
+.hufflepuff .answer, .hufflepuff-color {
     background-color: #fbb92f;
     color: #07080c;
 }
 
-.ravenclaw-color {
+.ravenclaw .answer, .ravenclaw-color {
     background-color: #203268;
     color: #886031;
 }
