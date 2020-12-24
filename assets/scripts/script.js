@@ -369,8 +369,8 @@ let questionsSet;
 
 const questions = {
     hufflepuff: {
-  Q1: ['Q text', 'A', 'B', 'C', 'D', 'correct'],
-  Q2: ['Q text', 'A', 'B', 'C', 'D', 'correct'],
+  Q1: ['Q1 text', 'A', 'B', 'C', 'D', 'A'],
+  Q2: ['Q2 text', 'A', 'B', 'C', 'D', 'B'],
 }
 }
 
@@ -383,9 +383,10 @@ function chooseQuestionSet() { // CHECK THAT THIS CHOOSES QUESTION SET BY HOUSE
 // ---------------------------------------------------------------- Randomises the order of the questions
 
 let currentQuestion;
+let questionPool = 2;
 
 function randomiseQuestionOrder() {
-    let randomNumber = Math.ceil(Math.random() * 2);
+    let randomNumber = Math.ceil(Math.random() * questionPool);
     currentQuestion = questionsSet[`Q${randomNumber}`];
     console.log(currentQuestion);
 }
@@ -414,15 +415,18 @@ let score = 0;
 
 function checkAnswer(num) {
     let currentQuestionResponse = currentQuestion[num]; // clicked answer
-   if (currentQuestionResponse == currentQuestion[5]) { //if id of clicked answer is equal to the question correct answer
+    if (currentQuestionResponse == currentQuestion[5]) { //if id of clicked answer is equal to the question correct answer
        score++; // Add to the score
-       questionsAnswered++;
-   };
-   if (questionsAnswered < questionsSet.length) { // if the current question isn't the final question
-       currentQuestion++; // move to the next question
-   } else {
+       questionsAnswered++; // Increment how many questions are answered
+       console.log(questionsSet);
+    };
+    if (questionsAnswered < 10) { // if the current question isn't the final question
+        delete questionsSet.currentQuestion; // Remove the question from the set of questions
+        questionPool--; // Decrement the question pool for the RNG
+        console.log(questionPool);
+    } else {
        timerEnd();
-   }
+    }
 }
 
 // ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
