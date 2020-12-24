@@ -13,3 +13,11 @@ let audio = {
     correctRavenclawClick: new Audio("assets/audio/ravenclawright.wav"),
     incorrectRavenclawClick: new Audio("assets/audio/ravenclawwrong.wav"),
 };
+
+function backgroundMusicToggle() {
+
+}
+
+function soundEffectsToggle() {
+    
+}
