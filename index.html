@@ -13,45 +13,26 @@
     <body>
         <header>
             <nav id="navButtons">
-                <a href="howtoplay.html">
-                    <div>
-                        <p class="button"><i class="fas fa-info-circle"></i><br>Instructions</p>
-                    </div>
-                </a>
-                <a href="settings.html">
-                <div>
-                    <p class="button"><i class="fas fa-cog"></i><br>Music Settings</p>
-                </div>
-                </a>
+                <button class="button"><i class="fas fa-info-circle"></i><br>Instructions</button>
+                <button class="button"><i class="fas fa-home"></i><br>Home</button>
+                <button class="button"><i class="fas fa-cog"></i><br>Music Settings</button>
             </nav>
-            <img src="assets/images/logo.png" alt="Harry Potter logo" id="logo">
         </header>
-        <section>
-            <h1 class="choose-house">Choose Your House</h1>
-        </section>
-        <section class="overlay">
-            <a  id="gryffindor" class="house-selector" href="#" onclick="chooseHouse(this)">
-                <div class="house gryffindor-color">
-                    <p class="house-text">Gryffindor</p>
-                </div>
-            </a>
-            <a id="slytherin" class="house-selector" href="quiz.html" onclick="chooseHouse(this)">
-                <div class="house slytherin-color">
-                    <p class="house-text">Slytherin</p>
-                </div>
-            </a>
-            <a id="hufflepuff" class="house-selector" href="quiz.html" onclick="chooseHouse(this)">
-                <div class="house hufflepuff-color">
-                    <p class="house-text">Hufflepuff</p>
-                </div>
-            </a>
-            <a id="ravenclaw" class="house-selector" href="quiz.html" onclick="chooseHouse(this)">
-                <div class="house ravenclaw-color">
-                    <p class="house-text">Ravenclaw</p>
-                </div>
-            </a>
-        </section>
+        <main class="main-section">
+            <section id="js-choose-house-page" class="page-content">
+                <img src="assets/images/logo.png" alt="Harry Potter logo" id="logo">
+                <h1 class="choose-house">Choose Your House</h1>
+                <section class="overlay">
+                    <button class="house-text house gryffindor-color house-selector" id="js-gryffindor" onclick="chooseHouse(this)">Gryffindor</button>
+                    <button class="house-text house slytherin-color house-selector" id="js-slytherin" onclick="chooseHouse(this)">Slytherin</button>
+                    <button class="house-text house hufflepuff-color house-selector" id="js-hufflepuff" onclick="chooseHouse(this)">Hufflepuff</button>
+                    <button class="house-text house ravenclaw-color house-selector" id="js-ravenclaw" onclick="chooseHouse(this)">Ravenclaw</button>
+                </section>
+            </section>
+        </main>
+        <footer class="copyright">
+            Copyright
+        </footer>
         <script src="assets/scripts/script.js"></script>
-        <script src="assets/scripts/audio.js"></script>
     </body>
 </html>
