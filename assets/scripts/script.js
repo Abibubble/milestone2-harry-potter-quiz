@@ -1,16 +1,16 @@
 // Sets color scheme depending on which House is chosen on index.html
 
 function chooseHouse(obj) {
-    let houseChosen = obj.id;
+    const houseChosen = obj.id;
 
-    console.log(houseChosen);
-    console.log(this);
+    console.log(houseChosen); // Gets the correct id - gryffindor
+    console.log(this); // Yet this isn't working? - Window, etc.
 
     let answers = document.getElementsByClassName("answer")
-    console.log(answers);
+    console.log(answers); // HTML collection
 
     if (houseChosen === "gryffindor") {
-        answers.classList.add("gryffindor-color");
+        answers.classList.add("gryffindor-color"); // TypeError, cannot read 'add' of undefined
     } else if (houseChosen === "slytherin") {
         answers.classList.add("slytherin-color");
     } else if (houseChosen === "hufflepuff") {
