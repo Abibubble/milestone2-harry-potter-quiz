@@ -1,26 +1,21 @@
 // Sets color scheme depending on which House is chosen on index.html
 
-function chooseHouse(obj) {
-    const houseChosen = obj.id;
+let houseChosen;
+let answers = document.getElementById("answer-overlay");;
 
-    console.log(houseChosen); // Gets the correct id - gryffindor
-    console.log(this); // Yet this isn't working? - Window, etc.
+function setHouse(house) {
 
-    let answers = document.getElementsByClassName("answer")
-    console.log(answers); // HTML collection
+    resetHouse(houseChosen);
 
-    if (houseChosen === "js-gryffindor") {
-        answers.classList.add("gryffindor-color"); // TypeError, cannot read 'add' of undefined
-    } else if (houseChosen === "js-slytherin") {
-        answers.classList.add("slytherin-color");
-    } else if (houseChosen === "js-hufflepuff") {
-        answers.classList.add("hufflepuff-color");
-    } else if (houseChosen === "js-ravenclaw") {
-        answers.classList.add("ravenclaw-color");
-    } else {
-        alert("Error! House not found. Please try again.");
-    };
+    houseChosen = house;
+
+    answers.classList.add(`${house}`);
+
     // Move to next section (hide this one, show next one)
+}
+
+function resetHouse(house) {
+    answers.classList.remove(house);
 }
 
 //
@@ -427,7 +422,7 @@ function checkAnswer(num) {
 
 // ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
 
-let timer;
+// let timer;
 
 function timer() {
     // When question page is fully loaded
