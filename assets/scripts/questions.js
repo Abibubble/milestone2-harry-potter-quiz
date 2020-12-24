@@ -388,8 +388,7 @@ function checkAnswer(num) {
    if (currentQuestion < questionsSet.length) { // if the current question isn't the final question
        currentQuestion++; // move to the next question
    } else {
-       // clear timer
-       // move to score screen
+       timerEnd();
    }
 }
 
@@ -398,7 +397,15 @@ function checkAnswer(num) {
 let timer;
 
 function timer() {
+    // When question page is fully loaded
+    // Start timer
+    // Count down from 180 seconds
+    timerEnd();
+}
 
+function timerEnd() {
+    //If timer runs out, end the quiz
+    showScorePage();
 }
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
