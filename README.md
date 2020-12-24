@@ -275,8 +275,12 @@ A large amount of testing was done to ensure that all pages were linking correct
 Friends, family members, members of staff and 13 customers were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Solved Bugs
-1. 
-    * 
+1. The chooseHouse function wasn't acting on the second page, so it didn't change the colour scheme as it should
+    * I searched Google and Stack Overflow and tested out a few fixes that I saw suggested there, but none of them worked.
+    * I used console.log on all of my variables after they were created, and discovered that 'this' wasn't being targeted properly.
+    * The houseChosen variable was collecting the correct id.
+    * The answers variable was collecting an HTML collection.
+
 
 ### Known Bugs
 * 
