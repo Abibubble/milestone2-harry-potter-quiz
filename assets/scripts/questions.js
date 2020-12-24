@@ -1,4 +1,4 @@
-let house; // Set which house they chose
+// ---------------------------------------------------------------- Questions sets
 
 let gryffindorQuestions = [ 
   {
@@ -332,24 +332,31 @@ let ravenclawQuestions = [
   },
 ];
 
+// ---------------------------------------------------------------- Chooses question set depending on which house was chosen
+
+let questionsSet;
+
 function chooseQuestionSet() { // CHECK THAT THIS CHOOSES QUESTION SET BY HOUSE
-    let questionsSet;
-    if (house === "gryffindor") {
+    if (houseChosen === "gryffindor") {
         questionsSet = gryffindorQuestions;
-    } else if (house === "slytherin") {
+    } else if (houseChosen === "slytherin") {
         questionsSet = slytherinQuestions;
-    } else if (house === "hufflepuff") {
+    } else if (houseChosen === "hufflepuff") {
         questionsSet = hufflepuffQuestions;
-    } else if (house === "ravenclaw") {
+    } else if (houseChosen === "ravenclaw") {
         questionsSet = ravenclawQuestions;
     } else {
         alert("No house chosen. Please choose a house!");
     }
 }
 
+// ---------------------------------------------------------------- Randomises the order of the questions
+
+let currentQuestion;
+
 function randomiseQuestionOrder() {
     let randomNumber = Math.floor(Math.random() * 10);
-    let currentQuestion = questionsSet[randomNumber];
+    currentQuestion = questionsSet[randomNumber];
 }
 
 function populateQuestion() {
@@ -369,7 +376,9 @@ function populateQuestion() {
     answerFour.innerText = currentQuestion.optionD;
 }
 
-// Check the answer given by the user and move to the next question
+// ---------------------------------------------------------------- Check the answer given by the user and move to the next question
+
+let score = 0;
 
 function checkAnswer(num) {
     let currentQuestionResponse; // id of clicked answer
@@ -384,10 +393,22 @@ function checkAnswer(num) {
    }
 }
 
+// ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
+
+let timer;
+
 function timer() {
 
 }
 
-function showScorePage() {
+// ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
 
+function showScorePage() {
+    if (score > 5) {
+        // Go to good results page
+        // Populate their score
+    } else {
+        // Go to bad results page
+        // Populate their score
+    }
 }
