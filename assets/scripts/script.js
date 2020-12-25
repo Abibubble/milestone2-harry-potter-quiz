@@ -1,21 +1,20 @@
 // Sets color scheme depending on which House is chosen on index.html
 
 let houseChosen;
-let answers = document.getElementById("answer-overlay");;
+let answers = document.getElementById("answer-overlay");
 
 function setHouse(house) {
 
     resetHouse(houseChosen);
 
     houseChosen = house;
-
     answers.classList.add(`${house}`);
 
     chooseQuestionSet();
-    // Move to next section (hide this one, show next one)
     randomiseQuestionOrder();
-    
     populateQuestion();
+
+        // Move to next section (hide this one, show next one)
 }
 
 function resetHouse(house) {
@@ -31,172 +30,35 @@ function resetHouse(house) {
 
 // ---------------------------------------------------------------- Questions sets
 
-// let gryffindorQuestions = [ 
-//   {
-//     question: "Which animal represents your house?",
-//     optionA: "Lion",
-//     optionB: "Snake",
-//     optionC: "Badger",
-//     optionD: "Eagle",
-//     correct: "A",
-//   },
-//   {
-//     question: "What are your house colours? Scarlet + gold, Silver + green, Yellow + black, Blue + silver",
-//     optionA: "Scarlet and Gold",
-//     optionB: "Silver and Green",
-//     optionC: "Yellow and Black",
-//     optionD: "Blue and Silver",
-//     correct: "A",
-//   },
-//   {
-//     question: "Who was Hermione's date at the Yule Ball?",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "Viktor Krum",
-//     optionD: "",
-//     correct: "C",
-//   },
-//   {
-//     question: "Which character served as Quiddich commentator?",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "Lee Jordan",
-//     correct: "D",
-//   },
-//   {
-//     question: "Which insect is Rom most scared of?",
-//     optionA: "",
-//     optionB: "Spiders",
-//     optionC: "",
-//     optionD: "",
-//     correct: "B",
-//   },
-//   {
-//     question: "What is the name of Hermione's cat?",
-//     optionA: "",
-//     optionB: "Crookshanks",
-//     optionC: "",
-//     optionD: "",
-//     correct: "B",
-//   },
-//   {
-//     question: "How did Neville help to defeat Voldemort?",
-//     optionA: "",
-//     optionB: "Killed Nagini",
-//     optionC: "",
-//     optionD: "",
-//     correct: "B",
-//   },
-//   {
-//     question: "How does Harry catch his first snitch?",
-//     optionA: "In his mouth",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "",
-//     correct: "A",
-//   },
-//   {
-//     question: "How does Hermione take extra classes in third year?",
-//     optionA: "Weekend classes",
-//     optionB: "Made a clone",
-//     optionC: "Penseive",
-//     optionD: "Time Turner",
-//     correct: "D",
-//   },
-//   {
-//     question: "Other than Harry, who else could have been the object of the prophecy regarding Voldemort's downfall?",
-//     optionA: "Hermione Granger",
-//     optionB: "Luna Lovegood",
-//     optionC: "Neville Longbottom",
-//     optionD: "Dean Thomas",
-//     correct: "A",
-//   },
-// ];
-
-// let slytherinQuestions = [   
-//   {
-//     question: "Which animal represents your house?",
-//     optionA: "Lion",
-//     optionB: "Snake",
-//     optionC: "Badger",
-//     optionD: "Eagle",
-//     correct: "B",
-//   },
-//   {
-//     question: "What are your house colours? Scarlet + gold, Silver + green, Yellow + black, Blue + silver",
-//     optionA: "Scarlet and Gold",
-//     optionB: "Silver and Green",
-//     optionC: "Yellow and Black",
-//     optionD: "Blue and Silver",
-//     correct: "B",
-//   },
-//   {
-//     question: "How many horcruxes did Voldemort make?",
-//     optionA: "",
-//     optionB: "8",
-//     optionC: "",
-//     optionD: "",
-//     correct: "B",
-//   },
-//   {
-//     question: "Finish the quote. “After all this time?”",
-//     optionA: "Always.",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "",
-//     correct: "A",
-//   },
-//   {
-//     question: "What was the name of Voldemort's snake?",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "Nagini",
-//     correct: "D",
-//   },
-//   {
-//     question: "Who killed Dobby by throwing a knife at him?",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "Bellatrix Lestrange",
-//     correct: "D",
-//   },
-//   {
-//     question: "Which medieval wizard was in Slytherin?",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "Merlin",
-//     optionD: "",
-//     correct: "C",
-//   },
-//   {
-//     question: "Where is the common room?",
-//     optionA: "In the dungeons",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "",
-//     correct: "A",
-//   },
-//   {
-//     question: "Who is the resident ghost of Slytherin?",
-//     optionA: "Nearly Headless Nick",
-//     optionB: "The Bloody Baron",
-//     optionC: "The Fat Friar",
-//     optionD: "The Grey Lady",
-//     correct: "B",
-//   },
-//   {
-//     question: "What qualities does a Slytherin possess?",
-//     optionA: "Patience and Loyalty",
-//     optionB: "Wit and Learning",
-//     optionC: "Cunning and Deceit",
-//     optionD: "Daring and Nerve",
-//     correct: "C",
-//   },
-// ];
-
+const questions = {
+    gryffindor: {
+        Q1: ["Which animal represents your house?", "Lion", "Snake", "Badger", "Eagle", "Lion"],
+        Q2: ["What are your house colours?", "Scarlet and Gold", "Silver and Green", "Yellow and Black", "Blue and Silver", "Scarlet and Gold"],
+        Q3: ["Who was Hermione's date at the Yule Ball?", "A", "B", "Viktor Krum", "D", "Viktor Krum"],
+        Q4: ["Which character served as Quiddich commentator?", "A", "B", "C", "Lee Jordan", "Lee Jordan"],
+        Q5: ["Which insect is Rom most scared of?", "A", "Spiders", "C", "D", "Spiders"],
+        Q6: ["What is the name of Hermione's cat?", "A", "B", "Crookshanks", "D", "Crookshanks"],
+        Q7: ["How did Neville help to defeat Voldemort?", "A", "Killed Nagini", "C", "D", "Killed Nagini"],
+        Q8: ["How does Harry catch his first snitch?", "In his mouth", "B", "C", "D", "In his mouth"],
+        Q9: ["How does Hermione take extra classes in third year?", "Weekend classes", "Made a clone", "Penseive", "Time Turner", "Time Turner"],
+        Q10: ["Other than Harry, who else could have been the object of the prophecy regarding Voldemort's downfall?", 
+            "Hermione Granger", "Luna Lovegood", "Neville Longbottom", "Dean Thomas", "Neville Longbottom"]
+    },
+    slytherin: {
+        Q1: ["Which animal represents your house?", "Lion", "Snake", "Badger", "Eagle", "Snake"],
+        Q2: ["What are your house colours?", "Scarlet and Gold", "Silver and Green", "Yellow and Black", "Blue and Silver", "Silver and Green"],
+        Q3: ["How many horcruxes did Voldemort make?", "Six", "Seven", "Eight", "Nine", "Eight"],
+        Q4: ["Finish the quote. “After all this time?”", "Always.", "Maybe.", "I guess...", "No!", "Always."],
+        Q5: ["What was the name of Voldemort's snake?", "Sid", "Basilisk", "Medusa", "Nagini", "Nagini"],
+        Q6: ["Who killed Dobby by throwing a knife at him?", "Draco Malfoy", "Severus Snape", "Voldemort", "Bellatrix Lestrange", "Bellatrix Lestrange"],
+        Q7: ["Which medieval wizard was in Slytherin?", "A", "B", "Merlin", "D", "Merlin"],
+        Q8: ["Where is the common room of your house?", "In the dungeons", "B", "C", "D", "In the dungeons"],
+        Q9: ["Who is the resident ghost of Slytherin?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Bloody Baron"],
+        Q10: ["What qualities does a Slytherin possess?", "Patience and Loyalty", "Wit and Learning", "Cunning and Deceit", "Daring and Nerve", "Cunning and Deceit"]
+    },
+    hufflepuff: {},
+    ravenclaw: {}
+}
 // let hufflepuffQuestions = [   
 //   {
 //     question: "Which animal represents your house?",
@@ -366,13 +228,6 @@ function resetHouse(house) {
 // ---------------------------------------------------------------- Chooses question set depending on which house was chosen
 
 let questionsSet;
-
-const questions = {
-    hufflepuff: {
-  Q1: ['Q1 text', 'A', 'B', 'C', 'D', 'A'],
-  Q2: ['Q2 text', 'A', 'B', 'C', 'D', 'B'],
-}
-}
 
 function chooseQuestionSet() { // CHECK THAT THIS CHOOSES QUESTION SET BY HOUSE
     questionsSet = questions[houseChosen];
