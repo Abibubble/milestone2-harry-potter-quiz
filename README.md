@@ -275,12 +275,35 @@ A large amount of testing was done to ensure that all pages were linking correct
 Friends, family members, members of staff and 13 customers were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Solved Bugs
-1. The chooseHouse function wasn't acting on the second page, so it didn't change the colour scheme as it should
+1. The setHouse function wasn't acting on the second page, so it didn't change the colour scheme as it should
     * I searched Google and Stack Overflow and tested out a few fixes that I saw suggested there, but none of them worked.
     * I used console.log on all of my variables after they were created, and discovered that 'this' wasn't being targeted properly.
     * The houseChosen variable was collecting the correct id.
     * The answers variable was collecting an HTML collection.
+    * I searched on Stack Overflow, and saw that as I was using multiple scripts and multiple html documents, I'd need to use a post request to access the data fully.
+    * This added more complications than I needed, so I changed the set up of my documents.
+    * I added all scripts into one script, with different sections
+    * I added all HTML pages into one page, using a hide/show function to access whichever part of the page needs to be visible to the user.
+    * I was then able to simplify my setHouse function, which fixed this bug.
+    * ADD IMAGES
 
+2. The houseChosen variable contained a string, so when I was trying to use it to cycle through an array of objects, it was just bringing me up each index of that string (a single letter).
+    * I searched Google and Stack Overflow, and found eval(), which fixed my problem.
+    * Upon more research, I found that eval() should not be used due to extreme security risks.
+    * I looked into using Function(), but that didn't fix my problem either.
+    * I spoke to Eve Crabb and Tom Crabb (friends of mine who work in Web Development), who suggested that I'd be better off having my questions in one 'questions' object.
+    * Then I put each set of questions in their own object, and each question and answer set in an array within that object.
+    * This meant I could then refer to the object depending on which house was chosen much simpler.
+    * I then used a seperate function to refer to a specific question within the question set, which solved my problem.
+
+3. The randomiseQuestionOrder function wasn't accessing the question and answer content as it should have been.
+    * Originally, I had my random question generator set up to find a number between 0 and 9 using Math.floor(), to then use with indexing to find a question.
+    * However, due to bug #2, this didn't function was I intended.
+    * I then changed it to Math.ceil(), to find a random number between 1 and 10.
+    * Using this number, I concatenated the letter Q in front of the number, and set that to the variable of currentQuestion.
+    * This meant I could refer to the question by the [0] of each question set.
+    * This meant that referring to the question, the answers, and the correct answer became much simpler.
+    * I could then use indexing to use whichever part I needed to, which fixed this bug.
 
 ### Known Bugs
 * 
@@ -288,6 +311,8 @@ Friends, family members, members of staff and 13 customers were asked to review 
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and originally got this result.
+
+SOMETHING ABOUT NOT USING JQUERY DUE TO PERFORMANCE TRADEOFFS.
 
 ![Lighthouse first try](LINK)
 
