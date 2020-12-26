@@ -68,96 +68,25 @@ const questions = {
         Q9: ["Who is the resident ghost of Hufflepuff?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Fat Friar"],
         Q10: ["How do you get into the Hufflepuff common room?", "Hum a tune", "Tap out a rhythm", "Perform a poem", "Dance", "Tap out a rhythm"]
     },
-    ravenclaw: {}
+    ravenclaw: {
+        Q1: ["Which animal represents your house?", "Lion", "Snake", "Badger", "Eagle", "Eagle"],
+        Q2: ["What are your house colours?", "Scarlet and Gold", "Silver and Green", "Yellow and Black", "Blue and Silver", "Blue and Silver"],
+        Q3: ["What qualities does a Slytherin possess?", "Patience and Loyalty", "Wit and Learning", "Cunning and Deceit", "Daring and Nerve", "Wit and Learning"],
+        Q4: ["Which gem is contained in the Ravenclaw house points hourglass?", "Amythests", "Emeralds", "Sapphires", "Rubies", "Sapphires"],
+        Q5: ["What does Felix Felicis do?", "Poisons you", "Gives you good luck", "Makes you fall in love", "Ressurects someone", "Gives you good luck"],
+        Q6: ["Who is the Seeker of the Ravenclaw Quiddich team?", "A", "B", "C", "Cho Chang", "Cho Chang"],
+        Q7: ["Who is the resident ghost of Hufflepuff?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Grey Lady"],
+        Q8: ["Q8", "A", "B", "C", "D", "A"],
+        Q9: ["Q9", "A", "B", "C", "D", "A"],
+        Q10: ["Q10", "A", "B", "C", "D", "A"]
+    }
 }
-// let ravenclawQuestions = [   
-//   {
-//     question: "Which animal represents your house?",
-//     optionA: "Lion",
-//     optionB: "Snake",
-//     optionC: "Badger",
-//     optionD: "Eagle",
-//     correct: "D",
-//   },
-//   {
-//     question: "What are your house colours? Scarlet + gold, Silver + green, Yellow + black, Blue + silver",
-//     optionA: "Scarlet and Gold",
-//     optionB: "Silver and Green",
-//     optionC: "Yellow and Black",
-//     optionD: "Blue and Silver",
-//     correct: "D",
-//   },
-//   {
-//     question: "What qualities does a Ravenclaw possess?",
-//     optionA: "Patience and Loyalty",
-//     optionB: "Wit and Learning",
-//     optionC: "Cunning and Deceit",
-//     optionD: "Daring and Nerve",
-//     correct: "B",
-//   },
-//   {
-//     question: "Which gem is contained in the Ravenclaw house points hourglass?",
-//     optionA: "Amethysts",
-//     optionB: "Sapphires",
-//     optionC: "Emeralds",
-//     optionD: "Rubies",
-//     correct: "D",
-//   },
-//   {
-//     question: "What does Felix Felicis do? Gives good luck, poisons you, fall in love, resurrection",
-//     optionA: "Poisons the consumer",
-//     optionB: "Gives the consumer good luck",
-//     optionC: "Makes you fall in love",
-//     optionD: "Ressurects someone",
-//     correct: "B",
-//   },
-//   {
-//     question: "Who is the Seeker of the Ravenclaw Quiddich team?",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "Cho Chang",
-//     correct: "D",
-//   },
-//   {
-//     question: "Who is the resident ghost of Ravenclaw?",
-//     optionA: "Nearly Headless Nick",
-//     optionB: "The Bloody Baron",
-//     optionC: "The Fat Friar",
-//     optionD: "The Grey Lady",
-//     correct: "D",
-//   },
-//   {
-//     question: "",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "",
-//     correct: "",
-//   },
-//   {
-//     question: "",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "",
-//     correct: "",
-//   },
-//   {
-//     question: "",
-//     optionA: "",
-//     optionB: "",
-//     optionC: "",
-//     optionD: "",
-//     correct: "",
-//   },
-// ];
 
 // ---------------------------------------------------------------- Chooses question set depending on which house was chosen
 
 let questionsSet;
 
-function chooseQuestionSet() { // CHECK THAT THIS CHOOSES QUESTION SET BY HOUSE
+function chooseQuestionSet() {
     questionsSet = questions[houseChosen];
 }
 
@@ -169,12 +98,11 @@ let currentQuestion;
 let questionPool = 2;
 
 function randomiseQuestionOrder() {
-    let randomNumber = Math.ceil(Math.random() * questionPool);
-    currentQuestion = questionsSet[`Q${randomNumber}`];
-    console.log(currentQuestion);
+    let randomNumber = Math.ceil(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
+    currentQuestion = questionsSet[`Q${randomNumber}`]; // Finds a question in the question pool with that number
 }
 
-function populateQuestion() {
+function populateQuestion() { // Fills in the text for question and answer chosen by the randomiseQuestionOrder function
     let questionText = document.getElementById("question-text");
     questionText.innerText = currentQuestion[0];
 
