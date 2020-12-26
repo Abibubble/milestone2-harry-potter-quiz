@@ -95,7 +95,7 @@ function chooseQuestionSet() {
 // ---------------------------------------------------------------- Randomises the order of the questions
 
 let currentQuestion;
-let questionPool = 2;
+let questionPool = 10;
 
 function randomiseQuestionOrder() {
     let randomNumber = Math.ceil(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
@@ -122,13 +122,19 @@ function populateQuestion() { // Fills in the text for question and answer chose
 // ---------------------------------------------------------------- Check the answer given by the user and move to the next question
 
 let questionsAnswered = 0;
-let score = 0;
+let currentScore = 0;
+
+function pushScore() {
+    let scoreArea = document.getElementById("score"); // Gets the score area
+    scoreArea.innerText = `${currentScore}/10`; // Pushes the updated score to the score area for the user to see
+}
 
 function checkAnswer(num) {
     let currentQuestionResponse = currentQuestion[num]; // clicked answer
     if (currentQuestionResponse == currentQuestion[5]) { //if id of clicked answer is equal to the question correct answer
-       score++; // Add to the score
+       currentScore++; // Add to the score
        questionsAnswered++; // Increment how many questions are answered
+       pushScore();
        console.log(questionsSet);
     };
     if (questionsAnswered < 10) { // if the current question isn't the final question
@@ -159,11 +165,11 @@ function timerEnd() {
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
 
 function showScorePage() {
-    if (score > 5) {
-        // Go to good results page
+    if (currentScore >= 5) {
+        // Go to good results area
         // Populate their score
     } else {
-        // Go to bad results page
+        // Go to bad results area
         // Populate their score
     }
 }
