@@ -14,7 +14,7 @@ function setHouse(house) {
     randomiseQuestionOrder();
     populateQuestion();
 
-        // Move to next section (hide this one, show next one)
+    // Move to next section (hide this one, show next one)
 }
 
 function resetHouse(house) {
@@ -136,9 +136,12 @@ function checkAnswer(num) {
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
        console.log(questionsSet);
+       delete questionsSet.currentQuestion; // Remove the question from the set of questions
+       randomiseQuestionOrder();
+       populateQuestion();
+       // ALMOST!!! It's changing the question, but it isn't removing the current question from the pool
     };
     if (questionsAnswered < 10) { // if the current question isn't the final question
-        delete questionsSet.currentQuestion; // Remove the question from the set of questions
         questionPool--; // Decrement the question pool for the RNG
         console.log(questionPool);
     } else {
