@@ -1,4 +1,4 @@
-// Sets color scheme depending on which House is chosen on index.html
+// Sets color scheme and question set depending on which House is chosen on index.html
 
 let houseChosen;
 let answers = document.getElementById("answer-overlay");
@@ -17,7 +17,7 @@ function setHouse(house) {
     // Move to next section (hide this one, show next one)
 }
 
-function resetHouse(house) {
+function resetHouse(house) { // Reset the house at the start, so if the user is playing a second time, they're not stuck with the same house
     answers.classList.remove(house);
 }
 
