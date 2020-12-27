@@ -29,7 +29,7 @@
                     <button class="house-text house ravenclaw-color house-selector" onclick="setHouse('ravenclaw')">Ravenclaw</button>
                 </section>
             </section>
-            <section id="js-quiz-page" class="page-content">
+            <section id="js-quiz-page" class="page-content hide">
                 <h1 id="question-text">Question</h1>
                 <section class="overlay answer-overlay" id="answer-overlay">
                     <button class="answer-text answer answer-selector" id="answer-one" onclick="checkAnswer('1')">Answer 1</button>
@@ -38,12 +38,12 @@
                     <button class="answer-text answer answer-selector" id="answer-four" onclick="checkAnswer('4')">Answer 4</button>
                 </section>
                 <section class="progress-position">
-                <div id="score"></div>
+                <div id="score">0 / 10</div>
                 <div class="progress-overlay">
                     <progress max="10" value="5"></progress>
                 </div>
                 <div id="timer">
-                    <div id="counter">180</div> <!--3 minutes timer total for the quiz-->
+                    <div id="counter">180 seconds</div> <!--3 minutes timer total for the quiz-->
                 </div>
                 </section>
             </section>

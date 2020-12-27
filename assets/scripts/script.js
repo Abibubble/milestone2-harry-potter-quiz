@@ -2,6 +2,12 @@
 
 let houseChosen;
 let answers = document.getElementById("answer-overlay");
+const homepage = document.getElementById("js-choose-house-page");
+const quizpage = document.getElementById("js-quiz-page");
+const goodScorePage = document.getElementById("js-good-page");
+const badScorePage = document.getElementById("js-bad-page");
+const howToPlay = document.getElementById("js-how-to-play-page");
+const settings = document.getElementById("js-settings-page");
 
 function setHouse(house) {
 
@@ -10,9 +16,13 @@ function setHouse(house) {
     houseChosen = house;
     answers.classList.add(`${house}`);
 
+    homepage.classList.add("hide");
+    quizpage.classList.remove("hide");
+
     chooseQuestionSet();
     randomiseQuestionOrder();
     populateQuestion();
+    startTimer();
 
     // Move to next section (hide this one, show next one)
 }
@@ -130,19 +140,19 @@ function pushScore() {
 }
 
 function checkAnswer(num) {
-    let currentQuestionResponse = currentQuestion[num]; // clicked answer
+    let currentQuestionResponse = currentQuestion[num]; // clicked answer, connecting to the index number of the answer that was clicked
     if (currentQuestionResponse == currentQuestion[5]) { //if id of clicked answer is equal to the question correct answer
        currentScore++; // Add to the score
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
+       delete questionsSet[currentQuestion]; // Remove the question from the set of questions
        console.log(questionsSet);
-       delete questionsSet.currentQuestion; // Remove the question from the set of questions
-       randomiseQuestionOrder();
-       populateQuestion();
        // ALMOST!!! It's changing the question, but it isn't removing the current question from the pool
     };
     if (questionsAnswered < 10) { // if the current question isn't the final question
         questionPool--; // Decrement the question pool for the RNG
+        randomiseQuestionOrder();
+        populateQuestion();
         console.log(questionPool);
     } else {
        timerEnd();
@@ -153,15 +163,22 @@ function checkAnswer(num) {
 
 // let timer;
 
-function timer() {
-    // When question page is fully loaded
-    // Start timer
-    // Count down from 180 seconds
-    timerEnd();
+function startTimer() {    // Start timer
+    let counter = document.getElementById("counter");
+    let seconds = 180;
+    setInterval(function() { // Count down from 180 seconds in seconds
+        seconds--;
+        counter.innerText = `${seconds} seconds`; // Fill in the user-facing timer
+        if (seconds === 0) {
+            endTimer(); // If the timer runs out, end the timer
+        }
+    }, 1000);
+
 }
 
-function timerEnd() {
-    //If timer runs out, end the quiz
+function endTimer() {
+    counter = "";
+    alert("Oh no! You're out of time!")
     showScorePage();
 }
 
@@ -184,26 +201,12 @@ function showScorePage() {
 //
 //
 
-let audio = {
-    backgroundAudio: new Audio("assets/audio/background.mp3"),
-
-    correctGryffindorClick: new Audio("assets/audio/gryffindorright.wav"),
-    incorrectGryffindorClick: new Audio("assets/audio/gryffindorwrong.wav"),
-
-    correctSlytherinClick: new Audio("assets/audio/slytherinright.wav"),
-    incorrectSlytherinClick: new Audio("assets/audio/slytherinwrong.wav"),
-
-    correctHufflepuffClick: new Audio("assets/audio/hufflepuffright.wav"),
-    incorrectHufflepuffClick: new Audio("assets/audio/hufflepuffwrong.wav"),
-
-    correctRavenclawClick: new Audio("assets/audio/ravenclawright.wav"),
-    incorrectRavenclawClick: new Audio("assets/audio/ravenclawwrong.wav"),
-};
+// Load the music
 
 function backgroundMusicToggle() {
-
+    // Toggle the background music on or off
 }
 
 function soundEffectsToggle() {
-    
+    // Toggle the sound effects on or off
 }
