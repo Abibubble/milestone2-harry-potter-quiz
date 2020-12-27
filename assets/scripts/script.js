@@ -186,11 +186,13 @@ function endTimer() {
 
 function showScorePage() {
     if (currentScore >= 5) {
-        // Go to good results area
-        // Populate their score
+        goodScorePage.classList.remove("hide"); // Go to good results area
+        quizpage.classList.add("hide");
+        document.getElementById("js-final-score").innerText = `${currentScore} / 10` // Populate their score
     } else {
-        // Go to bad results area
-        // Populate their score
+        badScorePage.classList.remove("hide"); // Go to bad results area
+        quizpage.classList.add("hide");
+        document.getElementById("js-final-score").innerText = `${currentScore} / 10` // Populate their score
     }
 }
 
