@@ -190,6 +190,9 @@ function startTimer() {    // Start the timer counting down from 180 seconds
         if (seconds === 0) {
             endTimer(); // If the timer runs out, end the timer
         }
+        if (counter = "") {
+            return;
+        }
     }, 1000);
 }
 
