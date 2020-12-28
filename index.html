@@ -98,10 +98,41 @@
             </section>
 
             <section id="js-instructions-page" class="page-content hide">
+                <h1 id="how-to-play-text">How To Play</h1>
+                <section id="how-to-play-overlay">
+                    <div id="how-to-play">
+                        <ul class="settings-p">
+                            <li>Choose your House on the homepage to play the quiz.</li>
+                            <li>Once the quiz starts, you'll be shown a question, and four possible answers.</li>
+                            <li>Click the answer you believe is correct.</li>
+                            <li>If it's correct, your score beneath will update, and a sound effect will play.</li>
+                            <li>If it's incorrect, your score beneath will not update, and a sound effect will play</li>
+                            <li>If you'd like to exit the quiz, you can click on the 'Home' button at the top of the screen.</li>
+                        </ul>
+                    </div>
+                </section>
             </section>
 
             <section id="js=settings-page" class="page-content hide">
+                <h1 id="settings-text">Music Settings</h1>
+                <section id="settings-overlay">
+                    <div id="background-music" class="settings-module">
+                        <p class="settings-p">Background music</p>
+                        <label class="switch">
+                            <input type="checkbox" onclick="backgroundMusicToggle()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div id="sound-effects" class="settings-module">
+                        <p class="settings-p">Sound Effects</p>
+                        <label class="switch">
+                            <input type="checkbox" onclick="soundEffectsToggle()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </section>
             </section>
+
         </main>
 
         <footer class="copyright">
