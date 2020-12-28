@@ -129,6 +129,18 @@ function populateQuestion() { // Fills in the text for question and answer chose
     answerFour.innerText = currentQuestion[4];
 }
 
+// ---------------------------------------------------------------- To end the quiz and timer
+
+function endQuiz() {
+    counter = "";
+    showScorePage();
+}
+
+function endTimer() {
+    alert("Oh no! You're out of time!");
+    endQuiz();
+}
+
 // ---------------------------------------------------------------- Check the answer given by the user and move to the next question
 
 let questionsAnswered = 0;
@@ -148,6 +160,9 @@ function checkAnswer(num) {
        delete questionsSet[`${currentQuestion}`]; // Remove the question from the set of questions
        console.log(questionsSet);
        // ALMOST!!! It's changing the question, but it isn't removing the current question from the pool
+    } else {
+        questionsAnswered++;
+        delete questionsSet[`${currentQuestion}`];
     };
     if (questionsAnswered < 10) { // if the current question isn't the final question
         questionPool--; // Decrement the question pool for the RNG
@@ -161,9 +176,10 @@ function checkAnswer(num) {
     }
 }
 
-// ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
+// IT NOW WON'T LET US GET 10/10 - BUG FIX ME
 
-// let timer;
+
+// ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
 
 function startTimer() {    // Start the timer counting down from 180 seconds
     let counter = document.getElementById("counter");
@@ -175,19 +191,10 @@ function startTimer() {    // Start the timer counting down from 180 seconds
             endTimer(); // If the timer runs out, end the timer
         }
     }, 1000);
-
 }
 
-function endTimer() {
-    counter = "";
-    alert("Oh no! You're out of time!");
-    showScorePage();
-}
 
-function endQuiz() {
-    counter = "";
-    showScorePage();
-}
+
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
 
