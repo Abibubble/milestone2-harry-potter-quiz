@@ -23,8 +23,6 @@ function setHouse(house) {
     randomiseQuestionOrder();
     populateQuestion();
     startTimer();
-
-    // Move to next section (hide this one, show next one)
 }
 
 function resetHouse(house) { // Reset the house at the start, so if the user is playing a second time, they're not stuck with the same house
@@ -100,8 +98,6 @@ function chooseQuestionSet() {
     questionsSet = questions[houseChosen];
 }
 
-
-
 // ---------------------------------------------------------------- Randomises the order of the questions
 
 let currentQuestion;
@@ -176,9 +172,6 @@ function checkAnswer(num) {
     }
 }
 
-// IT NOW WON'T LET US GET 10/10 - BUG FIX ME
-
-
 // ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
 
 function startTimer() {    // Start the timer counting down from 180 seconds
@@ -189,15 +182,12 @@ function startTimer() {    // Start the timer counting down from 180 seconds
         counter.innerText = `${seconds} seconds`; // Fill in the user-facing timer
         if (seconds === 0) {
             endTimer(); // If the timer runs out, end the timer
-        }
+        };
         if (counter = "") {
             return;
         }
     }, 1000);
 }
-
-
-
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
 
