@@ -13,9 +13,9 @@
     <body>
         <header>
             <nav id="navButtons">
-                <button class="button"><i class="fas fa-info-circle"></i><br>Instructions</button>
-                <button class="button"><i class="fas fa-home"></i><br>Home</button>
-                <button class="button"><i class="fas fa-cog"></i><br>Music Settings</button>
+                <button class="button" id="instructions"><i class="fas fa-info-circle"></i><br>Instructions</button>
+                <button class="button" id="home"><i class="fas fa-home"></i><br>Home</button>
+                <button class="button" id="settings"><i class="fas fa-cog"></i><br>Music Settings</button>
             </nav>
         </header>
         <main class="main-section">
@@ -29,6 +29,7 @@
                     <button class="house-text house ravenclaw-color house-selector" onclick="setHouse('ravenclaw')">Ravenclaw</button>
                 </section>
             </section>
+
             <section id="js-quiz-page" class="page-content hide">
                 <h1 id="question-text">Question</h1>
                 <section class="overlay answer-overlay" id="answer-overlay">
@@ -47,10 +48,60 @@
                 </div>
                 </section>
             </section>
+
+            <section id="js-good-page" class="page-content hide">
+                <h1 id="result-text">Your Result</h1>
+                <section>
+                    <div class="score">
+                        <h2 id="js-good-score">6 - 10 / 10</h2>
+                        <br>
+                    </div>
+                    <div>
+                        <img src="assets/images/hermione.jpg" alt="An image of Hermione Granger" class="result-image">
+                        <br>
+                    </div>
+                    <div class="quote">
+                        <figure>
+                            <blockquote>
+                                Quote here
+                            </blockquote>
+                            <figcaption>
+                                &mdash; Character
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </section>
+
+            <section id="js-bad-page" class="page-content hide">
+                <h1 class="result-text">Your Result</h1>
+                <section>
+                    <div class="score">
+                        <h2 id="js-bad-score">0 - 5 / 10</h2>
+                        <br>
+                    </div>
+                    <div>
+                        <img src="assets/images/hermione.jpg" alt="An image of Hermione Granger" class="result-image">
+                        <br>
+                    </div>
+                    <div class="quote">
+                        <figure>
+                            <blockquote>
+                                Quote here
+                            </blockquote>
+                            <figcaption>
+                                &mdash; Character
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </section>
         </main>
+
         <footer class="copyright">
             Copyright
         </footer>
+
        <script src="assets/scripts/script.js"></script>
     </body>
 </html>
