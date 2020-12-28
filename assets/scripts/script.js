@@ -145,7 +145,7 @@ function checkAnswer(num) {
        currentScore++; // Add to the score
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
-       delete questionsSet[currentQuestion]; // Remove the question from the set of questions
+       delete questionsSet[`${currentQuestion}`]; // Remove the question from the set of questions
        console.log(questionsSet);
        // ALMOST!!! It's changing the question, but it isn't removing the current question from the pool
     };
@@ -154,8 +154,10 @@ function checkAnswer(num) {
         randomiseQuestionOrder();
         populateQuestion();
         console.log(questionPool);
+    } else if (questionsAnswered === 10) {
+       endQuiz();
     } else {
-       timerEnd();
+        alert("Oh no! Something went wrong! Please return to the homepage and try again.")
     }
 }
 
@@ -163,7 +165,7 @@ function checkAnswer(num) {
 
 // let timer;
 
-function startTimer() {    // Start timer
+function startTimer() {    // Start the timer counting down from 180 seconds
     let counter = document.getElementById("counter");
     let seconds = 180;
     setInterval(function() { // Count down from 180 seconds in seconds
@@ -178,21 +180,26 @@ function startTimer() {    // Start timer
 
 function endTimer() {
     counter = "";
-    alert("Oh no! You're out of time!")
+    alert("Oh no! You're out of time!");
+    showScorePage();
+}
+
+function endQuiz() {
+    counter = "";
     showScorePage();
 }
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
 
 function showScorePage() {
-    if (currentScore >= 5) {
+    if (currentScore > 5) {
         goodScorePage.classList.remove("hide"); // Go to good results area
         quizpage.classList.add("hide");
-        document.getElementById("js-final-score").innerText = `${currentScore} / 10` // Populate their score
+        document.getElementById("js-good-score").innerText = `${currentScore} / 10` // Populate their score
     } else {
         badScorePage.classList.remove("hide"); // Go to bad results area
         quizpage.classList.add("hide");
-        document.getElementById("js-final-score").innerText = `${currentScore} / 10` // Populate their score
+        document.getElementById("js-bad-score").innerText = `${currentScore} / 10` // Populate their score
     }
 }
 
