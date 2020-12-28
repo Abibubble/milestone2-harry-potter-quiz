@@ -305,8 +305,19 @@ Friends, family members, members of staff and 13 customers were asked to review 
     * This meant that referring to the question, the answers, and the correct answer became much simpler.
     * I could then use indexing to use whichever part I needed to, which fixed this bug.
 
+4. After answering a question, the completed question wasn't being removed from the question pool, so it was being repeated.
+    * Objects and arrays issues
+    * delete questionsSet.currentQuestion or delete questionsSet[currentQuestion ], but neither works.
+
+5. The quiz wouldn't let you get to 10 answered questions, it refused to count higher than 9, meaning the only way to end the quiz is to let the timer run out.
+    * Something to do with the endTimer function? That was what I changed last
+    * Something about questionsAnswered < 10? Maybe should be <= 10?
+    * Changed it to <= 10 and now it won't go beyond 8.
+    * I added an else statement that I'd forgotten, for if the answer isn't correct.
+    * I also moved the endTimer and endQuiz functions above the checkAnswer function, because they're used inside it.
+
 ### Known Bugs
-* 
+* Number 4
 
 
 ### Lighthouse
