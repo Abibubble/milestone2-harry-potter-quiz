@@ -296,8 +296,8 @@ Friends, family members, members of staff and 13 customers were asked to review 
     * This meant I could then refer to the object depending on which house was chosen much simpler.
     * I then used a seperate function to refer to a specific question within the question set, which solved my problem.
 
-3. The randomiseQuestionOrder function wasn't accessing the question and answer content as it should have been.
-    * Originally, I had my random question generator set up to find a number between 0 and 9 using Math.floor(), to then use with indexing to find a question.
+3. The randomiseQuestionOrder() function wasn't accessing the question and answer content as it should have been.
+    * Originally, I had my randomiseQuestionOrder() set up to find a number between 0 and 9 using Math.floor(), to then use with indexing to find a question.
     * However, due to bug #2, this didn't function was I intended.
     * I then changed it to Math.ceil(), to find a random number between 1 and 10.
     * Using this number, I concatenated the letter Q in front of the number, and set that to the variable of currentQuestion.
@@ -310,14 +310,19 @@ Friends, family members, members of staff and 13 customers were asked to review 
     * delete questionsSet.currentQuestion or delete questionsSet[currentQuestion ], but neither works.
 
 5. The quiz wouldn't let you get to 10 answered questions, it refused to count higher than 9, meaning the only way to end the quiz is to let the timer run out.
-    * Something to do with the endTimer function? That was what I changed last
+    * Something to do with the endTimer() function? That was what I changed last
     * Something about questionsAnswered < 10? Maybe should be <= 10?
     * Changed it to <= 10 and now it won't go beyond 8.
     * I added an else statement that I'd forgotten, for if the answer isn't correct.
-    * I also moved the endTimer and endQuiz functions above the checkAnswer function, because they're used inside it.
+    * I also moved the endTimer() and endQuiz() functions above the checkAnswer() function, because they're used inside it.
+
+6. Once the user has completed the quiz and got to the results page, the timer kept going, giving an alert after 180 seconds, even if the user had completed the quiz.
+    * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
+    * This didn't fix the issue for some reason.
 
 ### Known Bugs
 * Number 4
+* Number 6
 
 
 ### Lighthouse
