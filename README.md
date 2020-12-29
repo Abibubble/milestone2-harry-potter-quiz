@@ -321,9 +321,13 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
     * This didn't fix the issue for some reason.
 
+7. The questions aren't populating into the question and answer boxes on the quiz page.
+    * I checked my code and my previous commits, but found nothing that would have changed it.
+
 ### Known Bugs
 * Number 4
 * Number 6
+* Number 7
 
 
 ### Lighthouse
