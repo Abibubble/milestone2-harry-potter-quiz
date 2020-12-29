@@ -177,8 +177,8 @@ This site was deployed to GitHub Pages by following these steps:
 ---
 ## Testing
 ### W3C Validator
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-The only errors found were due to Bootstrap code and the Google Maps embed code. UPDATE THESE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
+The only errors found were due to... UPDATE THESE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 1. W3C Markup Validator
     * [index.html - Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Findex.html)
@@ -224,21 +224,20 @@ Scrolling down on the Contact Us page gives a form on tablet and desktop that ca
 There is also an alternative link to their Facebook page, where a table booking can also be submitted.
 
 ### Full Testing
-[Click here to view the full testing steps that were completed on every device and browser](assets/testing-steps.pdf) PUT THESE IN A SEPERATE MARKDOWN FILE, NOT PDF
+[Click here to view the full testing steps that were completed on every device and browser](testing.md)
 
 #### Desktop / Laptop
 1. Chrome
     * All tested and working correctly
 
 2. Edge
-    * All tested and working correctly
+    * 
 
 3. Firefox
-    * Scrolling alert scrolls with a jolty movement
+    * 
 
 4. Internet Explorer
-    * Layout is completely shifted, with all text only appearing on the right half of the viewport width
-    * No dropdowns to the FAQs, as the details tag isn't supported on Internet Explorer
+    * 
 
 #### Tablet
 1. Chrome
@@ -249,10 +248,10 @@ There is also an alternative link to their Facebook page, where a table booking 
     * All tested and working correctly
 
 2. Safari
-    * Images in Gallery slow to load on iPhone X
+    * 
 
 3. Samsung Internet
-    * All tested and working correctly
+    * 
 
 ### Further Testing
 The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
@@ -271,8 +270,10 @@ The website was viewed on a variety of devices, including:
 * Samsung Galaxy S10+
 * Samsung A20
 
-A large amount of testing was done to ensure that all pages were linking correctly, all buttons worked as they should, and the form .
-Friends, family members, members of staff and 13 customers were asked to review the site and documentation to point out any bugs and/or user experience issues.
+A large amount of testing was done to ensure that all pages were visible or hidden, all buttons worked as they should, and the quiz played out as it should.
+Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Solved Bugs
 1. The setHouse function wasn't acting on the second page, so it didn't change the colour scheme as it should
