@@ -27,6 +27,7 @@ function toHomePage() {
     badScorePage.classList.add("hide");
     howToPlay.classList.add("hide");
     settings.classList.add("hide");
+    counter = "";
 }
 
 function toInstructionsPage() {
@@ -36,6 +37,7 @@ function toInstructionsPage() {
     badScorePage.classList.add("hide");
     howToPlay.classList.remove("hide");
     settings.classList.add("hide");
+    counter = "";
 }
 
 function toSettingsPage() {
@@ -45,6 +47,7 @@ function toSettingsPage() {
     badScorePage.classList.add("hide");
     howToPlay.classList.add("hide");
     settings.classList.remove("hide");
+    counter = "";
 }
 
 // ---------------------------------------------------------------- Questions sets
@@ -157,7 +160,7 @@ function randomiseQuestionOrder() {
     let randomNumber = Math.floor(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
     console.log(randomNumber);
     currentQuestion = questionsSet[`${randomNumber}`]; // Finds a question in the question set with that index number
-    console.log(currentQuestion); // RETURNED UNDEFINED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    console.log(currentQuestion); // SPLICE IS LEAVING AN UNDEFINED INSTEAD OF MOVING EVERYTHING OVER
 }
 
 function populateQuestion() { // Fills in the text for question and answer chosen by the randomiseQuestionOrder function
@@ -230,8 +233,10 @@ function newQuestion() {
     }
 }
 
-function removeOldQuestion() {
-    questionsSet = questionsSet.splice(`${currentQuestion}`,1); // Remove the question from the set of questions - NOT FULLY WORKING YET
+function removeOldQuestion() { // THIS IS REMOVING INDEX 0, NOT THE CURRENT QUESTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    let questionIndex = currentQuestion.indexOf();
+    questionsSet.splice(`${questionIndex}`); // Remove the question from the set of questions
+
 }
 
 // ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
