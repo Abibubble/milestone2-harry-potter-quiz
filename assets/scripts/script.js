@@ -18,6 +18,35 @@ let questionsAnswered = 0;
 let currentScore = 0;
 let counter;
 
+// ---------------------------------------------------------------- Navigations
+
+function toHomePage() {
+    homepage.classList.remove("hide");
+    quizpage.classList.add("hide");
+    goodScorePage.classList.add("hide");
+    badScorePage.classList.add("hide");
+    howToPlay.classList.add("hide");
+    settings.classList.add("hide");
+}
+
+function toInstructionsPage() {
+    homepage.classList.add("hide");
+    quizpage.classList.add("hide");
+    goodScorePage.classList.add("hide");
+    badScorePage.classList.add("hide");
+    howToPlay.classList.remove("hide");
+    settings.classList.add("hide");
+}
+
+function toSettingsPage() {
+    homepage.classList.add("hide");
+    quizpage.classList.add("hide");
+    goodScorePage.classList.add("hide");
+    badScorePage.classList.add("hide");
+    howToPlay.classList.add("hide");
+    settings.classList.remove("hide");
+}
+
 // ---------------------------------------------------------------- Questions sets
 
 const questions = [
@@ -86,10 +115,7 @@ function setHouse(house) {
     homepage.classList.add("hide"); // Hide home page
     quizpage.classList.remove("hide"); // Show quiz page
 
-    chooseQuestionSet();
-    randomiseQuestionOrder();
-    populateQuestion();
-    startTimer();
+    startQuiz();
 }
 
 function resetHouse(house) { // Reset the house at the start, so if the user is playing a second time, they're not stuck with the same house
@@ -222,6 +248,15 @@ function startTimer() {    // Start the timer counting down from 180 seconds
             return;
         }
     }, 1000);
+}
+
+// ---------------------------------------------------------------- Start the quiz
+
+function startQuiz() {
+    chooseQuestionSet();
+    randomiseQuestionOrder();
+    populateQuestion();
+    startTimer();
 }
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
