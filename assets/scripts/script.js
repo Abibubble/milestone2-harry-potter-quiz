@@ -194,13 +194,16 @@ function checkAnswer(num) {
        currentScore++; // Add to the score
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
-       newQuestion();
     } else {
         questionsAnswered++;
-        newQuestion();
-    };
+    }
+    newQuestion();
+}
+
+function newQuestion() {
     if (questionsAnswered < 10) { // if the current question isn't the final question
         questionPool--; // Decrement the question pool for the RNG
+        removeOldQuestion();
         randomiseQuestionOrder();
         populateQuestion();
     } else if (questionsAnswered === 10) {
@@ -210,7 +213,7 @@ function checkAnswer(num) {
     }
 }
 
-function newQuestion() {
+function removeOldQuestion() {
     questionsSet = questionsSet.splice(`${currentQuestion}`,1); // Remove the question from the set of questions - NOT FULLY WORKING YET
 }
 
