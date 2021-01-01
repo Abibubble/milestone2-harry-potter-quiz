@@ -194,7 +194,7 @@ function checkAnswer(num) {
        currentScore++; // Add to the score
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
-       questionsSet.splice([currentQuestion, 1]); // Remove the question from the set of questions
+       questionsSet.splice(currentQuestion, 1); // Remove the question from the set of questions
        console.log(questionsSet); // COMES UP AS []!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     } else {
@@ -234,10 +234,12 @@ function startTimer() {    // Start the timer counting down from 180 seconds
 
 function showScorePage() {
     if (currentScore > 5) {
-        toGoodScorePage();
+        quizpage.classList.add("hide");
+        goodScorePage.classList.remove("hide");
         document.getElementById("js-good-score").innerText = `${currentScore} / 10` // Populate their score
     } else {
-        toBadScorePage();
+        quizpage.classList.add("hide");
+        badScorePage.classList.remove("hide");
         document.getElementById("js-bad-score").innerText = `${currentScore} / 10` // Populate their score
     }
 }
