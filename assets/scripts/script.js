@@ -16,17 +16,7 @@ const settings = document.getElementById("js-settings-page");
 
 let questionsAnswered = 0;
 let currentScore = 0;
-
-// ---------------------------------------------------------------- Navigations
-
-function toHomePage() {
-    homepage.classList.remove("hide");
-    quizpage.classList.add("hide");
-    goodScorePage.classList.add("hide");
-    badScorePage.classList.add("hide");
-    howToPlay.classList.add("hide");
-    settings.classList.add("hide");
-}
+let counter;
 
 // ---------------------------------------------------------------- Questions sets
 
@@ -80,7 +70,7 @@ const questions = [
         ["Q9", "A", "B", "C", "D", "A"],
         ["Q10", "A", "B", "C", "D", "A"]
     ]
-]
+];
 
 // ---------------------------------------------------------------- Choose your house
 
@@ -209,7 +199,7 @@ function newQuestion() {
     } else if (questionsAnswered === 10) {
        endQuiz();
     } else {
-        alert("Oh no! Something went wrong! Please return to the homepage and try again.")
+        alert("Oh no! Something went wrong! Please return to the homepage and try again.");
     }
 }
 
@@ -227,8 +217,8 @@ function startTimer() {    // Start the timer counting down from 180 seconds
         counter.innerText = `${seconds} seconds`; // Fill in the user-facing timer
         if (seconds === 0) {
             endTimer(); // If the timer runs out, end the timer
-        };
-        if (counter = "") {
+        }
+        if (counter === "") {
             return;
         }
     }, 1000);
@@ -240,16 +230,13 @@ function showScorePage() {
     if (currentScore > 5) {
         quizpage.classList.add("hide");
         goodScorePage.classList.remove("hide");
-        document.getElementById("js-good-score").innerText = `${currentScore} / 10` // Populate their score
+        document.getElementById("js-good-score").innerText = `${currentScore} / 10`; // Populate their score
     } else {
         quizpage.classList.add("hide");
         badScorePage.classList.remove("hide");
-        document.getElementById("js-bad-score").innerText = `${currentScore} / 10` // Populate their score
+        document.getElementById("js-bad-score").innerText = `${currentScore} / 10`; // Populate their score
     }
 }
-
-// goodScorePage.classList.remove("hide"); // Go to good results area
-// quizpage.classList.add("hide");
 
 //
 //
