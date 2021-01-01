@@ -194,9 +194,7 @@ function checkAnswer(num) {
        currentScore++; // Add to the score
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
-       questionsSet.splice(currentQuestion, 1); // Remove the question from the set of questions
-       console.log(questionsSet); // COMES UP AS []!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+       questionsSet.splice(currentQuestion, 1); // Remove the question from the set of questions - NOT FULLY WORKING YET
     } else {
         questionsAnswered++;
         delete questionsSet[`${currentQuestion}`];
@@ -205,7 +203,6 @@ function checkAnswer(num) {
         questionPool--; // Decrement the question pool for the RNG
         randomiseQuestionOrder();
         populateQuestion();
-        console.log(questionPool); // RETURNS UNDEFINED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     } else if (questionsAnswered === 10) {
        endQuiz();
     } else {
