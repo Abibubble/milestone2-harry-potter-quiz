@@ -1,5 +1,3 @@
-// Sets color scheme and question set depending on which House is chosen on index.html
-
 // ---------------------------------------------------------------- House variables
 
 let houseChosen;
@@ -31,6 +29,9 @@ function toHomePage() {
 }
 
 // ---------------------------------------------------------------- Choose your house
+
+// Sets color scheme and question set depending on which House is chosen on index.html
+
 function setHouse(house) {
 
     resetHouse(houseChosen); // Reset which house was chosen for repeated
@@ -139,6 +140,7 @@ let questionPool = 10;
 function randomiseQuestionOrder() {
     let randomNumber = Math.floor(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
     currentQuestion = questionsSet[`${randomNumber}`]; // Finds a question in the question set with that index number
+    console.log(currentQuestion);
 }
 
 function populateQuestion() { // Fills in the text for question and answer chosen by the randomiseQuestionOrder function
@@ -193,8 +195,8 @@ function checkAnswer(num) {
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
        questionsSet.splice([currentQuestion, 1]); // Remove the question from the set of questions
-       console.log(questionsSet);
-       // ALMOST!!! It's changing the question, but it isn't removing the current question from the pool
+       console.log(questionsSet); // COMES UP AS []!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     } else {
         questionsAnswered++;
         delete questionsSet[`${currentQuestion}`];
@@ -203,7 +205,7 @@ function checkAnswer(num) {
         questionPool--; // Decrement the question pool for the RNG
         randomiseQuestionOrder();
         populateQuestion();
-        console.log(questionPool);
+        console.log(questionPool); // RETURNS UNDEFINED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     } else if (questionsAnswered === 10) {
        endQuiz();
     } else {
