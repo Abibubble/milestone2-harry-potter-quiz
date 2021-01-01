@@ -309,6 +309,7 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
 4. After answering a question, the completed question wasn't being removed from the question pool, so it was being repeated.
     * Objects and arrays issues
     * delete questionsSet.currentQuestion or delete questionsSet[currentQuestion ], but neither works.
+    * splice() also didn't work, it was just removing index 1, rather than getting the index number from the currentQuestion variable.
 
 5. The quiz wouldn't let you get to 10 answered questions, it refused to count higher than 9, meaning the only way to end the quiz is to let the timer run out.
     * Something to do with the endTimer() function? That was what I changed last
@@ -321,8 +322,8 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
     * This didn't fix the issue for some reason.
 
-7. The questions aren't populating into the question and answer boxes on the quiz page.
-    * I checked my code and my previous commits, but found nothing that would have changed it.
+7. Timer isn't stopping when you click the navigation links.
+    * I tried to update counter to blank in the navigation functions, but that just cause it to bring up the score page as well as home page.
 
 ### Known Bugs
 * Number 4
