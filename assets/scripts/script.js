@@ -194,10 +194,10 @@ function checkAnswer(num) {
        currentScore++; // Add to the score
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
-       questionsSet.splice(currentQuestion, 1); // Remove the question from the set of questions - NOT FULLY WORKING YET
+       newQuestion();
     } else {
         questionsAnswered++;
-        delete questionsSet[`${currentQuestion}`];
+        newQuestion();
     };
     if (questionsAnswered < 10) { // if the current question isn't the final question
         questionPool--; // Decrement the question pool for the RNG
@@ -208,6 +208,10 @@ function checkAnswer(num) {
     } else {
         alert("Oh no! Something went wrong! Please return to the homepage and try again.")
     }
+}
+
+function newQuestion() {
+    questionsSet = questionsSet.splice(`${currentQuestion}`,1); // Remove the question from the set of questions - NOT FULLY WORKING YET
 }
 
 // ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
