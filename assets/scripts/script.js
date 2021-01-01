@@ -28,37 +28,6 @@ function toHomePage() {
     settings.classList.add("hide");
 }
 
-// ---------------------------------------------------------------- Choose your house
-
-// Sets color scheme and question set depending on which House is chosen on index.html
-
-function setHouse(house) {
-
-    resetHouse(houseChosen); // Reset which house was chosen for repeated
-
-    houseChosen = house;
-    answers.classList.add(`${house}`);
-
-    homepage.classList.add("hide"); // Hide home page
-    quizpage.classList.remove("hide"); // Show quiz page
-
-    chooseQuestionSet();
-    randomiseQuestionOrder();
-    populateQuestion();
-    startTimer();
-}
-
-function resetHouse(house) { // Reset the house at the start, so if the user is playing a second time, they're not stuck with the same house
-    answers.classList.remove(house);
-}
-
-//
-//
-// Quiz questions
-// And functions
-//
-//
-
 // ---------------------------------------------------------------- Questions sets
 
 const questions = [
@@ -112,6 +81,37 @@ const questions = [
         ["Q10", "A", "B", "C", "D", "A"]
     ]
 ]
+
+// ---------------------------------------------------------------- Choose your house
+
+// Sets color scheme and question set depending on which House is chosen on index.html
+
+function setHouse(house) {
+
+    resetHouse(houseChosen); // Reset which house was chosen for repeated
+
+    houseChosen = house;
+    answers.classList.add(`${house}`);
+
+    homepage.classList.add("hide"); // Hide home page
+    quizpage.classList.remove("hide"); // Show quiz page
+
+    chooseQuestionSet();
+    randomiseQuestionOrder();
+    populateQuestion();
+    startTimer();
+}
+
+function resetHouse(house) { // Reset the house at the start, so if the user is playing a second time, they're not stuck with the same house
+    answers.classList.remove(house);
+}
+
+//
+//
+// Quiz
+// functions
+//
+//
 
 // ---------------------------------------------------------------- Chooses question set depending on which house was chosen
 
