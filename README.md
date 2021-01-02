@@ -74,10 +74,10 @@ The main features that I wanted to include are:
 ### User Stories
 #### Client Goals
 * The quiz needs to be easily accessible, with instructions and music settings available.
-* The quiz needs to be personalised to each user, allowing them to choose their house and adjusting the quiz questions and styling to match.
-* It needs to be easy to see how many questions there are, and how many correct and incorrect answers have been made throughout the quiz.
+* The quiz needs to be personalised to each user.
+* It needs to be easy to see how many questions there are, and how many correct answers have been made throughout the quiz.
 * It needs to be instantly engaging to enourage the user to play the game.
-* Questions needs to be randomisedand drawn from a large bank of available questions.
+* Questions needs to be randomised and drawn from a large bank of available questions.
 * Manouvering around the site needs to be straightforward.
 * The user must be able to give up on the quiz if they wish to, and return to the homepage.
 
@@ -186,34 +186,62 @@ The only errors found were due to... UPDATE THESE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 ### Testing User Stories
+#### Client Goals
+##### The quiz needs to be easily accessible, with instructions and music settings available.
+* On every page, there is a link to Instructions and Settings.
+* From every page, you can return to the Home page via a button. This cancels the current quiz and allows the user to restart.
+* Basic instructions are available on every page, with more information on the Instructions page.
+
+##### The quiz needs to be personalised to each user.
+* On the Home page, the user selects their house.
+* This updates the color scheme for the entire quiz, changing the answers boxes to their house colors.
+* It also gives them a pool of questions related to their chosen house.
+* When they complete the quiz, the results screen is different bepending on which house they chose, using a character from their house, and a quote from that character.
+* If they've scored 5 points or less, they get a character and quote displayed from a not so smart character from their house.
+* If they've scored 6 points or more, they get a character and quote displayed from a smart character from their house.
+
+##### It needs to be easy to see how many questions there are, and how many correct answers have been made throughout the quiz.
+* Underneath the answers boxes, there is a tally showing x / 10, with x being their current score. This is updated after each question.
+* There is also a progress bar underneath, that shows how far through the quiz they are.
+
+##### It needs to be easy to see how much time is left to complete the questions.
+* Underneath the answers boxes, there is a clear timer that counts down from 180 seconds.
+
+##### It needs to be instantly engaging to enourage the user to play the game.
+* The Home page is bright and interesting, with bright colours to draw their eye in, and encourage them to play the quiz.
+* MUSIC???!?!?!?!?!?!?!
+
+##### Questions needs to be randomised and drawn from a large bank of available questions.
+* There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
+* The question set is fully randomised, without allowing questions to be repeated.
+
+##### Manouvering around the site needs to be straightforward.
+* On every page, there is a button to take the user to Home, Instructions, or Settings pages.
+* On the Home page, there are simple instructions for the user to choose their house, with brightly colored buttons to match the house colors.
+
+##### The user must be able to give up on the quiz if they wish to, and return to the homepage.
+* On every page, there is a button to take the user to Home, which resets their house, score, and timer back to default.
+
+
 #### First Time Visitor Goals
-##### I want to easily learn more about the bar.
-Upon entering the site, users are greeted with a navigation bar that is clean and easy to read to take them to the information that they need. 
-Underneath this, there is a hero image of a game of pool, making it obvious at first glance what the website is for. 
-The user then has two options - click in the navbar to navigate to another page, or scroll down. 
-Scrolling down leads to more information about the bar.
+##### I want it to be easy to understand what to do.
+* There is a clear Instructions page, that details exactly how the quiz works.
+* This is easily accessible from every page.
+* The instructions on the main pages themselves are clear to read and easy to understand.
 
-##### I want to be able to easily navigate throughout the site to find information.
-At the top of each page there is a clean and easy to read navigation bar, with each link describing what the page they will end up at clearly. 
-The logo in the top left of each page also links to the homepage, following standard convention.
+##### I want to be able to easily navigate throughout the site.
+* On every page, there is a button to take the user to Home, Instructions, or Settings pages.
+* All other buttons and links are clearly defined and easy to see.
 
-##### I want to locate their social media links to see their social media prescence.
-In the footer of each page, there is a link to their Facebook site. 
-In the Contact Us page, there is a link to their Twitter page, and two links to their Facebook site (one to the Facebook in general, and one to prompt to book a table). 
-Any links that they click to an external site will open up in a new tab to ensure the user can easily get back to the website.
+##### I want to be able to turn the music and sound effects on or off.
+* The Settings page is accessible from every page in the quiz, with a toggle switch for both background music and sound effects.
+
 
 #### Returning Visitor Goals
-##### I want to find current information about Covid-19.
-On the homepage, there is a bright yellow scrolling banner that is eye-catching and bold, directly under the navbar that explains the current situation with Covid-19.
-
-##### I want to find the best way to get in contact with the bar with any questions I may have.
-The navigation bar has a clear link called 'Contact Us', where all the contact details are visible. 
-The user can also scroll to the bottom of any page on the site to locate contact details and a Facebook link in the footer.
-
-#### Frequent User Goals
-##### I want to submit a booking request
-Scrolling down on the Contact Us page gives a form on tablet and desktop that cal be filled in to submit a table booking request. 
-There is also an alternative link to their Facebook page, where a table booking can also be submitted.
+##### I want to have different questions depending on which house I choose, increasing replayability.
+* There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
+* The question set is fully randomised, without allowing questions to be repeated. This allows the user to replay any house without having the same experience.
+* The user can choose any house they like, and the quiz takes you back to the Home page once you've completed the quiz. This allows for easy choosing of a new house.
 
 ### Full Testing
 [Click here to view the full testing steps that were completed on every device and browser](testing.md)
@@ -271,13 +299,12 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
 1. The setHouse function wasn't acting on the second page, so it didn't change the colour scheme as it should
     * I searched Google and Stack Overflow and tested out a few fixes that I saw suggested there, but none of them worked.
     * I used console.log on all of my variables after they were created, and discovered that 'this' wasn't being targeted properly.
-    * The houseChosen variable was collecting the correct id.
-    * The answers variable was collecting an HTML collection.
+    * The houseChosen variable was collecting the correct id, and the answers variable was collecting an HTML collection.
     * I searched on Stack Overflow, and saw that as I was using multiple scripts and multiple html documents, I'd need to use a post request to access the data fully.
-    * This added more complications than I needed, so I changed the set up of my documents.
-    * I added all scripts into one script, with different sections
+    * This added more complications than was necessary, making my code longer than required, so I changed the set up of my documents.
+    * I added all scripts into one script, with different sections clearly defined.
     * I added all HTML pages into one page, using a hide/show function to access whichever part of the page needs to be visible to the user.
-    * I was then able to simplify my setHouse function, which fixed this bug.
+    * I was then able to simplify my setHouse function, which fixed this bug, and improved the performance of my site.
     * ADD IMAGES
 
 2. The houseChosen variable contained a string, so when I was trying to use it to cycle through an array of objects, it was just bringing me up each index of that string (a single letter).
