@@ -307,11 +307,11 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * I was then able to simplify my setHouse function, which fixed this bug, and improved the performance of my site.
     * ADD IMAGES
 
-2. The houseChosen variable contained a string, so when I was trying to use it to cycle through an array of objects, it was just bringing me up each index of that string (a single letter).
+2. The houseChosen variable contained a string, so when I was trying to use it to cycle through an array of objects, it was just bringing up each index of that string (a single letter).
     * I searched Google and Stack Overflow, and found eval(), which fixed my problem.
     * Upon more research, I found that eval() should not be used due to extreme security risks.
     * I looked into using Function(), but that didn't fix my problem either.
-    * I spoke to Eve Crabb and Tom Crabb (friends of mine who work in Web Development), who suggested that I'd be better off having my questions in one 'questions' object.
+    * I spoke to Eve Crabb and Tom Crabb (friends of mine who are developers), who suggested that I'd be better off having my questions in one 'questions' object.
     * Then I put each set of questions in their own object, and each question and answer set in an array within that object.
     * This meant I could then refer to the object depending on which house was chosen much simpler.
     * I then used a seperate function to refer to a specific question within the question set, which solved my problem.
@@ -328,6 +328,7 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
 4. After answering a question, the completed question wasn't being removed from the question pool, so it was being repeated.
     * Objects and arrays issues
     * delete questionsSet.currentQuestion or delete questionsSet[currentQuestion ], but neither works.
+    * Changed my questions into a nested array, but neither of the above worked still.
     * splice() also didn't work, it was just removing index 1, rather than getting the index number from the currentQuestion variable.
 
 5. The quiz wouldn't let you get to 10 answered questions, it refused to count higher than 9, meaning the only way to end the quiz is to let the timer run out.
@@ -402,7 +403,8 @@ https://fontmeme.com/fonts/harry-p-font/
 
 ### Acknowledgements
 * My mentor, Antonio Rodriguez, for continuous helpful feedback and support.
-* Eve Crabb and Tom Crabb, for their support and help through my learning.
+* Eve Crabb, for her support through my learning, and for being a sounding board for bug fixes.
+* Tom Crabb, for his advice on how to make my code cleaner.
 * The team at Code Institute, for teaching me the necessary skills to create this site.
 
 
