@@ -7,6 +7,14 @@
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
 ![W3C Validation](LINK)
 ![GitHub forks](https://img.shields.io/github/forks/abibubble/milestone2-harry-potter-quiz?style=social)
+---
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
 
 [Here is a link to the final project](LINK)
 
@@ -180,7 +188,7 @@ The only errors found were due to... UPDATE THESE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     * [HTML Results](LINK)
 
 2. W3C CSS Validator
-    * [CSS Results](LINK)
+    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fmilestone2-harry-potter-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 3. JSHint
     * [JavaScript Results](https://jshint.com/) PROPER LINK HERE!!!!!!!!!!!!!!!!!!
