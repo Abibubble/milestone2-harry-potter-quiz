@@ -400,7 +400,9 @@ https://fontmeme.com/fonts/harry-p-font/
 * Colour picker - https://imagecolorpicker.com/en/
 
 ### Media
-* All media belongs to Harry Potter LOOK INTO COPYRIGHT THINGS, ETC.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* All media belongs to J.K. Rowling & Warner Bros Entertainment Inc.
+* All characters, quotes, and themes belong to J.K. Rowling & Warner Bros Entertainment Inc.
+* All images used were copyright free images, with credit given in Content above.
 
 ### Acknowledgements
 * My mentor, Antonio Rodriguez, for continuous helpful feedback and support.
