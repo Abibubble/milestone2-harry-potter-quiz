@@ -1,4 +1,4 @@
-<h1 align="center">Harry Potter Quiz</h1>
+# Harry Potter Quiz
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/milestone1-escape-pool-bar)
 ![GitHub contributors](https://img.shields.io/github/contributors/abibubble/milestone1-escape-pool-bar)
@@ -69,16 +69,17 @@ The main features that I wanted to include are:
 * Choose your house, the questions correlate to which house is chosen
 * Background music that can be toggled on and off
 * Settings page for music
-* Sound effects for correct or incorrect answer
+* Sound effects for correct or incorrect answer, which also can be toggled on or off
 
 ### User Stories
 #### Client Goals
-* The quiz needs to be easily accessible, with instrustions and music settings available.
+* The quiz needs to be easily accessible, with instructions and music settings available.
 * The quiz needs to be personalised to each user, allowing them to choose their house and adjusting the quiz questions and styling to match.
 * It needs to be easy to see how many questions there are, and how many correct and incorrect answers have been made throughout the quiz.
 * It needs to be instantly engaging to enourage the user to play the game.
 * Questions needs to be randomisedand drawn from a large bank of available questions.
 * Manouvering around the site needs to be straightforward.
+* The user must be able to give up on the quiz if they wish to, and return to the homepage.
 
 #### First Time Visitor Goals
 * I want it to be easy to understand what to do.
@@ -86,24 +87,26 @@ The main features that I wanted to include are:
 * I want to be able to turn the music and sound effects on or off.
 
 #### Returning Visitor Goals
-* I want to have different questionsdepending on which house I choose, increasing replayability.
+* I want to have different questions depending on which house I choose, increasing replayability.
 
-#### Frequent User Goals
-* ??????????????????
 ---
 ## Design
 ### Colour Scheme
-* Griffindor
-* Hufflepuff
-* Ravenclaw
-* Slytherin
+* Basic color scheme uses rgb(218,165,32) for the gold and #07080c for the off-black.
+* Gryffindor house uses #d74f40 as the primary color, with #fbb928 as the secondary.
+* Hufflepuff house uses #fbb92f as the primary color, with #07080c as the secondary.
+* Ravenclaw house uses #203268 as the primary color, with #886031 as the secondary.
+* Slytherin house uses #005d4a as the primary color, with #a7acaf as the secondary.
+
+All of these colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
 
 ### Typography
-I used this [Harry Potter font](http://www.fontsaddict.com/font/harry-potter.html) from Fonts Addict. This tied everything into the theme of the quiz.
+I used sans-serif throughout the quiz. It's a clean and easy to read font, whilst also being bold and eye catching. 
+It also doesn't distract the user from the main theme, and has the added bonus that it's a staple font with HTML, so all browsers will be able to display it.
 
 ### Imagery
 The large background hero image is designed to be striking and catch the user's attention, making it clear at first glance what the quiz is related to. 
-It directly correlates to the aesthetic of the Harry Potter series.
+It directly correlates to the aesthetic of the Harry Potter series, using an image of Gloucester cloisters, which was used in the filming of the Harry Potter films.
 
 ### Wireframes
 I created wireframes for desktop, mobile and tablet, and a user navigation map for the movements a user can make.
@@ -114,9 +117,9 @@ I created wireframes for desktop, mobile and tablet, and a user navigation map f
 * A score counter (for correct and incorrect answers)
 * Choose your house, the questions correlate to which house is chosen
 * Background music that can be toggled on and off
-* Settings page for music
-* Sound effects for correct or incorrect answer
+* Sound effects for correct or incorrect answer that can be toggled on and off
 ---
+
 ## Technologies Used
 ### Languages Used
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
@@ -124,24 +127,16 @@ I created wireframes for desktop, mobile and tablet, and a user navigation map f
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Frameworks Libraries and Programs Used
-#### Bootstrap 4.5.2:
-Bootstrap was used to help with the responsiveness and styling of the website. ?????????????????????????
-#### Hover.css:
-Hover.css was used????????????
-#### Fonts Addict:
-[Harry Potter font](http://www.fontsaddict.com/font/harry-potter.html) was used from Fonts Addict
 #### Font Awesome:
-Font Awesome was used on all pages to add social media icons and the copyright icon. ???????????????????????????????
-#### jQuery:
-jQuery came with Bootstrap which makes the navbar responsive. ?????????????????
+[Font Awesome](https://fontawesome.com/) was used on all pages to add the instructions, home, settings and copyright icons.
 #### Git:
-Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
 #### GitHub:
-GitHub is used to store the projects code after being pushed from Git.
+GitHub is used to store the code for this project after being pushed from Git.
 #### Balsamiq:
 Balsamiq was used to create the wireframes during the design process.
 #### Responsinator:
-Responsinator was used to help improve the responsive design on a variety of devices.
+[Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 #### Google DevTools:
 Google DevTools was used to help me find what code correlated to what feature.
 #### Am I Responsive Design:
@@ -181,17 +176,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 The only errors found were due to... UPDATE THESE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 1. W3C Markup Validator
-    * [index.html - Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Findex.html)
-    * [membership.html - Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fmembership.html)
-    * [about.html - Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fabout.html)
-    * [gallery.html - Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fgallery.html)
-    * [contact.html - Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fcontact.html)
+    * [HTML Results](LINK)
+
 2. W3C CSS Validator
-    * [index.html - Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [membership.html - Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fmembership.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [about.html - Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fabout.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [gallery.html - Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fgallery.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-    * [contact.html - Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [CSS Results](LINK)
+
+3. JSHint
+    * [JavaScript Results](https://jshint.com/) PROPER LINK HERE!!!!!!!!!!!!!!!!!!
+
 
 ### Testing User Stories
 #### First Time Visitor Goals
