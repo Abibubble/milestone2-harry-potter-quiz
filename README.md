@@ -1,13 +1,10 @@
 # Harry Potter Quiz
 
-![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/milestone1-escape-pool-bar)
-![GitHub contributors](https://img.shields.io/github/contributors/abibubble/milestone1-escape-pool-bar)
-![GitHub language count](https://img.shields.io/github/languages/count/abibubble/milestone1-escape-pool-bar)
-![GitHub top language](https://img.shields.io/github/languages/top/abibubble/milestone1-escape-pool-bar)
-![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fabibubble.github.io%2Fmilestone1-escape-pool-bar%2Fgallery.html)
-![Bootstrap version](https://img.shields.io/badge/Bootstrap-v4.5.2-blue)
-![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
-![GitHub forks](https://img.shields.io/github/forks/abibubble/milestone1-escape-pool-bar?style=social)
+![GitHub language count](https://img.shields.io/github/languages/count/abibubble/milestone2-harry-potter-quiz)
+![GitHub top language](https://img.shields.io/github/languages/top/abibubble/milestone2-harry-potter-quiz)
+![GitHub forks](https://img.shields.io/github/forks/abibubble/milestone2-harry-potter-quiz?style=social)
+![GitHub contributors](https://img.shields.io/github/contributors/abibubble/milestone2-harry-potter-quiz)
+![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/milestone2-harry-potter-quiz)
 
 [Here is a link to the final project](LINK)
 
