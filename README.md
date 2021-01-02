@@ -138,6 +138,8 @@ Balsamiq was used to create the wireframes during the design process.
 Google DevTools was used to help me find what code correlated to what feature.
 #### Am I Responsive Design:
 [Am I Responsive Design](http://ami.responsivedesign.is/#) was used to check the responsive design of the quiz.
+#### Shields.io:
+[Shields.io](https://shields.io/) was used to create the GitHub badges for my README.md file.
 
 ## Deployment
 ### Initial Deployment
