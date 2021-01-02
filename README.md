@@ -1,12 +1,12 @@
 # Harry Potter Quiz
 
-![GitHub language count](https://img.shields.io/github/languages/count/abibubble/milestone2-harry-potter-quiz)
-![GitHub top language](https://img.shields.io/github/languages/top/abibubble/milestone2-harry-potter-quiz)
-![GitHub forks](https://img.shields.io/github/forks/abibubble/milestone2-harry-potter-quiz?style=social)
 ![GitHub contributors](https://img.shields.io/github/contributors/abibubble/milestone2-harry-potter-quiz)
 ![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/milestone2-harry-potter-quiz)
+![GitHub language count](https://img.shields.io/github/languages/count/abibubble/milestone2-harry-potter-quiz)
+![GitHub top language](https://img.shields.io/github/languages/top/abibubble/milestone2-harry-potter-quiz)
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
 ![W3C Validation](LINK)
+![GitHub forks](https://img.shields.io/github/forks/abibubble/milestone2-harry-potter-quiz?style=social)
 
 [Here is a link to the final project](LINK)
 
