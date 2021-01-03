@@ -82,21 +82,18 @@ a {
     flex-direction: row;
 }
 
-.choose-house {
+.choose-house, .question-text {
     font-size: 60px;
     text-shadow: 2px 2px 3px black;
     text-align: center;
 }
 
 .overlay {
-    height: 60%;
-    width: 75%;
     background-color: rgba(255,255,255,0.2);
     border-radius: 25px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 0 auto;
 }
 
 .house, .answer {
@@ -116,7 +113,7 @@ a {
 
 .house-selector, .answer-selector {
     width: 23%;
-    height: 100%;
+    height: 125px;
 }
 
 .gryffindor .answer, .gryffindor-color {
@@ -146,7 +143,13 @@ a {
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+#js-quiz-page {
+    padding-top: 100px;
 }
 
 .answer-color {
@@ -155,16 +158,19 @@ a {
 }
 
 .answer-overlay {
-    height: 250px;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .progress-position {
     height: 25px;
-    width: 75%;
     z-index: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
 }
 
 .progress-overlay {
@@ -172,6 +178,8 @@ a {
     border-radius: 25px;
     height: 50px;
     width: 550px;
+    display: flex;
+    justify-content: center;
 }
 
 progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
@@ -181,7 +189,7 @@ progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the p
     height: 25px;
     width: 500px;
     border-radius: 5px;
-    text-align: center;
+    align-self: center;
 }
 
 progress[value]::-webkit-progress-bar { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
@@ -213,7 +221,10 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    margin: 0 auto;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .score {
