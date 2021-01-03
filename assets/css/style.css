@@ -74,12 +74,11 @@ a {
     height: 100%;
 }
 
-/* FIX LAYOUT */
-/* main-section is flex container, page content needs to be centered */
-
 .page-content {
     height: 85%;
     flex-direction: row;
+    width: 75%;
+    text-align: center;
 }
 
 .choose-house, .question-text {
@@ -146,6 +145,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+    text-align: center;
 }
 
 #js-quiz-page {
@@ -214,7 +214,7 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
 
 /* ------------------------------------------------------------------------------------------- Results */
 
-#result-text {
+.result-text {
     font-size: 60px;
     color: #07080c;
     text-shadow: 2px 2px 3px black;
@@ -222,23 +222,32 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
     border-radius: 25px;
     padding: 25px;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .score {
     font-size: 32px;
     color: #07080c;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.6);
     border-radius: 25px;
     padding: 25px;
     margin: 0 auto;
     height: 50px;
+    width: 25%;
+    text-align: center;
 }
 
 h2 {
     margin: 0;
+}
+
+.result-image-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .result-image {
@@ -250,11 +259,12 @@ h2 {
 .quote {
     font-size: 25px;
     color: #07080c;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.6);
     border-radius: 25px;
     padding: 25px;
     margin: 0 auto;
-    height: 50px;
+    text-align: center;
+    width: 75%;
 }
 
 #result-button {
@@ -267,7 +277,6 @@ h2 {
 /* ------------------------------------------------------------------------------------------- Settings */
 
 #settings-overlay, #how-to-play-overlay {
-    height: 250px;
     width: 60%;
     background-color: rgba(255,255,255,0.4);
     border-radius: 25px;
@@ -277,6 +286,10 @@ h2 {
     justify-content: space-around;
     padding: 25px;
     margin: 0 auto;
+}
+
+#settings-overlay {
+    height: 250px;
 }
 
 .settings-p {
