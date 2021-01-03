@@ -75,15 +75,17 @@ a {
 }
 
 /* FIX LAYOUT */
+/* main-section is flex container, page content needs to be centered */
 
 .page-content {
-    width: 75%;
     height: 85%;
+    flex-direction: row;
 }
 
 .choose-house {
     font-size: 60px;
-    text-shadow: 2px 2px 3px black
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
 }
 
 .overlay {
@@ -94,6 +96,7 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 .house, .answer {
