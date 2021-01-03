@@ -402,8 +402,9 @@ HAPPY OR NOT?
 ### Code
 * [Bootstrap4](https://getbootstrap.com/): Bootstrap Library used throughout to make site responsive using the Bootstrap Grid System.
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
-* [Fonts Addict](http://www.fontsaddict.com/font/harry-potter.html): Harry Potter font.
-https://fontmeme.com/fonts/harry-p-font/
+
+### Audio
+* [No Copyright Sound](https://www.youtube.com/watch?v=QDgnFDiyXEk): During the quiz music.
 
 ### Content
 * All text content written by the developer, Abi Harrison.
@@ -427,4 +428,3 @@ https://fontmeme.com/fonts/harry-p-font/
 
 goldenrod for gold behind logo
 Hermione pic Image by <a href="https://pixabay.com/users/lelilel-13071261/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4346324">Olga Kukova</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4346324">Pixabay</a>
-https://www.youtube.com/watch?v=QDgnFDiyXEk <-- Royalty free HP style music
