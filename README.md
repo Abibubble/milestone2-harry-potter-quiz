@@ -341,6 +341,7 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
 6. Once the user has completed the quiz and got to the results page, the timer kept going, giving an alert after 180 seconds, even if the user had completed the quiz.
     * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
     * This didn't fix the issue for some reason.
+    * Probably linked to bug 7.
 
 7. Timer isn't stopping when you click the navigation links.
     * I tried to update counter to blank in the navigation functions, but that just cause it to bring up the score page as well as home page.
