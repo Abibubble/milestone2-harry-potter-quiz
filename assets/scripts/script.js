@@ -20,6 +20,10 @@ let counter;
 
 // ---------------------------------------------------------------- Navigations
 
+function enterQuiz() {
+    // Click button, it then shows home page and navbar
+}
+
 function toHomePage() {
     homepage.classList.remove("hide");
     quizpage.classList.add("hide");
