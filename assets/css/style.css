@@ -41,8 +41,6 @@ body {
     box-shadow: 1px 1px 2px black, 0 0 5px rgb(255,255,255);
 }
 
-/* Check buttons aren't button-styled!!!!!!!!!!!!!!!!!!!!!!! */
-
 #logo {
     margin: 0 auto;
     margin-top: 100px;
@@ -57,12 +55,6 @@ a {
 
 .hide {
     display: none;
-}
-
-.copyright { /* Check this doesn't look weird */
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
 }
 
 /* ------------------------------------------------------------------------------------------- House selectors and Q+As */
@@ -277,8 +269,8 @@ h2 {
 /* ------------------------------------------------------------------------------------------- Settings */
 
 #settings-overlay, #how-to-play-overlay {
-    width: 60%;
-    background-color: rgba(255,255,255,0.4);
+    width: 75%;
+    background-color: rgba(255,255,255,0.5);
     border-radius: 25px;
     z-index: 0;
     display: flex;
@@ -326,7 +318,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #000;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -360,4 +352,24 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* ------------------------------------------------------------------------------------------- Footer */
+
+footer {
+    background-color: rgba(255,255,255,0.4);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+    color: black;
 }
