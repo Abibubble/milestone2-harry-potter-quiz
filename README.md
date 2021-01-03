@@ -25,6 +25,7 @@ This is a Harry Potter quiz, made with fully interactive elements, music and sou
     * [Imagery](#imagery)
     * [Wireframes](#wireframes)
     * [Features](#features)
+    * [Audio](#audio)
 
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
@@ -67,7 +68,7 @@ The main features that I wanted to include are:
 * Choose your house, the questions correlate to which house is chosen
 * Background music that can be toggled on and off
 * Settings page for music
-* Sound effects for correct or incorrect answer, which also can be toggled on or off
+* Sound effects for choosing a house, which also can be toggled on or off
 
 ### User Stories
 #### Client Goals
@@ -115,7 +116,13 @@ I created wireframes for desktop, mobile and tablet, and a user navigation map f
 * A score counter (for correct and incorrect answers)
 * Choose your house, the questions correlate to which house is chosen
 * Background music that can be toggled on and off
-* Sound effects for correct or incorrect answer that can be toggled on and off
+* Sound effects for house choice that can be toggled on and off
+
+### Audio
+* On the Home page, a crackling fire sound can be heard, giving the atmosphere of a common room at Hogwarts.
+* When the user chooses their house, a sound effect plays depending on which house was chosen.
+* Once the quiz starts, a Harry Potter-style theme is played as background music, adding to the experience and the intensity of the quiz.
+* When the user gets to the results page, the crackling fire sound returns, bringing it full circle so that there is no dramatic stop in the audio.
 ---
 
 ## Technologies Used
@@ -321,7 +328,7 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * However, due to bug #2, this didn't function was I intended.
     * I then changed it to Math.ceil(), to find a random number between 1 and 10.
     * Using this number, I concatenated the letter Q in front of the number, and set that to the variable of currentQuestion.
-    * This meant I could refer to the question by the [0] of each question set.
+    * This meant I could refer to the question by the [0 ] of each question set.
     * This meant that referring to the question, the answers, and the correct answer became much simpler.
     * I could then use indexing to use whichever part I needed to, which fixed this bug.
 
@@ -420,3 +427,4 @@ https://fontmeme.com/fonts/harry-p-font/
 
 goldenrod for gold behind logo
 Hermione pic Image by <a href="https://pixabay.com/users/lelilel-13071261/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4346324">Olga Kukova</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4346324">Pixabay</a>
+https://www.youtube.com/watch?v=QDgnFDiyXEk <-- Royalty free HP style music
