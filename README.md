@@ -344,6 +344,7 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
 
 7. Timer isn't stopping when you click the navigation links.
     * I tried to update counter to blank in the navigation functions, but that just cause it to bring up the score page as well as home page.
+    * To correct that, I added code to add the hide class to all pages as the quiz ends.
 
 8. The progress bar wasn't updating after each question was answered.
     * I checked my code, and realised I'd used .innerHTML instead of .value (as that was what I needed to update).
