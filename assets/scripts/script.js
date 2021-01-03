@@ -210,7 +210,7 @@ function pushScore() {
 }
 
 function pushProgress() {
-    getElementById("progress-bar").value = `${questionsAnswered}`;
+    document.getElementById("progress-bar").value = questionsAnswered;
 }
 
 function checkAnswer(num) {
