@@ -345,6 +345,12 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
 7. Timer isn't stopping when you click the navigation links.
     * I tried to update counter to blank in the navigation functions, but that just cause it to bring up the score page as well as home page.
 
+8. The progress bar wasn't updating after each question was answered.
+    * I checked my code, and realised I'd used .innerHTML instead of .value (as that was what I needed to update).
+    * I was still getting an error that getElementById wasn't defined.
+    * On a second read through, I realised I'd forgotten to include document. at the start.
+    * I updated this, which fixed my bug.
+
 ### Known Bugs
 * Number 4
 * Number 6
