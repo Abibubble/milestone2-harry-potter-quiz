@@ -186,9 +186,15 @@ function showScorePage() {
     if (currentScore <= 5) {
         quizpage.classList.add("hide");
         badScorePage.classList.remove("hide");
+        homepage.classList.add("hide");
+        settings.classList.add("hide");
+        howToPlay.classList.add("hide");
     } else if (currentScore > 5) {
         quizpage.classList.add("hide");
         goodScorePage.classList.remove("hide");
+        homepage.classList.add("hide");
+        settings.classList.add("hide");
+        howToPlay.classList.add("hide");
     }
 }
 
