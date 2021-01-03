@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="js-intro-hide">
             <nav id="navButtons">
                 <button class="button" onclick="toInstructionsPage()"><i class="fas fa-info-circle"></i><br>Instructions</button>
                 <button class="button" onclick="toHomePage()"><i class="fas fa-home"></i><br>Home</button>
@@ -19,7 +19,14 @@
             </nav>
         </header>
         <main class="main-section">
-            <section id="js-choose-house-page" class="page-content">
+            <section id="js-solemnly-swear" class="page content">
+                <div class="solemnly-overlay">
+                <p id="solemnly" onclick="enterQuiz()">
+                    I solemnly swear that I am up to no good...
+                </p>
+                </div>
+            </section>
+            <section id="js-choose-house-page" class="page-content hide">
                 <img src="assets/images/logo.png" alt="Harry Potter logo" id="logo">
                 <h1 class="choose-house">Choose Your House</h1>
                 <div class="overlay">
