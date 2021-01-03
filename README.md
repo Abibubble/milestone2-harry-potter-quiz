@@ -332,11 +332,11 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * splice() also didn't work, it was just removing index 1, rather than getting the index number from the currentQuestion variable.
 
 5. The quiz wouldn't let you get to 10 answered questions, it refused to count higher than 9, meaning the only way to end the quiz is to let the timer run out.
-    * Something to do with the endTimer() function? That was what I changed last
-    * Something about questionsAnswered < 10? Maybe should be <= 10?
-    * Changed it to <= 10 and now it won't go beyond 8.
-    * I added an else statement that I'd forgotten, for if the answer isn't correct.
+    * As I had just changed the endTimer() function, I double checked my code for that.
+    * I changed the condition to questionsAnswered <= 10, but that caused it to stop at 8.
+    * I checked my code again, and added an else statement that I'd forgotten, for if the answer isn't correct.
     * I also moved the endTimer() and endQuiz() functions above the checkAnswer() function, because they're used inside it.
+    * This fixed this bug.
 
 6. Once the user has completed the quiz and got to the results page, the timer kept going, giving an alert after 180 seconds, even if the user had completed the quiz.
     * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
