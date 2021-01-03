@@ -209,6 +209,10 @@ function pushScore() {
     scoreArea.innerText = `${currentScore}/10`; // Pushes the updated score to the score area for the user to see
 }
 
+function pushProgress() {
+    getElementById("progress-bar").value = `${questionsAnswered}`;
+}
+
 function checkAnswer(num) {
     if (currentQuestion[num] == currentQuestion[5]) { // if content of index of clicked answer is equal to the question correct answer
        currentScore++; // Add to the score
@@ -218,6 +222,7 @@ function checkAnswer(num) {
         questionsAnswered++;
     }
     newQuestion();
+    pushProgress();
 }
 
 function newQuestion() {
