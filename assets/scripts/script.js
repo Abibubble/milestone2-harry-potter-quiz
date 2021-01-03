@@ -254,7 +254,7 @@ function removeOldQuestion() { // THIS IS REMOVING INDEX 0, NOT THE CURRENT QUES
 
 function startTimer() {    // Start the timer counting down from 180 seconds
     let counter = document.getElementById("counter");
-    let seconds = 180;
+    let seconds = 120;
     setInterval(function() { // Count down from 180 seconds in seconds
         seconds--;
         counter.innerText = `${seconds} seconds`; // Fill in the user-facing timer
