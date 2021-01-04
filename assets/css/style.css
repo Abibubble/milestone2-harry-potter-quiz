@@ -2,14 +2,13 @@ body {
     font-family: sans-serif;
     color: lightgray;
     margin: 0;
-    padding: 20px;
     width: 100%;
     height: 100%;
 }
 
 /* ------------------------------------------------------------------------------------------- Background Image */
 
-body {
+.background-image {
     width: 100%;
     height: auto;
     background: url("/assets/images/cloisters.jpg") no-repeat bottom right fixed; /* Background image */
@@ -22,6 +21,16 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------------- Intro page */
+
+.black-background {
+    background-color: #000; /* Black background whilst animation is happening */
+    opacity: 1;
+}
+
+.js-solemnly-swear {
+    width: 100%;
+    height: 100%;
+}
 
 .solemnly-overlay {
     margin: auto;
@@ -38,22 +47,21 @@ body {
     color: #fff;
 }
 
-@keyframes solemnly-page {
-    /* Fade in words
-    Fade out words + background to homepage */
-}
-
-@media (onload) {
-    #solemnly span {
-        animation: solemnly-page 1s;
-        animation-fill-mode: forwards;
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
-.black-background {
-    background-color: #000; /* Black background whilst animation is happening */
-    background-size: 100%;
-    opacity: 1;
+#solemnly {
+    animation: fade 12s;
+    animation-fill-mode: forwards;
 }
 
 /* ------------------------------------------------------------------------------------------- Core page */

@@ -5,15 +5,17 @@ let answers = document.getElementById("answer-overlay");
 
 // ---------------------------------------------------------------- Page variables
 
+const bodyPage = document.getElementById("body");
+const solemnlyPage = document.getElementById("js-solemnly-swear");
+const fullPage = document.getElementById("main-section");
+const navbar = document.getElementById("js-navbar");
 const homepage = document.getElementById("js-choose-house-page");
 const quizpage = document.getElementById("js-quiz-page");
 const goodScorePage = document.getElementById("js-good-page");
 const badScorePage = document.getElementById("js-bad-page");
 const howToPlay = document.getElementById("js-how-to-play-page");
 const settings = document.getElementById("js-settings-page");
-const solemnlyPage = document.getElementById("js-solemnly-page");
-const fullPage = document.getElementById("main-section");
-const navbar = document.getElementById("js-solemnly-hide");
+const footerPage = document.getElementById("footer");
 
 // ---------------------------------------------------------------- Counter variables
 
@@ -24,6 +26,7 @@ let counter;
 // ---------------------------------------------------------------- Navigations
 
 function toHomePage() {
+    solemnlyPage.classList.add("hide");
     homepage.classList.remove("hide");
     quizpage.classList.add("hide");
     goodScorePage.classList.add("hide");
@@ -55,13 +58,14 @@ function toSettingsPage() {
 
 // ---------------------------------------------------------------- Fading in front page
 
-    // #js-intro-hide
-    //     display: hidden; Hide the nav bar when animation is happening
+    // Text animates in, then fades to home page and navbar
 
 function enterQuiz() {
-    navbar.classList.add("hide"); // Hide navbar
-    fullPage.classList.add("black-background"); // Full page black background
-    // Text animates in, then fades to home page and navbar
+    navbar.classList.remove("hide"); // Show navbar
+    bodyPage.classList.remove("black-background"); // Remove full page black background
+    bodyPage.classList.add("background-image"); // Add normal background image
+    footerPage.classList.remove("hide"); // Show footer
+    toHomePage();
 }
 
 // ---------------------------------------------------------------- Questions sets

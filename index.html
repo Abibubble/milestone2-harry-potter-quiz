@@ -10,8 +10,8 @@
     	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
     </head>
 
-    <body>
-        <header id="js-intro-hide">
+    <body id="body" class="black-background">
+        <header id="js-navbar" class="hide">
             <nav id="navButtons">
                 <button class="button" onclick="toInstructionsPage()"><i class="fas fa-info-circle"></i><br>Instructions</button>
                 <button class="button" onclick="toHomePage()"><i class="fas fa-home"></i><br>Home</button>
@@ -19,7 +19,7 @@
             </nav>
         </header>
         <main class="main-section">
-            <section id="js-solemnly-swear" class="page content">
+            <section id="js-solemnly-swear" class="page-content" onclick="enterQuiz()">
                 <div class="solemnly-overlay">
                 <p id="solemnly" onclick="enterQuiz()">
                     <span id="i">I</span>
@@ -155,7 +155,7 @@
 
         </main>
 
-        <footer class="copyright">
+        <footer id="footer" class="copyright hide">
             <p><i class="far fa-copyright"></i> Copyright J.K. Rowling<br>& Warner Bros Entertainment Inc.</p>
         </footer>
 
