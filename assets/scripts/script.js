@@ -24,6 +24,7 @@ const footerPage = document.getElementById("footer");
 let questionsAnswered = 0;
 let currentScore = 0;
 let counter;
+let scoreArea = document.getElementById("score");
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Page functions
 
@@ -213,8 +214,10 @@ function showScorePage() {
 }
 
 function endQuiz() {
-    counter = "";
+    counter="";
     showScorePage();
+    document.getElementById("progress-bar").value = 0;
+    scoreArea.innerText = "";
 }
 
 function endTimer() {
@@ -225,7 +228,6 @@ function endTimer() {
 // ---------------------------------------------------------------- Check the answer given by the user and move to the next question
 
 function pushScore() {
-    let scoreArea = document.getElementById("score"); // Gets the score area
     scoreArea.innerText = `${currentScore}/10`; // Pushes the updated score to the score area for the user to see
 }
 
@@ -266,17 +268,17 @@ function removeOldQuestion() { // THIS IS REMOVING INDEX 0, NOT THE CURRENT QUES
 
 // ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
 
-function startTimer() {    // Start the timer counting down from 180 seconds
+function startTimer() {    // Start the timer counting down from 120 seconds
     let counter = document.getElementById("counter");
     let seconds = 120;
-    setInterval(function() { // Count down from 180 seconds in seconds
+    let countTimer = setInterval(function() { // Count down from 120 seconds in seconds
         seconds--;
         counter.innerText = `${seconds} seconds`; // Fill in the user-facing timer
         if (seconds === 0) {
             endTimer(); // If the timer runs out, end the timer
         }
         if (counter === "") {
-            return;
+            setTimeout(countTimer);
         }
     }, 1000);
 }
