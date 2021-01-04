@@ -250,7 +250,7 @@ progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the p
 }
 
 progress[value]::-webkit-progress-bar { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
-  background-color: #fbb928;
+  background-color: #a0a150;
   border-radius: 15px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
 }
@@ -263,7 +263,7 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
 	   -webkit-linear-gradient(top, 
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #d74f40, #d74f60);
+	   -webkit-linear-gradient(left, #07080c, #000);
 
     border-radius: 152px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
