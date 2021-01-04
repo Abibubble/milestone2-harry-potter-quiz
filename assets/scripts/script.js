@@ -1,3 +1,5 @@
+// ----------------------------------------------------------------------------------------------------------------------------------------- Global variables
+
 // ---------------------------------------------------------------- House variables
 
 let houseChosen;
@@ -22,6 +24,8 @@ const footerPage = document.getElementById("footer");
 let questionsAnswered = 0;
 let currentScore = 0;
 let counter;
+
+// ----------------------------------------------------------------------------------------------------------------------------------------- Page functions
 
 // ---------------------------------------------------------------- Navigations
 
@@ -58,8 +62,6 @@ function toSettingsPage() {
 
 // ---------------------------------------------------------------- Fading in front page
 
-    // Text animates in, then fades to home page and navbar
-
 function enterQuiz() {
     navbar.classList.remove("hide"); // Show navbar
     bodyPage.classList.remove("black-background"); // Remove full page black background
@@ -67,6 +69,8 @@ function enterQuiz() {
     footerPage.classList.remove("hide"); // Show footer
     toHomePage();
 }
+
+// ----------------------------------------------------------------------------------------------------------------------------------------- Quiz functions
 
 // ---------------------------------------------------------------- Questions sets
 
@@ -143,13 +147,6 @@ function resetHouse(house) { // Reset the house at the start, so if the user is 
     answers.classList.remove(house);
 }
 
-//
-//
-// Quiz
-// functions
-//
-//
-
 // ---------------------------------------------------------------- Chooses question set depending on which house was chosen
 
 let questionsSet;
@@ -166,7 +163,6 @@ function chooseQuestionSet() {
     } else {
 
     }
-    // questionsSet = questions[houseChosen];
 }
 
 // ---------------------------------------------------------------- Randomises the order of the questions
@@ -243,19 +239,19 @@ function checkAnswer(num) {
        questionsAnswered++; // Increment how many questions are answered
        pushScore();
     } else {
-        questionsAnswered++;
+        questionsAnswered++; // If the answer is incorrect, just increment the question total
     }
     newQuestion();
     pushProgress();
 }
 
 function newQuestion() {
-    if (questionsAnswered < 10) { // if the current question isn't the final question
+    if (questionsAnswered < 10) { // If the current question isn't the final question
         questionPool--; // Decrement the question pool for the RNG
         removeOldQuestion();
         randomiseQuestionOrder();
         populateQuestion();
-    } else if (questionsAnswered === 10) {
+    } else if (questionsAnswered === 10) { // If the current question is the final question, end the quiz
        endQuiz();
     } else {
         alert("Oh no! Something went wrong! Please return to the homepage and try again.");
@@ -308,12 +304,7 @@ function showScorePage() {
     }
 }
 
-//
-//
-// Audio settings
-//
-//
-//
+// ----------------------------------------------------------------------------------------------------------------------------------------- Audio settings
 
 // ---------------------------------------------------------------- Toggle
 
