@@ -269,6 +269,16 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
+#score, #timer {
+    background: rgba(255,255,255,0.4);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    color: #07080c;
+    font-size: 25px;
+}
+
 /* ------------------------------------------------------------------------------------------- Results */
 
 .result-text {
