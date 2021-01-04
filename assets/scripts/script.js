@@ -11,6 +11,9 @@ const goodScorePage = document.getElementById("js-good-page");
 const badScorePage = document.getElementById("js-bad-page");
 const howToPlay = document.getElementById("js-how-to-play-page");
 const settings = document.getElementById("js-settings-page");
+const solemnlyPage = document.getElementById("js-solemnly-page");
+const fullPage = document.getElementById("main-section");
+const navbar = document.getElementById("js-solemnly-hide");
 
 // ---------------------------------------------------------------- Counter variables
 
@@ -19,10 +22,6 @@ let currentScore = 0;
 let counter;
 
 // ---------------------------------------------------------------- Navigations
-
-function enterQuiz() {
-    // Click button, it then shows home page and navbar
-}
 
 function toHomePage() {
     homepage.classList.remove("hide");
@@ -52,6 +51,17 @@ function toSettingsPage() {
     howToPlay.classList.add("hide");
     settings.classList.remove("hide");
     counter = "";
+}
+
+// ---------------------------------------------------------------- Fading in front page
+
+    // #js-intro-hide
+    //     display: hidden; Hide the nav bar when animation is happening
+
+function enterQuiz() {
+    navbar.classList.add("hide"); // Hide navbar
+    fullPage.classList.add("black-background"); // Full page black background
+    // Text animates in, then fades to home page and navbar
 }
 
 // ---------------------------------------------------------------- Questions sets

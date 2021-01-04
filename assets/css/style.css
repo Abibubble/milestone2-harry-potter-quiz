@@ -26,7 +26,6 @@ body {
 .solemnly-overlay {
     margin: auto;
     margin-top: 30%;
-    background-color: rgba(255,255,255,0.8);
     border-radius: 25px;
     display: flex;
     flex-flow: row wrap;
@@ -36,7 +35,25 @@ body {
 #solemnly {
     font-size: 40px;
     font-family: monospace;
-    color: #07080c;
+    color: #fff;
+}
+
+@keyframes solemnly-page {
+    /* Fade in words
+    Fade out words + background to homepage */
+}
+
+@media (onload) {
+    #solemnly span {
+        animation: solemnly-page 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.black-background {
+    background-color: #000; /* Black background whilst animation is happening */
+    background-size: 100%;
+    opacity: 1;
 }
 
 /* ------------------------------------------------------------------------------------------- Core page */
