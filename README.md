@@ -104,6 +104,7 @@ I used sans-serif throughout the quiz. It's a clean and easy to read font, whils
 It also doesn't distract the user from the main theme, and has the added bonus that it's a staple font with HTML, so all browsers will be able to display it.
 
 ### Imagery
+The opening quote page is a direct line from the books, which immediately captures the attention of the user, sets the theme for the quiz, and encourages immersion from the first glance.
 The large background hero image is designed to be striking and catch the user's attention, making it clear at first glance what the quiz is related to. 
 It directly correlates to the aesthetic of the Harry Potter series, using an image of Gloucester cloisters, which was used in the filming of the Harry Potter films.
 
