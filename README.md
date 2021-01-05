@@ -367,7 +367,6 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * I updated this, which fixed my bug.
 
 ### Known Bugs
-* Number 4
 * Number 6
 * Number 7
 
