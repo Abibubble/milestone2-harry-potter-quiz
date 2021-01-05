@@ -260,10 +260,11 @@ function newQuestion() {
     }
 }
 
-function removeOldQuestion() { // THIS IS REMOVING INDEX 0, NOT THE CURRENT QUESTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+function removeOldQuestion() { // THIS IS REMOVING THE LAST INDEX, NOT THE CURRENT QUESTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     let questionIndex = currentQuestion.indexOf();
-    questionsSet.splice(`${questionIndex}`); // Remove the question from the set of questions
-
+    console.log(questionIndex);
+    questionsSet.splice(questionIndex,1); // Remove the question from the set of questions
+    console.log(questionsSet);
 }
 
 // ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
