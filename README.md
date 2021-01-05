@@ -334,10 +334,15 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * I could then use indexing to use whichever part I needed to, which fixed this bug.
 
 4. After answering a question, the completed question wasn't being removed from the question pool, so it was being repeated.
-    * Objects and arrays issues
-    * delete questionsSet.currentQuestion or delete questionsSet[currentQuestion ], but neither works.
-    * Changed my questions into a nested array, but neither of the above worked still.
-    * splice() also didn't work, it was just removing index 1, rather than getting the index number from the currentQuestion variable.
+    * Originally I had my questions organised as a arrays nested inside an object. I reached out to the Slack community, and received advice that this was a complicated method.
+    * I changed my questions to be a nested array inside an array, which made my referencing each question much simpler, requiring less code.
+    * However, when I needed to delete the currentQuestion from the current questionsSet, it wasn't being deleted.
+    * I tried delete questionsSet.currentQuestion and delete questionsSet[currentQuestion ], but neither worked.
+    * Changed my questions into a nested array, but neither of the above worked still
+    * I also tried using .splice(), which also didn't work. It was just removing index 1, rather than getting the index number from the currentQuestion variable.
+    * I did a bit more research into .splice(), and got it removing the final index of the questionsSet.
+    * Finally, I realised I was using currentQuestion.indexOf(); instead of questionsSet.indexOf(currentQuestion), which corrected my reference to the correct index.
+    * This then solved this bug.
 
 5. The quiz wouldn't let you get to 10 answered questions, it refused to count higher than 9, meaning the only way to end the quiz is to let the timer run out.
     * As I had just changed the endTimer() function, I double checked my code for that.
@@ -346,7 +351,7 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * I also moved the endTimer() and endQuiz() functions above the checkAnswer() function, because they're used inside it.
     * This fixed this bug.
 
-6. Once the user has completed the quiz and got to the results page, the timer kept going, giving an alert after 180 seconds, even if the user had completed the quiz.
+6. Once the user has completed the quiz and got to the results page, the timer kept going, giving an alert after 120 seconds, even if the user had completed the quiz.
     * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
     * This didn't fix the issue for some reason.
     * Probably linked to bug 7.
