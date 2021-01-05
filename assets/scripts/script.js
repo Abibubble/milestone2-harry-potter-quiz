@@ -201,15 +201,19 @@ function showScorePage() {
     if (currentScore <= 5) {
         quizpage.classList.add("hide");
         badScorePage.classList.remove("hide");
-        homepage.classList.add("hide");
+        homepage.classList.add("hide"); // Not hiding home page when timer runs out when already on homepage !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         settings.classList.add("hide");
         howToPlay.classList.add("hide");
+        // Populate good image
+        // Populate good quote
     } else if (currentScore > 5) {
         quizpage.classList.add("hide");
         goodScorePage.classList.remove("hide");
-        homepage.classList.add("hide");
+        homepage.classList.add("hide"); // Not hiding home page when timer runs out when already on homepage !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         settings.classList.add("hide");
         howToPlay.classList.add("hide");
+        // Populate bad image
+        // Populate bad quote
     }
 }
 
