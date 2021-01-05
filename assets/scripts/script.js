@@ -79,12 +79,12 @@ const questions = [
     [ // Gryffindor
         ["Which animal represents your house?", "Lion", "Snake", "Badger", "Eagle", "Lion"],
         ["What are your house colours?", "Scarlet and Gold", "Silver and Green", "Yellow and Black", "Blue and Silver", "Scarlet and Gold"],
-        ["Who was Hermione's date at the Yule Ball?", "A", "B", "Viktor Krum", "D", "Viktor Krum"],
-        ["Which character served as Quiddich commentator?", "A", "B", "C", "Lee Jordan", "Lee Jordan"],
-        ["Which insect is Rom most scared of?", "A", "Spiders", "C", "D", "Spiders"],
-        ["What is the name of Hermione's cat?", "A", "B", "Crookshanks", "D", "Crookshanks"],
-        ["How did Neville help to defeat Voldemort?", "A", "Killed Nagini", "C", "D", "Killed Nagini"],
-        ["How does Harry catch his first snitch?", "In his mouth", "B", "C", "D", "In his mouth"],
+        ["Who was Hermione's date at the Yule Ball?", "Ron Weasley", "Harry Potter", "Viktor Krum", "Draco Malfoy", "Viktor Krum"],
+        ["Which character served as Quiddich commentator?", "Neville Longbottom", "Dean Thomas", "Lavender Brown", "Lee Jordan", "Lee Jordan"],
+        ["Which insect is Ron most scared of?", "Worms", "Spiders", "Ladybugs", "Caterpillars", "Spiders"],
+        ["What is the name of Hermione's cat?", "Paws", "Mittens", "Crookshanks", "Sebastian", "Crookshanks"],
+        ["How did Neville help to defeat Voldemort?", "Sacrificed himself", "Killed Nagini", "Cast Avada Kedavra", "Found a horcrux", "Killed Nagini"],
+        ["How does Harry catch his first snitch?", "In his mouth", "In his hand", "In his pocket", "In a pokeball", "In his mouth"],
         ["How does Hermione take extra classes in third year?", "Weekend classes", "Made a clone", "Penseive", "Time Turner", "Time Turner"],
         ["Other than Harry, who else could have been the object of the prophecy regarding Voldemort's downfall?", 
             "Hermione Granger", "Luna Lovegood", "Neville Longbottom", "Dean Thomas", "Neville Longbottom"]
@@ -96,8 +96,8 @@ const questions = [
         ["Finish the quote. “After all this time?”", "Always.", "Maybe.", "I guess...", "No!", "Always."],
         ["What was the name of Voldemort's snake?", "Sid", "Basilisk", "Medusa", "Nagini", "Nagini"],
         ["Who killed Dobby by throwing a knife at him?", "Draco Malfoy", "Severus Snape", "Voldemort", "Bellatrix Lestrange", "Bellatrix Lestrange"],
-        ["Which medieval wizard was in Slytherin?", "A", "B", "Merlin", "D", "Merlin"],
-        ["Where is the common room of your house?", "In the dungeons", "In the kitchen", "C", "D", "In the dungeons"],
+        ["Which medieval wizard was in Slytherin?", "Magnus", "Flamel", "Merlin", "Donnubáin", "Merlin"],
+        ["Where is the common room of your house?", "In the dungeons", "In the kitchen", "Under the stairs", "In the gardens", "In the dungeons"],
         ["Who is the resident ghost of Slytherin?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Bloody Baron"],
         ["What qualities does a Slytherin possess?", "Patience and Loyalty", "Wit and Learning", "Cunning and Deceit", "Daring and Nerve", "Cunning and Deceit"]
     ],
@@ -105,13 +105,13 @@ const questions = [
         ["Which animal represents your house?", "Lion", "Snake", "Badger", "Eagle", "Badger"],
         ["What are your house colours?", "Scarlet and Gold", "Silver and Green", "Yellow and Black", "Blue and Silver", "Yellow and Black"],
         ["What colour ink are Hogwarts invitation letters written in?", "Red", "Blue", "Green", "Black", "Green"],
-        ["Which Quiddich position did Captain Cedric Diggory play?", "Keeper", "Seeker", "C", "D", "Seeker"],
-        ["Which dragon did Cedric Diggory face in the Triwizard Tournament?", "A", "B", "C", "D", "D"],
+        ["Which Quiddich position did Captain Cedric Diggory play?", "Keeper", "Seeker", "Chaser", "Beater", "Seeker"],
+        ["Which dragon did Cedric Diggory face in the Triwizard Tournament?", "Hungarian Horntail", "Swedish Short-Snout", "Chinese Fireball", "Common Welsh Green", "Swedish Short-Snout"],
         ["What was the password to the prefect's bathroom?", "A", "B", "C", "Sherbet lemons", "Sherbet lemons"],
         ["Who is the head of Hufflepuff house?", "Professor McGonegal", "Professor Flitwick", "Professor Snape", "Professor Sprout", "Professor Sprout"],
-        ["Where is the common room of your house?", "In the dungeons", "In the kitchen", "C", "D", "In the kitchen"],
+        ["Where is the common room of your house?", "In the dungeons", "In the kitchen", "Under the stairs", "In a tower", "In the kitchen"],
         ["Who is the resident ghost of Hufflepuff?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Fat Friar"],
-        ["How do you get into the Hufflepuff common room?", "Hum a tune", "Tap out a rhythm", "Perform a poem", "Dance", "Tap out a rhythm"]
+        ["How do you get into the Hufflepuff common room?", "Hum a tune", "Tap out a rhythm", "Perform a poem", "Answer a riddle", "Tap out a rhythm"]
     ],
     [ // Ravenclaw
         ["Which animal represents your house?", "Lion", "Snake", "Badger", "Eagle", "Eagle"],
@@ -119,11 +119,11 @@ const questions = [
         ["What qualities does a Slytherin possess?", "Patience and Loyalty", "Wit and Learning", "Cunning and Deceit", "Daring and Nerve", "Wit and Learning"],
         ["Which gem is contained in the Ravenclaw house points hourglass?", "Amythests", "Emeralds", "Sapphires", "Rubies", "Sapphires"],
         ["What does Felix Felicis do?", "Poisons you", "Gives you good luck", "Makes you fall in love", "Ressurects someone", "Gives you good luck"],
-        ["Who is the Seeker of the Ravenclaw Quiddich team?", "A", "B", "C", "Cho Chang", "Cho Chang"],
+        ["Who is the Seeker of the Ravenclaw Quiddich team?", "Padma Patil", "Luna Lovegood", "Terry Boot", "Cho Chang", "Cho Chang"],
         ["Who is the resident ghost of Hufflepuff?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Grey Lady"],
-        ["Q8", "A", "B", "C", "D", "A"],
-        ["Q9", "A", "B", "C", "D", "A"],
-        ["Q10", "A", "B", "C", "D", "A"]
+        ["Where is the common room of your house?", "In the dungeons", "In the kitchen", "Under the stairs", "In a tower", "In a tower"],
+        ["How do you get into the Ravenclaw common room?", "Hum a tune", "Tap out a rhythm", "Perform a poem", "Answer a riddle", "Answer a riddle"],
+        ["Who is the head of Ravenclaw house?", "Professor McGonegal", "Professor Flitwick", "Professor Snape", "Professor Sprout", "Professor Flitwick"],
     ]
 ];
 
