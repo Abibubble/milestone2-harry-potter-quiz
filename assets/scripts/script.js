@@ -313,6 +313,8 @@ function showScorePage() {
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Audio settings
 
+// ---------------------------------------------------------------- Audio files
+
 var solemnlyAudio = new Audio('i-solemnly-swear.mp3');
 audio.play();
 
@@ -324,10 +326,24 @@ audio.play();
 
 // ---------------------------------------------------------------- Toggle
 
-function backgroundMusicToggle() {
-    // Toggle the background music on or off
+function whichMusic() {
+    if (!$(homepage).hasClass("hide")) {  // MAKE SURE THIS CHOOSES WHICH ONE DEPENDING ON WHICH PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        fireAudio.play();
+    } else if (!$(quizpage).hasClass("hide")) {
+        quizAudio.play();
+    } else if (bodyPage.hasClass("black-background")) {
+        solemnlyAudio.play();
+    }
 }
 
-function soundEffectsToggle() {
-    // Toggle the sound effects on or off
+function backgroundMusicToggle() { // Toggle the out-of-quiz audio on or off
+    if (slider = "off") {
+        fireAudio.pause();
+    }
+}
+
+function quizMusicToggle() { // Toggle the in-quiz audio on or off
+    if (slider = "off") {
+        quizAudio.pause();
+    }
 }
