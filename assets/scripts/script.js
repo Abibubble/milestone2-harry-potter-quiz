@@ -313,6 +313,15 @@ function showScorePage() {
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Audio settings
 
+var solemnlyAudio = new Audio('i-solemnly-swear.mp3');
+audio.play();
+
+var fireAudio = new Audio('fire-crackling-noise.mp3');
+audio.play();
+
+var quizAudio = new Audio('quiz-music.mp3');
+audio.play();
+
 // ---------------------------------------------------------------- Toggle
 
 function backgroundMusicToggle() {
