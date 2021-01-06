@@ -23,9 +23,10 @@ const footerPage = document.getElementById("footer");
 
 let questionsAnswered = 0;
 let currentScore = 0;
-let counter;
 let scoreArea = document.getElementById("score");
 let counter = document.getElementById("counter");
+let seconds;
+let countTimer;
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Page functions
 
@@ -34,32 +35,31 @@ let counter = document.getElementById("counter");
 function toHomePage() {
     solemnlyPage.classList.add("hide");
     homepage.classList.remove("hide");
-    quizpage.classList.add("hide");
-    goodScorePage.classList.add("hide");
-    badScorePage.classList.add("hide");
     howToPlay.classList.add("hide");
     settings.classList.add("hide");
-    clearInterval(timerFunction);
+    navbarMovement();
 }
 
 function toInstructionsPage() {
     homepage.classList.add("hide");
-    quizpage.classList.add("hide");
-    goodScorePage.classList.add("hide");
-    badScorePage.classList.add("hide");
     howToPlay.classList.remove("hide");
     settings.classList.add("hide");
-    clearInterval(timerFunction);
+    navbarMovement();
 }
 
 function toSettingsPage() {
     homepage.classList.add("hide");
-    quizpage.classList.add("hide");
-    goodScorePage.classList.add("hide");
-    badScorePage.classList.add("hide");
     howToPlay.classList.add("hide");
     settings.classList.remove("hide");
-    clearInterval(timerFunction);
+    navbarMovement();
+}
+
+function navbarMovement() {
+    goodScorePage.classList.add("hide");
+    badScorePage.classList.add("hide");
+    quizpage.classList.add("hide");
+    clearInterval(countTimer);
+    seconds = 120;
 }
 
 // ---------------------------------------------------------------- Fading in front page
@@ -70,6 +70,7 @@ function enterQuiz() {
     bodyPage.classList.add("background-image"); // Add normal background image
     footerPage.classList.remove("hide"); // Show footer
     toHomePage();
+    navbarMovement();
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Quiz functions
@@ -174,9 +175,7 @@ let questionPool = 10;
 
 function randomiseQuestionOrder() {
     let randomNumber = Math.floor(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
-    console.log(randomNumber);
     currentQuestion = questionsSet[`${randomNumber}`]; // Finds a question in the question set with that index number
-    console.log(currentQuestion); // SPLICE IS LEAVING AN UNDEFINED INSTEAD OF MOVING EVERYTHING OVER
 }
 
 function populateQuestion() { // Fills in the text for question and answer chosen by the randomiseQuestionOrder function
@@ -219,7 +218,7 @@ function showScorePage() {
 }
 
 function endQuiz() {
-    clearInterval(timerFunction);
+    clearInterval(countTimer);
     showScorePage();
     document.getElementById("progress-bar").value = 0;
     scoreArea.innerText = "";
@@ -272,30 +271,30 @@ function removeOldQuestion() {
 
 // ---------------------------------------------------------------- Creates the 120 second timer for the full quiz
 
+function startTimer() {    // Start the timer counting down from 120 seconds
+    counter.innerText = "120 seconds";
+    seconds = 120;
+    countTimer = setInterval(timerFunction, 1000);
+}
+
 function timerFunction() { // Count down from 120 seconds in seconds
     seconds--;
     counter.innerText = `${seconds} seconds`; // Fill in the user-facing timer
     if (seconds === 0) {
         endTimer(); // If the timer runs out, end the timer
     }
-    if (counter === "") {
-        endTimer();
-    }
-}
-
-function startTimer() {    // Start the timer counting down from 120 seconds
-    counter = "";
-    let seconds = 120;
-    let countTimer = setInterval(timerFunction, 1000);
 }
 
 // ---------------------------------------------------------------- Start the quiz
 
 function startQuiz() {
+    clearInterval(timerFunction);
+    currentScore = 0;
     chooseQuestionSet();
     randomiseQuestionOrder();
     populateQuestion();
     startTimer();
+    pushScore();
 }
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
