@@ -310,9 +310,6 @@ function showScorePage() {
 
 // ---------------------------------------------------------------- Audio files
 
-var solemnlyAudio = new Audio('i-solemnly-swear.mp3');
-audio.play();
-
 var fireAudio = new Audio('fire-crackling-noise.mp3');
 audio.play();
 
@@ -321,8 +318,8 @@ audio.play();
 
 // ---------------------------------------------------------------- Toggle
 
-let music = "on";
-let currentAudio = solemnlyAudio;
+let music = "off";
+let currentAudio = fireAudio;
 
 function whichMusic() {
 
@@ -344,11 +341,12 @@ function whichMusic() {
 }
 
 function toggleMusic() {
-    if (music === "on") {
-        fireAudio.pause();
-        quizAudio.pause();
-        solemnlyAudio.pause();
+    if (music === "off") {
+        music = "on";
+        document.getElementById("audio").innerHTML(`<i class="fas fa-volume-mute"></i><br>Audio off`);
     } else {
-        fireAudio.play();
+        music = "off";
+        document.getElementById("audio").innerHTML(`<i class="fas fa-volume-up"></i><br>Audio on`);
     }
+    whichMusic();
 }

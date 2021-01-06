@@ -15,7 +15,7 @@
             <nav id="navButtons">
                 <button class="button" onclick="toInstructionsPage()"><i class="fas fa-info-circle"></i><br>Instructions</button>
                 <button class="button" onclick="toHomePage()"><i class="fas fa-home"></i><br>Home</button>
-                <button class="button" onclick="toSettingsPage()"><i class="fas fa-cog"></i><br>Music Settings</button>
+                <button class="button audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i><br>Audio on</button>
             </nav>
         </header>
         <main class="main-section">
@@ -120,15 +120,6 @@
                             <li>If it's incorrect, your score beneath will not update.</li>
                             <li>If you'd like to exit the quiz, you can click on any of the buttons at the top of the screen.</li>
                         </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section id="js-settings-page" class="page-content hide">
-                <h1 id="settings-text">Music Settings</h1>
-                <div id="settings-overlay" onclick="toggleMusic()">
-                    <div id="background-music" class="settings-module">
-                        <p class="settings-p">Want to turn off the audio? Just click anywhere in this box.</p>
                     </div>
                 </div>
             </section>
