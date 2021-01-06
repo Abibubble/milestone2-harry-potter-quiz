@@ -355,10 +355,16 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
     * This didn't fix the issue for some reason.
     * Probably linked to bug 7.
+    * I did more reading into how setInterval and clearInterval works, and refactored my code.
+    * This also had the pleasant side effect of making my code shorter and easier to read.
+    * I'd been using clearInterval with my function name in the brackets, which I learned was incorrect.
+    * I replaced the function name with the variable name which fixed this bug.
 
 7. Timer isn't stopping when you click the navigation links.
     * I tried to update counter to blank in the navigation functions, but that just cause it to bring up the score page as well as home page.
     * To correct that, I added code to add the hide class to all pages as the quiz ends.
+    * Whilst researching to fix bug #6, I learned how to use clearInterval().
+    * I added the correct use of clearInterval() into my navigation click functions, which fixed this bug.
 
 8. The progress bar wasn't updating after each question was answered.
     * I checked my code, and realised I'd used .innerHTML instead of .value (as that was what I needed to update).
@@ -367,8 +373,7 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * I updated this, which fixed my bug.
 
 ### Known Bugs
-* Number 6
-* Number 7
+* 
 
 
 ### Lighthouse
