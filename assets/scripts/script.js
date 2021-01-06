@@ -60,6 +60,7 @@ function navbarMovement() {
     quizpage.classList.add("hide");
     clearInterval(countTimer);
     seconds = 120;
+    whichMusic();
 }
 
 // ---------------------------------------------------------------- Fading in front page
@@ -71,6 +72,7 @@ function enterQuiz() {
     footerPage.classList.remove("hide"); // Show footer
     toHomePage();
     navbarMovement();
+    whichMusic();
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Quiz functions
@@ -197,31 +199,12 @@ function populateQuestion() { // Fills in the text for question and answer chose
 
 // ---------------------------------------------------------------- To end the quiz and timer
 
-function showScorePage() {
-    if (currentScore <= 5) {
-        quizpage.classList.add("hide");
-        badScorePage.classList.remove("hide");
-        homepage.classList.add("hide"); // Not hiding home page when timer runs out when already on homepage !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        settings.classList.add("hide");
-        howToPlay.classList.add("hide");
-        // Populate good image
-        // Populate good quote
-    } else if (currentScore > 5) {
-        quizpage.classList.add("hide");
-        goodScorePage.classList.remove("hide");
-        homepage.classList.add("hide"); // Not hiding home page when timer runs out when already on homepage !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        settings.classList.add("hide");
-        howToPlay.classList.add("hide");
-        // Populate bad image
-        // Populate bad quote
-    }
-}
-
 function endQuiz() {
     clearInterval(countTimer);
     showScorePage();
     document.getElementById("progress-bar").value = 0;
     scoreArea.innerText = "";
+    whichMusic();
 }
 
 function endTimer() {
@@ -295,20 +278,32 @@ function startQuiz() {
     populateQuestion();
     startTimer();
     pushScore();
+    whichMusic();
 }
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
 
+function pageSwap() {
+    homepage.classList.add("hide");
+    settings.classList.add("hide");
+    howToPlay.classList.add("hide");
+    quizpage.classList.add("hide");
+}
+
 function showScorePage() {
-    if (currentScore > 5) {
-        quizpage.classList.add("hide");
+    pageSwap();
+    if (currentScore >= 5) { // If the user gets 5 points or more, show the good score page
         goodScorePage.classList.remove("hide");
         document.getElementById("js-good-score").innerText = `${currentScore} / 10`; // Populate their score
-    } else {
-        quizpage.classList.add("hide");
+        // Populate good image
+        // Populate good quote
+    } else {  // If the user gets less than 5 points, show the good score page
         badScorePage.classList.remove("hide");
         document.getElementById("js-bad-score").innerText = `${currentScore} / 10`; // Populate their score
+        // Populate bad image
+        // Populate bad quote
     }
+    whichMusic();
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Audio settings
@@ -326,24 +321,34 @@ audio.play();
 
 // ---------------------------------------------------------------- Toggle
 
+let music = "on";
+let currentAudio = solemnlyAudio;
+
 function whichMusic() {
-    if (!$(homepage).hasClass("hide")) {  // MAKE SURE THIS CHOOSES WHICH ONE DEPENDING ON WHICH PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        fireAudio.play();
-    } else if (!$(quizpage).hasClass("hide")) {
-        quizAudio.play();
-    } else if (bodyPage.hasClass("black-background")) {
-        solemnlyAudio.play();
-    }
-}
 
-function backgroundMusicToggle() { // Toggle the out-of-quiz audio on or off
-    if (slider = "off") {
+    if (music === "on") {
+
+        if (bodyPage.hasClass("black-background")) {
+            solemnlyAudio.play();
+        } else if (!$(quizpage).hasClass("hide")) {
+            quizAudio.play();
+        } else {
+            fireAudio.play();
+        }
+
+    } else {
         fireAudio.pause();
+        quizAudio.pause();
+        solemnlyAudio.pause();
     }
 }
 
-function quizMusicToggle() { // Toggle the in-quiz audio on or off
-    if (slider = "off") {
+function toggleMusic() {
+    if (music === "on") {
+        fireAudio.pause();
         quizAudio.pause();
+        solemnlyAudio.pause();
+    } else {
+        fireAudio.play();
     }
 }
