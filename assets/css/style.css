@@ -47,7 +47,10 @@ body {
     color: #fff;
     animation: fade 8s;
     animation-fill-mode: forwards;
+    z-index: 6;
 }
+
+/* ------------------------------------------------------------------------------------------- Animation */
 
 @keyframes fade {
     0% {
@@ -70,6 +73,15 @@ body {
     }
     100% {
         opacity: 0.8;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 

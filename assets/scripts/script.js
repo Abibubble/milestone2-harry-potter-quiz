@@ -66,8 +66,8 @@ function navbarMovement() {
 
 function enterQuiz() {
     navbar.classList.remove("hide"); // Show navbar
-    bodyPage.classList.remove("black-background"); // Remove full page black background
     bodyPage.classList.add("background-image"); // Add normal background image
+    bodyPage.classList.remove("black-background"); // Remove black background
     footerPage.classList.remove("hide"); // Show footer
     toHomePage();
     navbarMovement();
