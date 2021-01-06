@@ -25,6 +25,7 @@ let questionsAnswered = 0;
 let currentScore = 0;
 let counter;
 let scoreArea = document.getElementById("score");
+let counter = document.getElementById("counter");
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Page functions
 
@@ -38,7 +39,7 @@ function toHomePage() {
     badScorePage.classList.add("hide");
     howToPlay.classList.add("hide");
     settings.classList.add("hide");
-    counter = "";
+    clearInterval(timerFunction);
 }
 
 function toInstructionsPage() {
@@ -48,7 +49,7 @@ function toInstructionsPage() {
     badScorePage.classList.add("hide");
     howToPlay.classList.remove("hide");
     settings.classList.add("hide");
-    counter = "";
+    clearInterval(timerFunction);
 }
 
 function toSettingsPage() {
@@ -58,7 +59,7 @@ function toSettingsPage() {
     badScorePage.classList.add("hide");
     howToPlay.classList.add("hide");
     settings.classList.remove("hide");
-    counter = "";
+    clearInterval(timerFunction);
 }
 
 // ---------------------------------------------------------------- Fading in front page
@@ -218,7 +219,7 @@ function showScorePage() {
 }
 
 function endQuiz() {
-    counter="";
+    clearInterval(timerFunction);
     showScorePage();
     document.getElementById("progress-bar").value = 0;
     scoreArea.innerText = "";
@@ -269,21 +270,23 @@ function removeOldQuestion() {
     questionsSet.splice(questionIndex,1); // Remove the question from the set of questions
 }
 
-// ---------------------------------------------------------------- Creates the 180 second timer for the full quiz
+// ---------------------------------------------------------------- Creates the 120 second timer for the full quiz
+
+function timerFunction() { // Count down from 120 seconds in seconds
+    seconds--;
+    counter.innerText = `${seconds} seconds`; // Fill in the user-facing timer
+    if (seconds === 0) {
+        endTimer(); // If the timer runs out, end the timer
+    }
+    if (counter === "") {
+        endTimer();
+    }
+}
 
 function startTimer() {    // Start the timer counting down from 120 seconds
-    let counter = document.getElementById("counter");
+    counter = "";
     let seconds = 120;
-    let countTimer = setInterval(function() { // Count down from 120 seconds in seconds
-        seconds--;
-        counter.innerText = `${seconds} seconds`; // Fill in the user-facing timer
-        if (seconds === 0) {
-            endTimer(); // If the timer runs out, end the timer
-        }
-        if (counter === "") {
-            setTimeout(countTimer);
-        }
-    }, 1000);
+    let countTimer = setInterval(timerFunction, 1000);
 }
 
 // ---------------------------------------------------------------- Start the quiz
