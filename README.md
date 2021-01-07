@@ -379,16 +379,14 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and originally got this result.
 
-SOMETHING ABOUT NOT USING JQUERY DUE TO PERFORMANCE TRADEOFFS.
-
-![Lighthouse first try](LINK)
+![Lighthouse first try](IMAGE-LINK)
 
 IMPROVEMENTS
 
-![Lighthouse Homepage](LINK)
+![Lighthouse improvements](IMAGE-LINK)
 
 #### Performance:
-* 
+* I decided to use vanilla CSS and JavaScript, rather than utilising Bootstrap or jQuery due to the performance trade-offs caused by those libraries.
 
 HAPPY OR NOT?
 
@@ -410,19 +408,21 @@ HAPPY OR NOT?
 ---
 ## Credits
 ### Code
-* [Bootstrap4](https://getbootstrap.com/): Bootstrap Library used throughout to make site responsive using the Bootstrap Grid System.
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
+* [CSS Tricks](https://css-tricks.com/html5-progress-element/): The base code for the progress bar during the quiz.
 
 ### Audio
-* [No Copyright Sound](https://www.youtube.com/watch?v=QDgnFDiyXEk): During the quiz music.
+* [No Copyright Sound](https://www.youtube.com/watch?v=QDgnFDiyXEk): The dramatic music for during the quiz.
+* [Free Sounds Library](https://www.freesoundslibrary.com/fire-sound/): The fire cracking sound.
 
 ### Content
-* All text content written by the developer, Abi Harrison.
+* Introduction quote is from the Harry Potter novels.
+* All other text content written by the developer, Abi Harrison.
 * All other code was written by the developer, Abi Harrison.
-* Background photo on Homepage by <a href="/photographer/Devoncs-46326">Devon Cartwright-Smith</a> from <a href="https://freeimages.com/">FreeImages</a>
-* Gryffindor image by <a href="https://pixabay.com/users/larahughes-341057/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526">Lara Hughes</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526">Pixabay</a>
-* Harry Potter logo from https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg
-* Colour picker - https://imagecolorpicker.com/en/
+* Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/)
+* Gryffindor image by [Lara Hughes](https://pixabay.com/users/larahughes-341057/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526"] on [Pixabay](https://pixabay.com/).
+* [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg)
+* [Colour picker](https://imagecolorpicker.com/en/)
 
 ### Media
 * All media belongs to J.K. Rowling & Warner Bros Entertainment Inc.
