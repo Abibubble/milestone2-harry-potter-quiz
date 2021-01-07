@@ -27,7 +27,7 @@ let counter = document.getElementById("counter");
 let seconds;
 let countTimer;
 
-let music = "off";
+let music = "on";
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Page functions
 
