@@ -353,9 +353,9 @@ h2 {
     padding: 15px;
 }
 
-/* ------------------------------------------------------------------------------------------- Settings */
+/* ------------------------------------------------------------------------------------------- Instructions */
 
-#settings-overlay, #how-to-play-overlay {
+#how-to-play-overlay {
     width: 75%;
     background-color: rgba(255,255,255,0.5);
     border-radius: 25px;
@@ -367,19 +367,11 @@ h2 {
     margin: 0 auto;
 }
 
-#settings-overlay {
-    height: 250px;
-}
-
-.settings-p {
+.how-to-play-p {
     color: #000;
     font-size: 24px;
     font-weight: bold;
-}
-
-.settings-module {
-    align-self: center;
-    text-align: center;
+    list-style: none;
 }
 
 /* ------------------------------------------------------------------------------------------- Footer */
