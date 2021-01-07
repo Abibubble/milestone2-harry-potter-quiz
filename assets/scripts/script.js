@@ -27,7 +27,17 @@ let counter = document.getElementById("counter");
 let seconds;
 let countTimer;
 
+// ---------------------------------------------------------------- Questions variables
+
+let questionsSet;
+let currentQuestion;
+let questionPool = 10;
+
+// ---------------------------------------------------------------- Audio variables
+
 let music = "off";
+const fireAudio = new Audio('assets/audio/fire-sound.mp3');
+const quizAudio = new Audio('assets/audio/quiz-music.mp3');
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Page functions
 
@@ -152,8 +162,6 @@ function resetHouse(house) { // Reset the house at the start, so if the user is 
 
 // ---------------------------------------------------------------- Chooses question set depending on which house was chosen
 
-let questionsSet;
-
 function chooseQuestionSet() {
     if (houseChosen === "gryffindor") {
         questionsSet = questions[0];
@@ -169,9 +177,6 @@ function chooseQuestionSet() {
 }
 
 // ---------------------------------------------------------------- Randomises the order of the questions
-
-let currentQuestion;
-let questionPool = 10;
 
 function randomiseQuestionOrder() {
     let randomNumber = Math.floor(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
@@ -306,16 +311,10 @@ function showScorePage() {
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Audio settings
 
-// ---------------------------------------------------------------- Audio files
-
-var fireAudio = new Audio('assets/audio/fire-sound.mp3');
-
-var quizAudio = new Audio('assets/audio/quiz-music.mp3');
-
 // ---------------------------------------------------------------- Toggle
 
 fireAudio.loop = true;
-currentAudio = fireAudio;
+quizAudio.loop = true;
 
 function whichMusic() { // Decide which audio to play depending on if they're on the quiz page or not
 
