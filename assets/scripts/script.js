@@ -16,7 +16,6 @@ const quizpage = document.getElementById("js-quiz-page");
 const goodScorePage = document.getElementById("js-good-page");
 const badScorePage = document.getElementById("js-bad-page");
 const howToPlay = document.getElementById("js-how-to-play-page");
-const settings = document.getElementById("js-settings-page");
 const footerPage = document.getElementById("footer");
 
 // ---------------------------------------------------------------- Counter variables
@@ -28,6 +27,8 @@ let counter = document.getElementById("counter");
 let seconds;
 let countTimer;
 
+let music = "off";
+
 // ----------------------------------------------------------------------------------------------------------------------------------------- Page functions
 
 // ---------------------------------------------------------------- Navigations
@@ -36,21 +37,18 @@ function toHomePage() {
     solemnlyPage.classList.add("hide");
     homepage.classList.remove("hide");
     howToPlay.classList.add("hide");
-    settings.classList.add("hide");
     navbarMovement();
 }
 
 function toInstructionsPage() {
     homepage.classList.add("hide");
     howToPlay.classList.remove("hide");
-    settings.classList.add("hide");
     navbarMovement();
 }
 
 function toSettingsPage() {
     homepage.classList.add("hide");
     howToPlay.classList.add("hide");
-    settings.classList.remove("hide");
     navbarMovement();
 }
 
@@ -310,43 +308,38 @@ function showScorePage() {
 
 // ---------------------------------------------------------------- Audio files
 
-var fireAudio = new Audio('fire-crackling-noise.mp3');
-audio.play();
+var fireAudio = new Audio('assets/audio/fire-crackling-noise.mp3');
 
-var quizAudio = new Audio('quiz-music.mp3');
-audio.play();
+var quizAudio = new Audio('assets/audio/quiz-music.mp3');
 
 // ---------------------------------------------------------------- Toggle
 
-let music = "off";
-let currentAudio = fireAudio;
+currentAudio = fireAudio;
 
-function whichMusic() {
+function whichMusic() { // Decide which audio to play depending on if they're on the quiz page or not
 
     if (music === "on") {
-
-        if (bodyPage.hasClass("black-background")) {
-            solemnlyAudio.play();
-        } else if (!$(quizpage).hasClass("hide")) {
-            quizAudio.play();
-        } else {
+        if (quizpage.classList.contains("hide")) {
             fireAudio.play();
+            quizAudio.pause();
+        } else {
+            quizAudio.play();
+            fireAudio.pause();
         }
 
     } else {
         fireAudio.pause();
         quizAudio.pause();
-        solemnlyAudio.pause();
     }
 }
 
-function toggleMusic() {
+function toggleMusic() { // So that the user can toggle the music off or on
     if (music === "off") {
         music = "on";
-        document.getElementById("audio").innerHTML(`<i class="fas fa-volume-mute"></i><br>Audio off`);
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`; // Changes the text of the button once clicked
     } else {
         music = "off";
-        document.getElementById("audio").innerHTML(`<i class="fas fa-volume-up"></i><br>Audio on`);
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`; // Changes the text of the button once clicked
     }
     whichMusic();
 }
