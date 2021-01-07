@@ -308,12 +308,13 @@ function showScorePage() {
 
 // ---------------------------------------------------------------- Audio files
 
-var fireAudio = new Audio('assets/audio/fire-crackling-noise.mp3');
+var fireAudio = new Audio('assets/audio/fire-sound.mp3');
 
 var quizAudio = new Audio('assets/audio/quiz-music.mp3');
 
 // ---------------------------------------------------------------- Toggle
 
+fireAudio.loop = true;
 currentAudio = fireAudio;
 
 function whichMusic() { // Decide which audio to play depending on if they're on the quiz page or not
