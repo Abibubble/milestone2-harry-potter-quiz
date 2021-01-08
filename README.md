@@ -197,7 +197,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 ### Testing User Stories
 #### Client Goals
 ##### The quiz needs to be easily accessible, with instructions and music settings available.
-* On every page, there is a link to Instructions and Settings.
+* On every page, there is a link to Instructions, and a button to toggle the music on or off.
 * From every page, you can return to the Home page via a button. This cancels the current quiz and allows the user to restart.
 * Basic instructions are available on every page, with more information on the Instructions page.
 
@@ -205,7 +205,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * On the Home page, the user selects their house.
 * This updates the color scheme for the entire quiz, changing the answers boxes to their house colors.
 * It also gives them a pool of questions related to their chosen house.
-* When they complete the quiz, the results screen is different bepending on which house they chose, using a character from their house, and a quote from that character.
+* When they complete the quiz, the results screen is different depending on which house they chose, using a character from their house, and a quote from that character.
 * If they've scored 5 points or less, they get a character and quote displayed from a not so smart character from their house.
 * If they've scored 6 points or more, they get a character and quote displayed from a smart character from their house.
 
@@ -217,20 +217,23 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * Underneath the answers boxes, there is a clear timer that counts down from 180 seconds.
 
 ##### It needs to be instantly engaging to enourage the user to play the game.
+* The user is immediately greeted with a well-known quote from the Harry Potter books, which then prompts them to click to enter, causing them to interact with the quiz before the quiz even starts.
 * The Home page is bright and interesting, with bright colours to draw their eye in, and encourage them to play the quiz.
-* MUSIC???!?!?!?!?!?!?!
+* The navigation buttons are bright and right at the top, drawing thie eye to the 'Audio on' button. Upon clicking this, the audio adds more immersion to the website.
+* Each of the house buttons are bright, and coloured using the house colours, which are eye-catching.
+* Most people who know Harry Potter have a house that they consider 'their house'. The choosing house function allows them to feel like they're part of the quiz.
 
 ##### Questions needs to be randomised and drawn from a large bank of available questions.
 * There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
 * The question set is fully randomised, without allowing questions to be repeated.
 
 ##### Manouvering around the site needs to be straightforward.
-* On every page, there is a button to take the user to Home, Instructions, or Settings pages.
+* On every page, there is a button to take the user to Home, Instructions, and to toggle the audio.
 * On the Home page, there are simple instructions for the user to choose their house, with brightly colored buttons to match the house colors.
+* Within the quiz, the question and answers are bright and eye-catching, making it obvious what to do.
 
 ##### The user must be able to give up on the quiz if they wish to, and return to the homepage.
-* On every page, there is a button to take the user to Home, which resets their house, score, and timer back to default.
-
+* On every page, there is a button to take the user to Home or to Instructions, which resets their house, score, and timer back to default.
 
 #### First Time Visitor Goals
 ##### I want it to be easy to understand what to do.
@@ -239,12 +242,13 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * The instructions on the main pages themselves are clear to read and easy to understand.
 
 ##### I want to be able to easily navigate throughout the site.
-* On every page, there is a button to take the user to Home, Instructions, or Settings pages.
+* On every page, there is a button to take the user to Home, Instructions, or to toggle the audio on or off.
 * All other buttons and links are clearly defined and easy to see.
 
-##### I want to be able to turn the music and sound effects on or off.
-* The Settings page is accessible from every page in the quiz, with a toggle switch for both background music and sound effects.
-
+##### I want to be able to turn the audio on or off.
+* There is an audio button in the top right of the page, which the text changes depending on if the audio is on or off.
+* If the audio is off (as default), the button says 'Audio on' with a volume up icon.
+* If the audio is on, the button says 'Audio off' with a mute volume icon.
 
 #### Returning Visitor Goals
 ##### I want to have different questions depending on which house I choose, increasing replayability.
@@ -301,8 +305,6 @@ The website was viewed on a variety of devices, including:
 
 A large amount of testing was done to ensure that all pages were visible or hidden, all buttons worked as they should, and the quiz played out as it should.
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues.
-
-SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Solved Bugs
 1. The setHouse function wasn't acting on the second page, so it didn't change the colour scheme as it should
