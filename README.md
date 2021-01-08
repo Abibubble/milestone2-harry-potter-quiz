@@ -421,13 +421,14 @@ HAPPY OR NOT?
 ### Audio
 * [No Copyright Sound](https://www.youtube.com/watch?v=QDgnFDiyXEk): The dramatic music for during the quiz.
 * [Free Sounds Library](https://www.freesoundslibrary.com/fire-sound/): The fire cracking sound.
+* 'I solemnly swear' audio was spoken by Conor Nye, recorded by Abi Harrison, edited by Abi Harrison.
 
 ### Content
 * Introduction quote is from the Harry Potter novels.
 * All other text content written by the developer, Abi Harrison.
 * All other code was written by the developer, Abi Harrison.
 * Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/)
-* Gryffindor image by [Lara Hughes](https://pixabay.com/users/larahughes-341057/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526"] on [Pixabay](https://pixabay.com/).
+* Gryffindor image by [Lara Hughes](https://pixabay.com/users/larahughes-341057/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526") on [Pixabay](https://pixabay.com/).
 * [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg)
 * [Colour picker](https://imagecolorpicker.com/en/)
 
@@ -442,7 +443,4 @@ HAPPY OR NOT?
 * Tom Crabb, for his advice on how to make my code cleaner.
 * The team at Code Institute, for teaching me the necessary skills to create this site.
 
-
-goldenrod for gold behind logo
-Hermione pic Image by <a href="https://pixabay.com/users/lelilel-13071261/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4346324">Olga Kukova</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4346324">Pixabay</a>
-Crackling fireplace audio https://www.youtube.com/watch?v=lQPdYRh3CME
+Hermione pic Image by Olga Kukova from Pixabay
