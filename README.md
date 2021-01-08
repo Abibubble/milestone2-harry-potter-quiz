@@ -372,8 +372,12 @@ SCREENSHOTS OF BUGS ARE NEEDED, ESPECIALLY ACROSS ALL DEVICES!!!!!!!!!!!!!!!!!!!
     * On a second read through, I realised I'd forgotten to include document. at the start.
     * I updated this, which fixed my bug.
 
+9. When the screen size was desktop, the design looked good. But as the screen size was reduced, the content of the body was reduced too. So by the time the screen size was mobile, the content of the body was only filling 30% of the screen width.
+    * I looked up a full tutorial on CSS flexbox to ensure the flex I was using was correct.
+    * I checked in DevTools to see if any styles were affecting the content of my body element. Nothing was.
+
 ### Known Bugs
-* 
+* Bug #9
 
 
 ### Lighthouse
