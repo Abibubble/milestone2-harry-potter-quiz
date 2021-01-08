@@ -288,7 +288,6 @@ function startQuiz() {
 
 function pageSwap() {
     homepage.classList.add("hide");
-    settings.classList.add("hide");
     howToPlay.classList.add("hide");
     quizpage.classList.add("hide");
 }
