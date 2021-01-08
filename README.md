@@ -152,7 +152,7 @@ Google DevTools was used to help me find what code correlated to what feature.
 [Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
 
 ## Deployment
-### Initial Deployment
+### Initial Deployment IMPROVE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 This site was deployed to GitHub Pages by following these steps:
 1. Login or Sign Up to GitHub.
 2. Create a new repository named "milestone2-harry-potter-quiz".
@@ -181,8 +181,8 @@ This site was deployed to GitHub Pages by following these steps:
 ---
 ## Testing
 ### W3C Validator
-The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
-The only errors found were due to... UPDATE THESE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate the project to ensure there were no syntax errors in the project.
+The only errors found were due to 'let', 'const' and template literals only being available in ES6 within the JavaScript code.
 
 1. W3C Markup Validator
     * [HTML Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fmilestone2-harry-potter-quiz%2F)
@@ -191,7 +191,7 @@ The only errors found were due to... UPDATE THESE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fmilestone2-harry-potter-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 3. JSHint
-    * [JavaScript Results](https://jshint.com/) PROPER LINK HERE!!!!!!!!!!!!!!!!!!
+    * [JSHint](https://jshint.com/)
 
 
 ### Testing User Stories
