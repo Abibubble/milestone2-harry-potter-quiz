@@ -67,12 +67,12 @@ The main features that I wanted to include are:
 * A score counter for correct answers.
 * A progress bar so that the user can see how far through the quiz they are.
 * Choose your house, the questions correlate to which house is chosen.
-* Background music that can be toggled on and off, which changes depending on which page you're on.
+* Audio that can be toggled on and off, which changes depending on which page you're on.
 * A timer that ends the quiz if the time runs out.
 
 ### User Stories
 #### Client Goals
-* The quiz needs to be easily accessible, with instructions and music settings available.
+* The quiz needs to be easily accessible, with instructions and audio settings available.
 * The quiz needs to be personalised to each user.
 * It needs to be easy to see how many questions there are, and how many correct answers have been made throughout the quiz.
 * It needs to be instantly engaging to enourage the user to play the game.
@@ -83,7 +83,7 @@ The main features that I wanted to include are:
 #### First Time Visitor Goals
 * I want it to be easy to understand what to do.
 * I want to be able to easily navigate throughout the site.
-* I want to be able to turn the music on or off.
+* I want to be able to turn the audio on or off.
 
 #### Returning Visitor Goals
 * I want to have different questions depending on which house I choose, increasing replayability.
