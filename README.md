@@ -7,7 +7,7 @@
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
 ![GitHub forks](https://img.shields.io/github/forks/abibubble/milestone2-harry-potter-quiz?style=social)
 
-[Here is a link to the final project](LINK)
+[Here is a link to the final project](https://abibubble.github.io/milestone2-harry-potter-quiz/)
 
 This is a Harry Potter quiz, made with fully interactive elements, music and sound effects to match.
 
@@ -58,17 +58,17 @@ This is a Harry Potter quiz, made with fully interactive elements, music and sou
 ---
 ## User Experience (UX)
 ### Initial Discussion
-My initial requirements for this project was to create a fun, interactive quiz that 
+My initial requirements for this project was to create a fun, interactive quiz that could be enjoyed by anyone.
 
 The target demographic is incredibly mixed, as Harry Potter is enjoyed by people of all ages and genders.
 
 The main features that I wanted to include are:
-* Interactive quiz elements
-* A score counter (for correct and incorrect answers)
-* Choose your house, the questions correlate to which house is chosen
-* Background music that can be toggled on and off
-* Settings page for music
-* Sound effects for choosing a house, which also can be toggled on or off
+* Interactive quiz elements.
+* A score counter for correct answers.
+* A progress bar so that the user can see how far through the quiz they are.
+* Choose your house, the questions correlate to which house is chosen.
+* Background music that can be toggled on and off, which changes depending on which page you're on.
+* A timer that ends the quiz if the time runs out.
 
 ### User Stories
 #### Client Goals
@@ -83,7 +83,7 @@ The main features that I wanted to include are:
 #### First Time Visitor Goals
 * I want it to be easy to understand what to do.
 * I want to be able to easily navigate throughout the site.
-* I want to be able to turn the music and sound effects on or off.
+* I want to be able to turn the music on or off.
 
 #### Returning Visitor Goals
 * I want to have different questions depending on which house I choose, increasing replayability.
@@ -100,11 +100,12 @@ The main features that I wanted to include are:
 All of these colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
 
 ### Typography
+For the opening page, I used the font monospace, as it's got quite a bit of character, and it links with the feeling of entering into something.
 I used sans-serif throughout the quiz. It's a clean and easy to read font, whilst also being bold and eye catching. 
-It also doesn't distract the user from the main theme, and has the added bonus that it's a staple font with HTML, so all browsers will be able to display it.
+Both of these fonts also don't distract the user from the main theme, and has the added bonus that they're staple fonts with HTML, so all browsers will be able to display them.
 
 ### Imagery
-The opening quote page is a direct line from the books, which immediately captures the attention of the user, sets the theme for the quiz, and encourages immersion from the first glance.
+The opening quote page is a direct line from the books, which immediately captures the attention of the user, sets the theme for the quiz, and encourages immersion as soon as they enter the site.
 The large background hero image is designed to be striking and catch the user's attention, making it clear at first glance what the quiz is related to. 
 It directly correlates to the aesthetic of the Harry Potter series, using an image of Gloucester cloisters, which was used in the filming of the Harry Potter films.
 
@@ -113,15 +114,15 @@ I created wireframes for desktop, mobile and tablet, and a user navigation map f
 [Here is a link to the Wireframes and User Navigation Map](LINK)
 
 ### Features
-* Interactive quiz questions
-* A score counter (for correct and incorrect answers)
-* Choose your house, the questions correlate to which house is chosen
-* Background music that can be toggled on and off
-* Sound effects for house choice that can be toggled on and off
+* Interactive quiz elements.
+* A score counter for correct answers.
+* A progress bar so that the user can see how far through the quiz they are.
+* Choose your house, the questions correlate to which house is chosen.
+* Background music that can be toggled on and off, which changes depending on which page you're on.
+* A timer that ends the quiz if the time runs out.
 
 ### Audio
 * On the Home page, a crackling fire sound can be heard, giving the atmosphere of a common room at Hogwarts.
-* When the user chooses their house, a sound effect plays depending on which house was chosen.
 * Once the quiz starts, a Harry Potter-style theme is played as background music, adding to the experience and the intensity of the quiz.
 * When the user gets to the results page, the crackling fire sound returns, bringing it full circle so that there is no dramatic stop in the audio.
 ---
@@ -148,7 +149,7 @@ Google DevTools was used to help me find what code correlated to what feature.
 #### Am I Responsive Design:
 [Am I Responsive Design](http://ami.responsivedesign.is/#) was used to check the responsive design of the quiz.
 #### Shields.io:
-[Shields.io](https://shields.io/) was used to create the GitHub badges for my README.md file.
+[Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
 
 ## Deployment
 ### Initial Deployment
