@@ -13,8 +13,7 @@ const fullPage = document.getElementById("main-section");
 const navbar = document.getElementById("js-navbar");
 const homepage = document.getElementById("js-choose-house-page");
 const quizpage = document.getElementById("js-quiz-page");
-const goodScorePage = document.getElementById("js-good-page");
-const badScorePage = document.getElementById("js-bad-page");
+const scorePage = document.getElementById("js-good-page");
 const howToPlay = document.getElementById("js-how-to-play-page");
 const footerPage = document.getElementById("footer");
 
