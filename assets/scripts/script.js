@@ -33,6 +33,11 @@ let questionsSet;
 let currentQuestion;
 let questionPool = 10;
 
+// ---------------------------------------------------------------- Results variables
+
+let resultImage = document.getElementById("result-image");
+let resultQuote = document.getElementById("result-quote");
+
 // ---------------------------------------------------------------- Audio variables
 
 let music = "off";
@@ -286,9 +291,6 @@ function startQuiz() {
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
 
-let resultImage = document.getElementById("result-image");
-let resultQuote = document.getElementById("result-quote");
-
 function pageSwap() {
     homepage.classList.add("hide");
     howToPlay.classList.add("hide");
@@ -299,31 +301,19 @@ function showScorePage() {
     scorePage.classList.remove("hide");
     document.getElementById("js-score").innerText = `${currentScore} / 10`; // Populate their score
     if (currentScore <= 2) {
+        resultImage.src = "assets/images/galleons.jpg";
+        resultQuote.innerText = "Well, I suppose you can always buy your acceptance to Hogwarts?"
+    } else if (currentScore <= 5) {
         resultImage.src = "assets/images/remembrall.jpg";
         resultQuote.innerText = "Oh no! It looks like you could do with a Remembrall!"
-    } else if (currentScore <= 5) {
-
     } else if (currentScore <= 8) {
-
+        resultImage.src = "assets/images/letters.jpg";
+        resultQuote.innerText = "Congratulations, your Hogwarts letter is here! You could still do with a bit more revision before you go, though."
     } else if (currentScore <= 10) {
-
+        resultImage.src = "assets/images/ticket.jpg";
+        resultQuote.innerText = "Here's your ticket for the Hogwarts express! You'll fit in just fine!"
     } else {
         alert("Oh no! Something went wrong! Please try again.")
-    }
-}
-
-function showScorePage() {
-    pageSwap();
-    if (currentScore >= 5) { // If the user gets 5 points or more, show the good score page
-        goodScorePage.classList.remove("hide");
-        document.getElementById("js-good-score").innerText = `${currentScore} / 10`; // Populate their score
-        // Populate good image
-        // Populate good quote
-    } else {  // If the user gets less than 5 points, show the good score page
-        badScorePage.classList.remove("hide");
-        document.getElementById("js-bad-score").innerText = `${currentScore} / 10`; // Populate their score
-        // Populate bad image
-        // Populate bad quote
     }
     whichMusic();
 }
