@@ -13,7 +13,7 @@ const fullPage = document.getElementById("main-section");
 const navbar = document.getElementById("js-navbar");
 const homepage = document.getElementById("js-choose-house-page");
 const quizpage = document.getElementById("js-quiz-page");
-const scorePage = document.getElementById("js-good-page");
+const scorePage = document.getElementById("js-score-page");
 const howToPlay = document.getElementById("js-how-to-play-page");
 const footerPage = document.getElementById("footer");
 
@@ -67,8 +67,7 @@ function toSettingsPage() {
 }
 
 function navbarMovement() {
-    goodScorePage.classList.add("hide");
-    badScorePage.classList.add("hide");
+    scorePage.classList.add("hide");
     quizpage.classList.add("hide");
     clearInterval(countTimer);
     seconds = 120;
@@ -149,7 +148,7 @@ const questions = [
 
 function setHouse(house) {
 
-    resetHouse(houseChosen); // Reset which house was chosen for repeated
+    resetQuiz(houseChosen); // Reset which house was chosen for repeated
 
     houseChosen = house;
     answers.classList.add(`${house}`);
@@ -160,8 +159,10 @@ function setHouse(house) {
     startQuiz();
 }
 
-function resetHouse(house) { // Reset the house at the start, so if the user is playing a second time, they're not stuck with the same house
+function resetQuiz(house) { // Reset the house at the start, so if the user is playing a second time, they're not stuck with the same house
     answers.classList.remove(house);
+    currentScore = 0;
+    questionsAnswered = 0;
 }
 
 // ---------------------------------------------------------------- Chooses question set depending on which house was chosen
@@ -297,26 +298,27 @@ function pageSwap() {
 
 function showScorePage() { // Sets the result image and text depending on what score the user achieves
     scorePage.classList.remove("hide");
+    quizpage.classList.add("hide");
     document.getElementById("js-score").innerText = `${currentScore} / 10`; // Populate their score
     if (currentScore <= 2) {
         resultImage.src = "assets/images/galleons.jpg";
         resultQuote.innerText = "Well, I suppose you can always buy your acceptance to Hogwarts?";
         resultImage.alt = "An image of a pile of galleons, the currency in the wizarding world";
-    } else if (currentScore <= 5) {
+    } else if (currentScore <= 5 && currentScore > 2) {
         resultImage.src = "assets/images/remembrall.jpg";
         resultQuote.innerText = "Oh no! It looks like you could do with a Remembrall!";
         resultImage.alt = "A remembrall, a spherical object from the Harry Potter universe that tells you if you've forgotten something";
-    } else if (currentScore <= 8) {
+    } else if (currentScore <= 8 && currentScore > 5) {
         resultImage.src = "assets/images/letters.jpg";
         resultQuote.innerText = "Congratulations, your Hogwarts acceptance letter is here! You could still do with a bit more revision before you go, though.";
         resultImage.alt = "An image of the Dursley's living room with the Hogwarts acceptance letters flying around";
-    } else if (currentScore <= 10) {
+    } else if (currentScore <= 10 && currentScore > 8) {
         resultImage.src = "assets/images/ticket.jpg";
         resultQuote.innerText = "Here's your ticket for the Hogwarts express! You'll fit in just fine!";
         resultImage.alt = "An image of a ticket for the Hogwards Express, from platform 9 3/4";
     } else {
         alert("Oh no! Something went wrong! Please try again.");
-    }
+    };
     whichMusic();
 }
 
