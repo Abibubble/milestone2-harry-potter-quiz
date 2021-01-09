@@ -286,10 +286,30 @@ function startQuiz() {
 
 // ---------------------------------------------------------------- Decides which results page to show the user, and displays their score
 
+let resultImage = document.getElementById("result-image");
+let resultQuote = document.getElementById("result-quote");
+
 function pageSwap() {
     homepage.classList.add("hide");
     howToPlay.classList.add("hide");
     quizpage.classList.add("hide");
+}
+
+function showScorePage() {
+    scorePage.classList.remove("hide");
+    document.getElementById("js-score").innerText = `${currentScore} / 10`; // Populate their score
+    if (currentScore <= 2) {
+        resultImage.src = "assets/images/remembrall.jpg";
+        resultQuote.innerText = "Oh no! It looks like you could do with a Remembrall!"
+    } else if (currentScore <= 5) {
+
+    } else if (currentScore <= 8) {
+
+    } else if (currentScore <= 10) {
+
+    } else {
+        alert("Oh no! Something went wrong! Please try again.")
+    }
 }
 
 function showScorePage() {
