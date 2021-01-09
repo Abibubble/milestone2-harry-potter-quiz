@@ -379,8 +379,11 @@ Friends, family members, and other developers were asked to review the site and 
     * I looked up a full tutorial on CSS flexbox to ensure the flex I was using was correct.
     * I checked in DevTools to see if any styles were affecting the content of my body element. Nothing was.
 
+10. TypeError: Cannot read property '0' of undefined at script.js.193 after finishing the quiz once
+
 ### Known Bugs
 * Bug #9
+* Bug #10
 
 
 ### Lighthouse
