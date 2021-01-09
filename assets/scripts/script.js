@@ -211,7 +211,6 @@ function endQuiz() {
     showScorePage();
     document.getElementById("progress-bar").value = 0;
     scoreArea.innerText = "";
-    whichMusic();
 }
 
 function endTimer() {
@@ -277,7 +276,7 @@ function timerFunction() { // Count down from 120 seconds in seconds
 
 // ---------------------------------------------------------------- Start the quiz
 
-function startQuiz() {
+function startQuiz() { // Starts the quiz from scratch, resetting all required variables
     clearInterval(timerFunction);
     currentScore = 0;
     chooseQuestionSet();
@@ -296,7 +295,7 @@ function pageSwap() {
     quizpage.classList.add("hide");
 }
 
-function showScorePage() {
+function showScorePage() { // Sets the result image and text depending on what score the user achieves
     scorePage.classList.remove("hide");
     document.getElementById("js-score").innerText = `${currentScore} / 10`; // Populate their score
     if (currentScore <= 2) {
