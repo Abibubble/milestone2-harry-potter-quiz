@@ -4,6 +4,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
+    font-size: 25px;
 }
 
 /* ------------------------------------------------------------------------------------------- Background Image */
@@ -34,7 +35,7 @@ body {
 
 .solemnly-overlay {
     margin: auto;
-    margin-top: 30%;
+    margin-top: 40%;
     border-radius: 25px;
     display: flex;
     flex-flow: row wrap;
@@ -42,7 +43,7 @@ body {
 }
 
 #solemnly {
-    font-size: 40px;
+    font-size: 350%;
     font-family: monospace;
     color: #fff;
     animation: fade 8s;
@@ -91,7 +92,7 @@ body {
 }
 
 #enter {
-    font-size: 25px;
+    font-size: 250%;
     font-family: monospace;
     color: #fff;
     text-align: center;
@@ -117,6 +118,7 @@ body {
     text-align: center;
     border: 2px solid #000;
     box-shadow: 1px 1px 2px black, 0 0 5px rgb(255,255,255);
+    font-size: 100%;
 }
 
 #logo {
@@ -125,7 +127,7 @@ body {
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    width: 90%;
+    width: 80%;
 }
 
 a {
@@ -154,7 +156,7 @@ a {
 }
 
 .choose-house, .question-text {
-    font-size: 60px;
+    font-size: 400%;
     text-shadow: 2px 2px 3px black;
     text-align: center;
 }
@@ -166,6 +168,7 @@ a {
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
+    height: 200px;
 }
 
 .house, .answer {
@@ -179,13 +182,13 @@ a {
 
 .house-text, .answer-text {
     text-align: center;
-    font-size: 175%;
+    font-size: 300%;
     font-weight: bold;
 }
 
 .house-selector, .answer-selector {
     width: 25%;
-    height: 125px;
+    height: 100%;
 }
 
 .gryffindor .answer, .gryffindor-color {
@@ -209,14 +212,14 @@ a {
 }
 
 #question-text, #settings-text, #how-to-play-text {
-    font-size: 60px;
+    font-size: 250%;
     color: #07080c;
     text-shadow: 2px 2px 3px black;
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    margin-bottom: 10%;
     width: 75%;
     text-align: center;
 }
@@ -298,17 +301,17 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
 /* ------------------------------------------------------------------------------------------- Results */
 
 .result-text {
-    font-size: 60px;
+    font-size: 300%;
     color: #07080c;
     text-shadow: 2px 2px 3px black;
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 15px;
     width: 75%;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .score {
@@ -317,7 +320,8 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
     background-color: rgba(255,255,255,0.6);
     border-radius: 25px;
     padding: 25px;
-    margin: 0 auto;
+    margin: auto;
+    margin-bottom: 5%;
     height: 50px;
     width: 25%;
     text-align: center;
@@ -325,12 +329,12 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
 
 h2 {
     margin: 0;
+    margin-bottom: 5%;
 }
 
 .result-image-container {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
 }
 
 .result-image {
@@ -348,6 +352,10 @@ h2 {
     margin: 0 auto;
     text-align: center;
     width: 75%;
+}
+
+.result-quote {
+    font-size: 100%;
 }
 
 #result-button {
@@ -401,9 +409,69 @@ footer p {
 /* ------------------------------------------------------------------------------------------- Responsive design */
 
 @media screen and (max-width: 992px) { /* Media queries for tablet */
-
+    #solemnly {
+        font-size: 200%;
+    }
+    #enter {
+        font-size: 150%;
+    }
+    #logo {
+        margin-top: 10%;
+    }
+    .house-text, .answer-text {
+        font-size: 125%;
+    }
+    .button {
+        font-size: 65%;
+    }
+    .overlay {
+        height: 125px;
+    }
+    .choose-house, .question-text {
+        margin-top: 20%;
+        margin-bottom: 10%;
+        font-size: 200%;
+    }
+    #question-text, #settings-text, #how-to-play-text {
+        font-size: 200%;
+    }
+    .house-selector, .answer-selector {
+        width: 100%;
+        height: 55%;
+        margin-bottom: 3px;
+    }
 }
 
 @media screen and (max-width: 600px) { /* Media queries for mobile */
-
+    #solemnly {
+        font-size: 125%;
+    }
+    #enter {
+        font-size: 100%;
+    }
+    #logo {
+        margin-top: 10%;
+    }
+    .house-text, .answer-text {
+        font-size: 75%;
+    }
+    .button {
+        font-size: 45%;
+    }
+    .overlay {
+        height: 100px;
+    }
+    .choose-house, .question-text {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 150%;
+    }
+    #question-text, #settings-text, #how-to-play-text {
+        font-size: 150%;
+    }
+    .house-selector, .answer-selector {
+        width: 100%;
+        height: 45%;
+        margin-bottom: 3px;
+    }
 }
