@@ -375,11 +375,7 @@ Friends, family members, and other developers were asked to review the site and 
     * On a second read through, I realised I'd forgotten to include document. at the start.
     * I updated this, which fixed my bug.
 
-9. When the screen size was desktop, the design looked good. But as the screen size was reduced, the content of the body was reduced too. So by the time the screen size was mobile, the content of the body was only filling 30% of the screen width.
-    * I looked up a full tutorial on CSS flexbox to ensure the flex I was using was correct.
-    * I checked in DevTools to see if any styles were affecting the content of my body element. Nothing was.
-
-10. TypeError: Cannot read property '0' of undefined at script.js.193 after finishing the quiz once
+9. TypeError: Cannot read property '0' of undefined at script.js.193 after finishing the quiz once
     * It's not re-setting the questionsSet for some reason
     * I tried setting questionsSet to 0 in the startQuiz function, but no luck
     * currentQuestion is returning undefined when going through the quiz the second time around.
@@ -387,8 +383,6 @@ Friends, family members, and other developers were asked to review the site and 
 
 ### Known Bugs
 * Bug #9
-* Bug #10
-
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and originally got this result.
