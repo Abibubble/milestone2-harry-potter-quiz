@@ -388,7 +388,7 @@ h2 {
 
 .how-to-play-p {
     color: #000;
-    font-size: 150%;  /* Changed from 100% */
+    font-size: 150%;
     font-weight: bold;
     list-style: none;
 }
@@ -420,6 +420,9 @@ footer p {
 /* ------------------------------------------------------------------------------------------- Responsive design */
 
 @media screen and (max-width: 992px) { /* Media queries for tablet */
+    .solemnly-overlay {
+        margin-top: 40%;
+    }
     #solemnly {
         font-size: 200%;
     }
@@ -479,18 +482,11 @@ footer p {
 }
 
 @media screen and (max-width: 600px) { /* Media queries for mobile */
-    .solemnly-overlay {
-        margin-top: 40%;
-    }
     #solemnly {
         font-size: 125%;
     }
     #enter {
         font-size: 100%;
-    }
-    #logo {
-        margin-top: 10%;
-        width: 80%;
     }
     .house-text, .answer-text {
         font-size: 75%;
@@ -505,17 +501,13 @@ footer p {
         margin-top: 10%;
         margin-bottom: 5%;
         font-size: 150%;
-        width: 80%;
     }
     #question-text, #settings-text, #how-to-play-text {
         font-size: 100%;
-        margin-top: 5%;
         margin-bottom: 5%;
     }
     .house-selector, .answer-selector {
-        width: 100%;
         height: 45%;
-        margin-bottom: 3px;
     }
     #score, #timer {
         font-size: 60%;
