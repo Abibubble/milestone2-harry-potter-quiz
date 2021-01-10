@@ -380,6 +380,9 @@ Friends, family members, and other developers were asked to review the site and 
     * I checked in DevTools to see if any styles were affecting the content of my body element. Nothing was.
 
 10. TypeError: Cannot read property '0' of undefined at script.js.193 after finishing the quiz once
+    * It's not re-setting the questionsSet for some reason
+    * I tried setting questionsSet to 0 in the startQuiz function, but no luck
+    * currentQuestion is returning undefined when going through the quiz the second time around.
 
 ### Known Bugs
 * Bug #9
