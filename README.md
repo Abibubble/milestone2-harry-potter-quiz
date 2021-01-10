@@ -383,6 +383,7 @@ Friends, family members, and other developers were asked to review the site and 
     * It's not re-setting the questionsSet for some reason
     * I tried setting questionsSet to 0 in the startQuiz function, but no luck
     * currentQuestion is returning undefined when going through the quiz the second time around.
+    * Changing the house doesn't stop the bug, so it's not house-specific, and not linked to choosing the same house twice in a row.
 
 ### Known Bugs
 * Bug #9
