@@ -35,7 +35,7 @@ body {
 
 .solemnly-overlay {
     margin: auto;
-    margin-top: 40%;
+    margin-top: 25%; /* Changed from 40% */
     border-radius: 25px;
     display: flex;
     flex-flow: row wrap;
@@ -43,7 +43,7 @@ body {
 }
 
 #solemnly {
-    font-size: 350%;
+    font-size: 200%;
     font-family: monospace;
     color: #fff;
     animation: fade 8s;
@@ -92,7 +92,7 @@ body {
 }
 
 #enter {
-    font-size: 250%;
+    font-size: 150%;
     font-family: monospace;
     color: #fff;
     text-align: center;
@@ -118,16 +118,16 @@ body {
     text-align: center;
     border: 2px solid #000;
     box-shadow: 1px 1px 2px black, 0 0 5px rgb(255,255,255);
-    font-size: 100%;
+    font-size: 75%; /* Changed from 100% */
 }
 
 #logo {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 5%; /* Changed from 100px */
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    width: 80%;
+    width: 60%; /* Changed from 80% */
 }
 
 a {
@@ -156,11 +156,15 @@ a {
 }
 
 .choose-house, .question-text {
-    font-size: 400%;
+    font-size: 300%; /* Changed from 400% */
     text-shadow: 3px 3px 4px black;
     text-align: center;
     background-color: rgba(218,165,32,0.8);
     border-radius: 25px;
+    width: 50%; /* Added */
+    margin: auto; /* Added */
+    margin-top: 3%; /* Added */
+    margin-bottom: 3%; /* Added */
 }
 
 .overlay {
@@ -184,12 +188,12 @@ a {
 
 .house-text, .answer-text {
     text-align: center;
-    font-size: 300%;
+    font-size: 200%; /* Changed from 300% */
     font-weight: bold;
 }
 
 .house-selector, .answer-selector {
-    width: 25%;
+    width: 24%; /* Changed from 25% */
     height: 100%;
 }
 
@@ -221,7 +225,8 @@ a {
     border-radius: 25px;
     padding: 25px;
     margin: auto;
-    margin-bottom: 10%;
+    margin-bottom: 5%; /* Changed from 10% */
+    margin-top: 5%;  /* Added */
     width: 75%;
     text-align: center;
 }
@@ -248,13 +253,13 @@ a {
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35%;
+    margin-top: 15%; /* Changed from 35% */
 }
 
 .progress-overlay {
     background-color: rgba(255,255,255,0.2);
     border-radius: 25px;
-    height: 50px;
+    height: 200%; /* Changed from 50px */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -264,8 +269,8 @@ progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the p
     -webkit-appearance: none;
     appearance: none;
     z-index: 2;
-    height: 25px;
-    width: 90%;
+    height: 70%; /* Changed from 25px */
+    width: 95%;  /* Changed from 90% */
     border-radius: 15px;
     align-self: center;
 }
@@ -312,8 +317,8 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
     width: 75%;
     margin: auto;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-top: 5%;  /* Changed from 10% */
+    margin-bottom: 2%;  /* Changed from 5% */
 }
 
 .score {
@@ -323,7 +328,7 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
     border-radius: 25px;
     padding: 25px;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 2%;  /* Changed from 5% */
     height: 50px;
     width: 25%;
     text-align: center;
@@ -336,7 +341,7 @@ h2 {
 
 .result-image-container {
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;  /* Changed from 5% */
 }
 
 .result-image {
@@ -383,7 +388,7 @@ h2 {
 
 .how-to-play-p {
     color: #000;
-    font-size: 100%;
+    font-size: 150%;  /* Changed from 100% */
     font-weight: bold;
     list-style: none;
 }
