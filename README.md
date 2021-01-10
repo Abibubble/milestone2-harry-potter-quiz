@@ -11,7 +11,7 @@
 
 This is a Harry Potter quiz, made with fully interactive elements, music and sound effects to match.
 
-![Final project image](IMAGE LINK)
+![Final project image](assets/images/amiresponsive.jpg)
 
 ## Contents
 
@@ -111,7 +111,7 @@ It directly correlates to the aesthetic of the Harry Potter series, using an ima
 
 ### Wireframes
 I created wireframes for desktop, mobile and tablet, and a user navigation map for the movements a user can make.
-[Here is a link to the Wireframes and User Navigation Map](LINK)
+[Here is a link to the Wireframes and User Navigation Map](/assets/images/wireframes.pdf)
 
 ### Features
 * Interactive quiz elements.
@@ -385,33 +385,31 @@ Friends, family members, and other developers were asked to review the site and 
 * Bug #9
 
 ### Lighthouse
-I tested my website using DevTools Lighthouse feature, and originally got this result.
+I tested my website using DevTools Lighthouse feature, and got these results:
 
-![Lighthouse first try](IMAGE-LINK)
+![Lighthouse desktop first try](/assets/images/lighthouse.png)
 
-IMPROVEMENTS
-
-![Lighthouse improvements](IMAGE-LINK)
+![Lighthouse mobile first try](/assets/images/lighthousemobile.png)
 
 #### Performance:
 * I decided to use vanilla CSS and JavaScript, rather than utilising Bootstrap or jQuery due to the performance trade-offs caused by those libraries.
-
-HAPPY OR NOT?
+* I was very happy with my initial lighthouse score, as the only thing reducing my Performance is that I have quite a few images, including an image being used as the background on all pages.
+* My mobile score is lower because the images are scaled down for use on mobile, rather than importing a new image, so it's reducing the Performance due to resizing.
 
 #### Accessibility:
-* 
-
-HAPPY OR NOT?
+* I was very careful when writing my code to ensure it was fully accessible.
+* I used semantic code wherever possible.
+* Every image has relevant alt text, including the images that are pushed depending on the result. Each image is pushed with relevant alt text.
+* All text has good visibility on whichever background it's on, so it shouldn't cause issues for any colour blind users.
 
 #### Best Practices:
-* 
- 
-HAPPY OR NOT?
+* As I avoided code libraries, I also avoided any security vulerabilities associated with those libraries.
+* Images are shown with the correct aspect ratio, as all resizing is done with percentage values instead of pixel values.
+* As the site is a quiz, it also doesn't ask for any geolocation or notification permissions.
 
 #### SEO:
-* 
-
-HAPPY OR NOT?
+* I ensured the site has a relevant meta description and a relevant title.
+* All font sizes are legible on all screen sizes, and all tap targets are well sized.
 
 ---
 ## Credits
