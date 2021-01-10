@@ -162,7 +162,6 @@ function setHouse(house) {
 function resetQuiz(house) { // Reset the house at the start, so if the user is playing a second time, they're not stuck with the same house
     answers.classList.remove(house);
     currentScore = 0;
-    questionsAnswered = 0;
 }
 
 // ---------------------------------------------------------------- Chooses question set depending on which house was chosen
@@ -177,7 +176,7 @@ function chooseQuestionSet() {
     } else if (houseChosen === "ravenclaw") {
         questionsSet = questions[3];
     } else {
-
+        alert("That's not a valid house. Please return to the home page and choose again.");
     }
 }
 
@@ -186,11 +185,14 @@ function chooseQuestionSet() {
 function randomiseQuestionOrder() {
     let randomNumber = Math.floor(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
     currentQuestion = questionsSet[`${randomNumber}`]; // Finds a question in the question set with that index number
+    console.log(currentQuestion); // undefined the second time around
 }
 
 function populateQuestion() { // Fills in the text for question and answer chosen by the randomiseQuestionOrder function
     let questionText = document.getElementById("question-text");
-    questionText.innerText = currentQuestion[0];
+    console.log(questionText);
+    questionText.innerText = currentQuestion[0]; // THIS IS THE PROBLEM LINE
+    console.log(currentQuestion);
 
     let answerOne = document.getElementById("answer-one");
     answerOne.innerText = currentQuestion[1];
@@ -212,6 +214,7 @@ function endQuiz() {
     showScorePage();
     document.getElementById("progress-bar").value = 0;
     scoreArea.innerText = "";
+    questionsSet = 0;
 }
 
 function endTimer() {
@@ -280,11 +283,13 @@ function timerFunction() { // Count down from 120 seconds in seconds
 function startQuiz() { // Starts the quiz from scratch, resetting all required variables
     clearInterval(timerFunction);
     currentScore = 0;
+    questionsAnswered = 0;
+    pushScore();
+    pushProgress();
     chooseQuestionSet();
     randomiseQuestionOrder();
     populateQuestion();
     startTimer();
-    pushScore();
     whichMusic();
 }
 
