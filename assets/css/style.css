@@ -419,6 +419,18 @@ footer p {
 
 /* ------------------------------------------------------------------------------------------- Responsive design */
 
+@media screen and (max-width: 1200px) { /* Media queries for smaller computer screens */
+    #logo {
+        margin-top: 2%;
+    }
+    .choose-house, .question-text {
+        font-size: 250%;
+    }
+    .overlay {
+        height: 150px;
+    }
+}
+
 @media screen and (max-width: 992px) { /* Media queries for tablet */
     .solemnly-overlay {
         margin-top: 40%;
@@ -531,5 +543,8 @@ footer p {
     }
     .how-to-play-p {
         font-size: 60%;
+    }
+    footer {
+        display: none;
     }
 }
