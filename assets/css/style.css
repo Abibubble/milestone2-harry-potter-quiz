@@ -104,6 +104,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
     margin: auto;
 }
@@ -124,6 +125,7 @@ body {
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
+    width: 90%;
 }
 
 a {
@@ -146,8 +148,9 @@ a {
 .page-content {
     height: 85%;
     flex-direction: row;
-    width: 75%;
+    width: 90%;
     text-align: center;
+    margin: auto;
 }
 
 .choose-house, .question-text {
@@ -162,6 +165,7 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    width: 100%;
 }
 
 .house, .answer {
@@ -175,12 +179,12 @@ a {
 
 .house-text, .answer-text {
     text-align: center;
-    font-size: 35px;
+    font-size: 175%;
     font-weight: bold;
 }
 
 .house-selector, .answer-selector {
-    width: 23%;
+    width: 25%;
     height: 125px;
 }
 
@@ -227,7 +231,7 @@ a {
 }
 
 .answer-overlay {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -246,7 +250,7 @@ a {
     background-color: rgba(255,255,255,0.2);
     border-radius: 25px;
     height: 50px;
-    width: 550px;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -256,7 +260,7 @@ progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the p
     appearance: none;
     z-index: 2;
     height: 25px;
-    width: 500px;
+    width: 90%;
     border-radius: 15px;
     align-self: center;
 }
