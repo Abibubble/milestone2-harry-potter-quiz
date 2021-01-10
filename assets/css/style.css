@@ -12,7 +12,7 @@ body {
 .background-image {
     width: 100%;
     height: auto;
-    background: url("/assets/images/cloisters.jpg") no-repeat bottom right fixed; /* Background image */
+    background: url("https://i.imgur.com/GmbJoQx.jpg") no-repeat bottom right fixed; /* Background image */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
