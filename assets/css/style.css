@@ -35,7 +35,7 @@ body {
 
 .solemnly-overlay {
     margin: auto;
-    margin-top: 25%; /* Changed from 40% */
+    margin-top: 25%;
     border-radius: 25px;
     display: flex;
     flex-flow: row wrap;
@@ -118,16 +118,16 @@ body {
     text-align: center;
     border: 2px solid #000;
     box-shadow: 1px 1px 2px black, 0 0 5px rgb(255,255,255);
-    font-size: 75%; /* Changed from 100% */
+    font-size: 75%;
 }
 
 #logo {
     margin: 0 auto;
-    margin-top: 5%; /* Changed from 100px */
+    margin-top: 5%;
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    width: 60%; /* Changed from 80% */
+    width: 60%;
 }
 
 a {
@@ -156,15 +156,15 @@ a {
 }
 
 .choose-house, .question-text {
-    font-size: 300%; /* Changed from 400% */
+    font-size: 300%;
     text-shadow: 3px 3px 4px black;
     text-align: center;
     background-color: rgba(218,165,32,0.8);
     border-radius: 25px;
-    width: 50%; /* Added */
-    margin: auto; /* Added */
-    margin-top: 3%; /* Added */
-    margin-bottom: 3%; /* Added */
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .overlay {
@@ -188,12 +188,12 @@ a {
 
 .house-text, .answer-text {
     text-align: center;
-    font-size: 200%; /* Changed from 300% */
+    font-size: 200%;
     font-weight: bold;
 }
 
 .house-selector, .answer-selector {
-    width: 24%; /* Changed from 25% */
+    width: 24%;
     height: 100%;
 }
 
@@ -225,8 +225,8 @@ a {
     border-radius: 25px;
     padding: 25px;
     margin: auto;
-    margin-bottom: 5%; /* Changed from 10% */
-    margin-top: 5%;  /* Added */
+    margin-bottom: 5%;
+    margin-top: 5%;
     width: 75%;
     text-align: center;
 }
@@ -253,13 +253,13 @@ a {
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15%; /* Changed from 35% */
+    margin-top: 15%;
 }
 
 .progress-overlay {
     background-color: rgba(255,255,255,0.2);
     border-radius: 25px;
-    height: 200%; /* Changed from 50px */
+    height: 200%;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -269,8 +269,8 @@ progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the p
     -webkit-appearance: none;
     appearance: none;
     z-index: 2;
-    height: 70%; /* Changed from 25px */
-    width: 95%;  /* Changed from 90% */
+    height: 70%;
+    width: 90%;
     border-radius: 15px;
     align-self: center;
 }
@@ -317,8 +317,8 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
     width: 75%;
     margin: auto;
     text-align: center;
-    margin-top: 5%;  /* Changed from 10% */
-    margin-bottom: 2%;  /* Changed from 5% */
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 .score {
@@ -328,7 +328,7 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
     border-radius: 25px;
     padding: 25px;
     margin: auto;
-    margin-bottom: 2%;  /* Changed from 5% */
+    margin-bottom: 2%;
     height: 50px;
     width: 25%;
     text-align: center;
@@ -341,7 +341,7 @@ h2 {
 
 .result-image-container {
     text-align: center;
-    margin-bottom: 2%;  /* Changed from 5% */
+    margin-bottom: 2%;
 }
 
 .result-image {
@@ -428,6 +428,7 @@ footer p {
     }
     #logo {
         margin-top: 10%;
+        width: 80%;
     }
     .house-text, .answer-text {
         font-size: 125%;
@@ -442,6 +443,7 @@ footer p {
         margin-top: 20%;
         margin-bottom: 10%;
         font-size: 200%;
+        width: 80%;
     }
     #question-text, #settings-text, #how-to-play-text {
         font-size: 200%;
@@ -455,9 +457,31 @@ footer p {
     #score, #timer {
         font-size: 80%;
     }
+    .progress-position {
+        margin-top: 35%;
+    }
+    .progress-overlay {
+        height: 150%;
+    }
+    .result-text {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .score {
+        margin-bottom: 5%;
+    }
+    .result-image-container {
+        margin-bottom: 5%;
+    }
+    .how-to-play-p {
+        font-size: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) { /* Media queries for mobile */
+    .solemnly-overlay {
+        margin-top: 40%;
+    }
     #solemnly {
         font-size: 125%;
     }
@@ -466,6 +490,7 @@ footer p {
     }
     #logo {
         margin-top: 10%;
+        width: 80%;
     }
     .house-text, .answer-text {
         font-size: 75%;
@@ -480,6 +505,7 @@ footer p {
         margin-top: 10%;
         margin-bottom: 5%;
         font-size: 150%;
+        width: 80%;
     }
     #question-text, #settings-text, #how-to-play-text {
         font-size: 100%;
