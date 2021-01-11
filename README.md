@@ -11,7 +11,7 @@
 
 This is a Harry Potter quiz, made with fully interactive elements, music and sound effects to match.
 
-![Final project image](/assets/images/docs/amiresponsive.jpg)
+![Final project image](assets/images/docs/amiresponsive.png)
 
 ## Contents
 
@@ -92,14 +92,23 @@ The main features that I wanted to include are:
 ## Design
 ### Colour Scheme
 * Basic color scheme uses rgb(218,165,32) for the gold and #07080c for the off-black.
+
 ![Goldenrod color](assets/images/docs/goldenrod.png) ![Off black color](assets/images/docs/offblack.png)
+
 * Gryffindor house uses #d74f40 as the primary color, with #fbb928 as the secondary.
+
 ![Gryffindor primary](assets/images/docs/gprim.png) ![Gryffindor secondary](assets/images/docs/gsec.png)
+
 * Hufflepuff house uses #fbb92f as the primary color, with #07080c as the secondary.
+
 ![Hufflepuff primary](assets/images/docs/hprim.png) ![Hufflepuff secondary](assets/images/docs/hsec.png)
+
 * Ravenclaw house uses #203268 as the primary color, with #886031 as the secondary.
+
 ![GRavenclaw primary](assets/images/docs/rprim.png) ![Ravenclaw secondary](assets/images/docs/rsec.png)
+
 * Slytherin house uses #005d4a as the primary color, with #a7acaf as the secondary.
+
 ![Slytherin primary](assets/images/docs/sprim.png) ![Slytherin secondary](assets/images/docs/ssec.png)
 
 All of these colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
@@ -116,7 +125,7 @@ It directly correlates to the aesthetic of the Harry Potter series, using an ima
 
 ### Wireframes
 I created wireframes for desktop, mobile and tablet, and a user navigation map for the movements a user can make.
-[Here is a link to the Wireframes and User Navigation Map](/assets/images/docs/wireframes.pdf)
+[Here is a link to the Wireframes and User Navigation Map](assets/images/docs/wireframes.pdf)
 
 ### Features
 * Interactive quiz elements.
@@ -393,10 +402,10 @@ Friends, family members, and other developers were asked to review the site and 
 I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop
-![Lighthouse desktop first try](/assets/images/lighthouse.png)
+![Lighthouse desktop first try](assets/images/lighthouse.png)
 
 #### Mobile
-![Lighthouse mobile first try](/assets/images/lighthousemobile.png)
+![Lighthouse mobile first try](assets/images/lighthousemobile.png)
 
 #### Performance:
 * I decided to use vanilla CSS and JavaScript, rather than utilising Bootstrap or jQuery due to the performance trade-offs caused by those libraries.
@@ -448,5 +457,3 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * Eve Crabb, for her support through my learning, and for being a sounding board for bug fixes.
 * Tom Crabb, for his advice on how to make my code cleaner.
 * The team at Code Institute, for teaching me the necessary skills to create this site.
-
-Hermione pic Image by Olga Kukova from Pixabay
