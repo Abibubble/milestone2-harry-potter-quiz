@@ -107,9 +107,13 @@ On every device and browser listed in the README.md file, I tested the following
 * Click answer box 3 to ensure it is clickable if the user chooses Slytherin house.
 * Click answer box 4 to ensure it is clickable if the user chooses Slytherin house.
 
-* Ensure that the questions are related to the house that the user chooses.
-* Ensure that the questions are in a random order each time.
-* Ensure that the user doesn't get the same question twice.
+* Ensure that the questions and answers are related to Gryffindor if the user chooses Gryffindor house.
+* Ensure that the questions and answers are related to Hufflepuff if the user chooses Hufflepuff house.
+* Ensure that the questions and answers are related to Ravenclaw if the user chooses Ravenclaw house.
+* Ensure that the questions and answers are related to Slytherin if the user chooses Slytherin house.
+
+* Ensure that the questions are in a random order each time the quiz is played.
+* Ensure that the user doesn't get the same question twice in one quiz.
 * Ensure that the answer the user has chosen is checked against the correct answer.
 
 ### Quiz
