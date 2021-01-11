@@ -11,7 +11,8 @@
 
 This is a Harry Potter quiz, made with fully interactive elements, music and sound effects to match.
 
-![Final project image](assets/images/docs/amiresponsive.png)
+![Final project image introduction page](assets/images/docs/amiresponsive.png)
+![Final project image home page](assets/images/docs/finalpage.png)
 
 ## Contents
 
