@@ -73,8 +73,15 @@ On every device and browser listed in the README.md file, I tested the following
     * The colour scheme changes to their house colours, on the answer boxes and on the progress bar.
     * The question pool is populated with questions relating to their chosen house.
     * The timer starts as the questions are populated to the quiz page.
-    * The results page that they get is modified so that the character and quote are linked to their house.
 * Ensure that when the user restarts the quiz and chooses a different house, that it doesn't keep their previous house choice.
+* Ensure that the user can restart the quiz and choose a new house at any point.
+
+### Timer
+* Ensure that the timer stops when the user clicks off the quiz page onto the Home page, and restarts from 120 seconds when they choose a new house.
+* Ensure that the timer stops when the user clicks off the quiz page onto the Instructions page, and restarts from 120 seconds when they choose a new house.
+* Ensure that the timer does not stop when the user clicks the audio on or off.
+* Ensure that the timer stops when the user completes the quiz, and restarts from 120 seconds when they choose a new house.
+* Ensure that the timer stops when the user runs out of time, and restarts from 120 seconds when they choose a new house.
 
 ### Questions
 
@@ -109,26 +116,29 @@ On every device and browser listed in the README.md file, I tested the following
 
 ### Quiz
 * Ensure that when the user has answered 10 questions, the quiz moves to a results page.
-* Ensure that if the user answers 0 questions correctly, they get the bad results page.
-* Ensure that if the user answers 1 questions correctly, they get the bad results page.
-* Ensure that if the user answers 2 questions correctly, they get the bad results page.
-* Ensure that if the user answers 3 questions correctly, they get the bad results page.
-* Ensure that if the user answers 4 questions correctly, they get the bad results page.
-* Ensure that if the user answers 5 questions correctly, they get the bad results page.
-* Ensure that if the user answers 6 questions correctly, they get the good results page.
-* Ensure that if the user answers 7 questions correctly, they get the good results page.
-* Ensure that if the user answers 8 questions correctly, they get the good results page.
-* Ensure that if the user answers 9 questions correctly, they get the good results page.
-* Ensure that if the user answers 10 questions correctly, they get the good results page.
+* Ensure that if the user answers 0 questions correctly, they get the galleons results page.
+* Ensure that if the user answers 1 questions correctly, they get the galleons results page.
+* Ensure that if the user answers 2 questions correctly, they get the galleons results page.
+* Ensure that if the user answers 3 questions correctly, they get the remembrall results page.
+* Ensure that if the user answers 4 questions correctly, they get the remembrall results page.
+* Ensure that if the user answers 5 questions correctly, they get the remembrall results page.
+* Ensure that if the user answers 6 questions correctly, they get the letters results page.
+* Ensure that if the user answers 7 questions correctly, they get the letters results page.
+* Ensure that if the user answers 8 questions correctly, they get the letters results page.
+* Ensure that if the user answers 9 questions correctly, they get the ticket results page.
+* Ensure that if the user answers 10 questions correctly, they get the ticket results page.
 
 ### Score
 * Ensure that if the user answers a question correctly, their score gets incremented.
 * Ensure that if the user answers a question incorrectly, their score does not get incremeneted.
 
+* Ensure that if the user answers a question correctly, their progress gets incremented.
+* Ensure that if the user answers a question incorrectly, their progress gets incremeneted.
+
 ### Timer
-* Ensure the timer counts down from 180 seconds.
+* Ensure the timer counts down from 120 seconds.
 * Ensure that when the user completes the quiz, the timer stops and is cleared.
-* Ensure that if the user doesn't complete the quiz within 180 seconds, an alert shows that time has run out.
+* Ensure that if the user doesn't complete the quiz within 120 seconds, an alert shows that time has run out.
 * Ensure that after this alert, the quiz goes to the relevant results page, depending on the user's current score.
 
 ### Audio
