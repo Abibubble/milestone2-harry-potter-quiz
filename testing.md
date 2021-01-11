@@ -70,21 +70,19 @@ On every device and browser listed in the README.md file, I tested the following
 ## Functions
 ### Choose house
 * Ensure that when the user clicks their chosen house, that the following applies:
-    * The colour scheme changes to their house colours, on the answer boxes and on the progress bar.
-    * The question pool is populated with questions relating to their chosen house.
-    * The timer starts as the questions are populated to the quiz page.
+    * The colour scheme on the answer boxes changes to Gryffindor house colours if they chose Gryffindor.
+    * The colour scheme on the answer boxes changes to Hufflepuff house colours if they chose Hufflepuff.
+    * The colour scheme on the answer boxes changes to Ravenclaw house colours if they chose Ravenclaw.
+    * The colour scheme on the answer boxes changes to Slytherin house colours if they chose Slytherin.
+
+    * The question pool is populated with questions relating to Gryffindor house if they chose Gryffindor.
+    * The question pool is populated with questions relating to Hufflepuff house if they chose Hufflepuff.
+    * The question pool is populated with questions relating to Ravenclaw house if they chose Ravenclaw.
+    * The question pool is populated with questions relating to Slytherin house if they chose Slytherin.
 * Ensure that when the user restarts the quiz and chooses a different house, that it doesn't keep their previous house choice.
 * Ensure that the user can restart the quiz and choose a new house at any point.
 
-### Timer
-* Ensure that the timer stops when the user clicks off the quiz page onto the Home page, and restarts from 120 seconds when they choose a new house.
-* Ensure that the timer stops when the user clicks off the quiz page onto the Instructions page, and restarts from 120 seconds when they choose a new house.
-* Ensure that the timer does not stop when the user clicks the audio on or off.
-* Ensure that the timer stops when the user completes the quiz, and restarts from 120 seconds when they choose a new house.
-* Ensure that the timer stops when the user runs out of time, and restarts from 120 seconds when they choose a new house.
-
 ### Questions
-
 * Ensure the question box populates a question from the Gryffindor questions set if the user chooses Gryffindor house.
 * Click answer box 1 to ensure it is clickable if the user chooses Gryffindor house.
 * Click answer box 2 to ensure it is clickable if the user chooses Gryffindor house.
@@ -135,11 +133,21 @@ On every device and browser listed in the README.md file, I tested the following
 * Ensure that if the user answers a question correctly, their progress gets incremented.
 * Ensure that if the user answers a question incorrectly, their progress gets incremeneted.
 
+* Ensure that if a user does the quiz a second time, their score gets restarted from 0.
+* Ensure that if a user does the quiz a second time, their progress gets restarted from 0.
+
 ### Timer
 * Ensure the timer counts down from 120 seconds.
-* Ensure that when the user completes the quiz, the timer stops and is cleared.
+* Ensure that the timer starts as the questions are populated to the quiz page.
 * Ensure that if the user doesn't complete the quiz within 120 seconds, an alert shows that time has run out.
 * Ensure that after this alert, the quiz goes to the relevant results page, depending on the user's current score.
+
+* Ensure that the timer ends when the user clicks off the quiz page onto the Home page, and restarts from 120 seconds when they choose a new house.
+* Ensure that the timer ends when the user clicks off the quiz page onto the Instructions page, and restarts from 120 seconds when they choose a new house.
+* Ensure that the timer does not stop when the user clicks the audio on or off.
+
+* Ensure that the timer ends when the user completes the quiz, and restarts from 120 seconds when they choose a new house.
+* Ensure that the timer ends when the user runs out of time, and restarts from 120 seconds when they choose a new house.
 
 ### Audio
 * Click the Audio on button to turn the audio on, and change the Audio on button to Audio off from the Home page.
