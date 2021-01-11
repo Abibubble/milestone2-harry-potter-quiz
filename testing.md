@@ -13,6 +13,9 @@
     * [Timer](#timer)
     * [Audio](#audio)
 * [Responsive Design](#responsive-design)
+    * [Mobile](#mobile)
+    * [Tablet](#tablet)
+    * [Computer](#computer)
 
 On every device and browser listed in the README.md file, I tested the following:
 
