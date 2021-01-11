@@ -12,6 +12,7 @@
     * [Score](#score)
     * [Timer](#timer)
     * [Audio](#audio)
+* [Responsive Design](#responsive-design)
 
 On every device and browser listed in the README.md file, I tested the following:
 
@@ -26,10 +27,14 @@ On every device and browser listed in the README.md file, I tested the following
 * Click the Instructions button to take us to Instructions from the Instructions page.
 * Click the Instructions button to take us to Instructions from the Results page.
 
+---
+
 ## Styling and Layout
 * Ensure all images load correctly.
 * Ensure the background image loads correctly.
 * Ensure the logo loads correctly.
+
+---
 
 ## Pages
 * Ensure that the Solemnly quote page is visible when the user first loads the page.
@@ -66,6 +71,8 @@ On every device and browser listed in the README.md file, I tested the following
 * Ensure that the results page is hidden once the user clicks on the Instructions button.
 * Ensure that the Instructions page is visible once the user clicks on the Instructions button.
 * Ensure that the audio is switched off as standard once the user clicks on the Instructions button.
+
+---
 
 ## Functions
 ### Choose house
@@ -165,3 +172,45 @@ On every device and browser listed in the README.md file, I tested the following
 
 * Click the Audio on button to turn the audio on, and change the Audio on button to Audio off from the results page.
 * Click the Audio off button to turn the audio off, and change the Audio off button to Audio on from the results page.
+
+---
+
+## Responsive Design
+### Mobile
+* The Solemnly page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Instructions page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The quiz page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Results page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+
+* The settings buttons have well sized text, not so big it takes up too much screen space, and not so small that they're difficult to read.
+* The house chooser buttons and the answer buttons are set on top of one another, instead of side by side.
+* All the font sizes aren't too big or too small for the screen size.
+* All fonts are easy to read.
+* All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
+
+### Tablet
+* The Solemnly page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Instructions page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The quiz page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Results page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+
+* The settings buttons have well sized text, not so big it takes up too much screen space, and not so small that they're difficult to read.
+* The house chooser buttons and the answer buttons are set on top of one another, instead of side by side.
+* All the font sizes aren't too big or too small for the screen size.
+* All fonts are easy to read.
+* All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
+
+### Computer
+* The Solemnly page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Home page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Instructions page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The quiz page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+* The Results page looks good and nothing wraps where it shouldn't or disappears off the edge of the viewport.
+
+* The settings buttons have well sized text, not so big it takes up too much screen space, and not so small that they're difficult to read.
+* The house chooser buttons and the answer buttons are set side by side, instead of on top of one another.
+* All the font sizes aren't too big or too small for the screen size.
+* All fonts are easy to read.
+* All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
