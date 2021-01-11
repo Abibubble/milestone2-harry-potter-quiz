@@ -102,7 +102,7 @@ The main features that I wanted to include are:
 
 * Hufflepuff house uses #fbb92f as the primary color, with #07080c as the secondary.
 
-![Hufflepuff primary](assets/images/docs/hprim.png) ![Hufflepuff secondary](assets/images/docs/hsec.png)
+![Hufflepuff primary](assets/images/docs/hprim.png) ![Hufflepuff secondary](assets/images/docs/offblack.png)
 
 * Ravenclaw house uses #203268 as the primary color, with #886031 as the secondary.
 
