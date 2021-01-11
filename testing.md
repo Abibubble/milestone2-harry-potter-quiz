@@ -16,17 +16,15 @@
 On every device and browser listed in the README.md file, I tested the following:
 
 ## Navigation Bar
-* Click the Home button to take us to Homepage from Homepage.
-* Click the Home button to take us to Homepage from Music Settings.
-* Click the Home button to take us to Homepage from Instructions.
+* Click the Home button to take us to Home page from the Home page.
+* Click the Home button to take us to Home page from the quiz page.
+* Click the Home button to take us to Home page from the Instructions page.
+* Click the Home button to take us to Home page from the Results page.
 
-* Click the Music Settings button to take us to Music Settings from Homepage.
-* Click the Music Settings button to take us to Music Settings from Music Settings.
-* Click the Music Settings button to take us to Music Settings from Instructions.
-
-* Click the Instructions button to take us to Instructions from Homepage.
-* Click the Instructions button to take us to Instructions from Music Settings.
-* Click the Instructions button to take us to Instructions from Instructions.
+* Click the Instructions button to take us to Instructions from Home page.
+* Click the Instructions button to take us to Instructions from the quiz page.
+* Click the Instructions button to take us to Instructions from the Instructions page.
+* Click the Instructions button to take us to Instructions from the Results page.
 
 ## Styling and Layout
 * Ensure all images load correctly.
@@ -34,11 +32,40 @@ On every device and browser listed in the README.md file, I tested the following
 * Ensure the logo loads correctly.
 
 ## Pages
-* Ensure each page is made visible or hidden depending on where the user is in the quiz (WRITE THIS  OUT FULLY)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-* Click answer box 1 to ensure it is clickable.
-* Click answer box 2 to ensure it is clickable.
-* Click answer box 3 to ensure it is clickable.
-* Click answer box 4 to ensure it is clickable.
+* Ensure that the Solemnly quote page is visible when the user first loads the page.
+* Ensure that the Home page is hidden when the user first loads the page.
+* Ensure that the quiz page is hidden when the user first loads the page.
+* Ensure that the results page is hidden when the user first loads the page.
+* Ensure that the Instructions page is hidden when the user first loads the page.
+* Ensure that the audio is switched off as standard when the user first loads the page.
+
+* Ensure that the Solemnly quote page is hidden when the user clicks off the Solemnly quote page.
+* Ensure that the Home page is visible when the user clicks off the Solemnly quote page.
+* Ensure that the quiz page is hidden when the user clicks off the Solemnly quote page.
+* Ensure that the results page is hidden when the user clicks off the Solemnly quote page.
+* Ensure that the Instructions page is hidden when the user clicks off the Solemnly quote page.
+* Ensure that the audio is switched off as standard when the user clicks off the Solemnly quote page.
+
+* Ensure that the Solemnly quote page is hidden once the user chooses a house.
+* Ensure that the Home page is hidden once the user chooses a house.
+* Ensure that the quiz page is visible once the user chooses a house.
+* Ensure that the results page is hidden once the user chooses a house.
+* Ensure that the Instructions page is hidden once the user chooses a house.
+* Ensure that the audio is switched off as standard once the user chooses a house.
+
+* Ensure that the Solemnly quote page is hidden once the user completes the quiz, or runs out of time.
+* Ensure that the Home page is hidden once the user completes the quiz, or runs out of time.
+* Ensure that the quiz page is hidden once the user completes the quiz, or runs out of time.
+* Ensure that the results page is visible once the user completes the quiz, or runs out of time.
+* Ensure that the Instructions page is hidden once the user completes the quiz, or runs out of time.
+* Ensure that the audio is switched off as standard once the user completes the quiz, or runs out of time.
+
+* Ensure that the Solemnly quote page is hidden once the user clicks on the Instructions button.
+* Ensure that the Home page is hidden once the user clicks on the Instructions button.
+* Ensure that the quiz page is hidden once the user clicks on the Instructions button.
+* Ensure that the results page is hidden once the user clicks on the Instructions button.
+* Ensure that the Instructions page is visible once the user clicks on the Instructions button.
+* Ensure that the audio is switched off as standard once the user clicks on the Instructions button.
 
 ## Functions
 ### Choose house
@@ -50,6 +77,31 @@ On every device and browser listed in the README.md file, I tested the following
 * Ensure that when the user restarts the quiz and chooses a different house, that it doesn't keep their previous house choice.
 
 ### Questions
+
+* Ensure the question box populates a question from the Gryffindor questions set if the user chooses Gryffindor house.
+* Click answer box 1 to ensure it is clickable if the user chooses Gryffindor house.
+* Click answer box 2 to ensure it is clickable if the user chooses Gryffindor house.
+* Click answer box 3 to ensure it is clickable if the user chooses Gryffindor house.
+* Click answer box 4 to ensure it is clickable if the user chooses Gryffindor house.
+
+* Ensure the question box populates a question from the Hufflepuff questions set if the user chooses Hufflepuff house.
+* Click answer box 1 to ensure it is clickable if the user chooses Hufflepuff house.
+* Click answer box 2 to ensure it is clickable if the user chooses Hufflepuff house.
+* Click answer box 3 to ensure it is clickable if the user chooses Hufflepuff house.
+* Click answer box 4 to ensure it is clickable if the user chooses Hufflepuff house.
+
+* Ensure the question box populates a question from the Ravenclaw questions set if the user chooses Ravenclaw house.
+* Click answer box 1 to ensure it is clickable if the user chooses Ravenclaw house.
+* Click answer box 2 to ensure it is clickable if the user chooses Ravenclaw house.
+* Click answer box 3 to ensure it is clickable if the user chooses Ravenclaw house.
+* Click answer box 4 to ensure it is clickable if the user chooses Ravenclaw house.
+
+* Ensure the question box populates a question from the Slytherin questions set if the user chooses Slytherin house.
+* Click answer box 1 to ensure it is clickable if the user chooses Slytherin house.
+* Click answer box 2 to ensure it is clickable if the user chooses Slytherin house.
+* Click answer box 3 to ensure it is clickable if the user chooses Slytherin house.
+* Click answer box 4 to ensure it is clickable if the user chooses Slytherin house.
+
 * Ensure that the questions are related to the house that the user chooses.
 * Ensure that the questions are in a random order each time.
 * Ensure that the user doesn't get the same question twice.
@@ -80,10 +132,14 @@ On every device and browser listed in the README.md file, I tested the following
 * Ensure that after this alert, the quiz goes to the relevant results page, depending on the user's current score.
 
 ### Audio
-* Ensure that if the background music is toggled on, the background music is playing.
-* Ensure that if the background music is toggled off, the background music is not playing.
-* Ensure that if the sound effects are toggled on, the sound effects are playing.
-* Ensure that if the sound effects are toggled off, the sound effects are playing.
-* Ensure that the background music plays on every page of the quiz.
-* Ensure that if the user gets a question correct, the good sound effect plays. (RELATED TO THEIR HOUSE???????????????)
-* Ensure that if the user gets a question wrong, the bad sound effect plays. (RELATED TO THEIR HOUSE???????????????)
+* Click the Audio on button to turn the audio on, and change the Audio on button to Audio off from the Home page.
+* Click the Audio off button to turn the audio off, and change the Audio off button to Audio on from the Home page.
+
+* Click the Audio on button to turn the audio on, and change the Audio on button to Audio off from the quiz page.
+* Click the Audio off button to turn the audio off, and change the Audio off button to Audio on from the quiz page.
+
+* Click the Audio on button to turn the audio on, and change the Audio on button to Audio off from the Instructions page.
+* Click the Audio off button to turn the audio off, and change the Audio off button to Audio on from the Instructions page.
+
+* Click the Audio on button to turn the audio on, and change the Audio on button to Audio off from the results page.
+* Click the Audio off button to turn the audio off, and change the Audio off button to Audio on from the results page.
