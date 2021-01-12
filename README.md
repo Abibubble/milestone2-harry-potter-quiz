@@ -403,8 +403,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### Accessibility:
 * I was very careful when writing my code to ensure it was fully accessible.
-* I used semantic code wherever possible.
-* Every image has relevant alt text, including the images that are pushed depending on the result. Each image is pushed with relevant alt text.
+* I used semantic code wherever possible to help any users that use screen readers.
+* Every image has relevant alt text, including the images that are populated depending on the result. Each image is populated with relevant alt text.
 * All text has good visibility on whichever background it's on, so it shouldn't cause issues for any colour blind users.
 
 #### Best Practices:
@@ -425,16 +425,19 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ### Audio
 * [No Copyright Sound](https://www.youtube.com/watch?v=QDgnFDiyXEk): The dramatic music for during the quiz.
 * [Free Sounds Library](https://www.freesoundslibrary.com/fire-sound/): The fire cracking sound.
-* 'I solemnly swear' audio was spoken by Conor Nye, recorded by Abi Harrison, edited by Abi Harrison.
+* 'I solemnly swear' audio was spoken by Conor Nye, recorded and edited by Abi Harrison.
 
 ### Content
 * Introduction quote is from the Harry Potter novels.
 * All other text content written by the developer, Abi Harrison.
 * All other code was written by the developer, Abi Harrison.
 * Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/)
-* Gryffindor image by [Lara Hughes](https://pixabay.com/users/larahughes-341057/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2240526") on [Pixabay](https://pixabay.com/).
 * [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg)
 * [Colour picker](https://imagecolorpicker.com/en/)
+* [Galleons image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(7415385922).jpg)
+* [Letters image](https://pixabay.com/da/photos/harry-potter-hogwarts-accept-brev-4455031/)
+* [Remembrall image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(Remembrall).jpg)
+* [Ticket image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(7415391168).jpg)
 
 ### Media
 * All media belongs to J.K. Rowling & Warner Bros Entertainment Inc.
