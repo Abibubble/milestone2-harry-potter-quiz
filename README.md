@@ -85,7 +85,7 @@ The main features that I wanted to include are:
 #### First Time Visitor Goals
 * I want it to be easy to understand what to do.
 * I want to be able to easily navigate throughout the site.
-* I want to be able to turn the audio on or off.
+* I want to be able to turn the audio on or off at any point in the quiz.
 
 #### Returning Visitor Goals
 * I want to have different questions depending on which house I choose, increasing replayability.
@@ -103,9 +103,9 @@ The main features that I wanted to include are:
 All of these colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
 
 ### Typography
-For the opening page, I used the font monospace, as it's got quite a bit of character, and it links with the feeling of entering into something.
+For the opening page, I used the font monospace, as it's got quite a bit of character, and it links with the feeling of entering into something. It's also very similar to a typewriter font, which matches the theme of novels quite nicely.
 I used sans-serif throughout the quiz. It's a clean and easy to read font, whilst also being bold and eye catching. 
-Both of these fonts also don't distract the user from the main theme, and has the added bonus that they're staple fonts with HTML, so all browsers will be able to display them.
+Both of these fonts also don't distract the user from the main theme, and have the added bonus that they're staple fonts with HTML, so all browsers will be able to display them.
 
 ### Imagery
 The opening quote page is a direct line from the books, which immediately captures the attention of the user, sets the theme for the quiz, and encourages immersion as soon as they enter the site.
@@ -113,14 +113,14 @@ The large background hero image is designed to be striking and catch the user's 
 It directly correlates to the aesthetic of the Harry Potter series, using an image of Gloucester cloisters, which was used in the filming of the Harry Potter films.
 
 ### Wireframes
-I created wireframes for desktop, mobile and tablet for this project [which you can see if you click here](wireframes.pdf).
+[Here are the wireframes for desktop, mobile and tablet for this project](wireframes.pdf).
 
 ### Features
 * Interactive quiz elements.
 * A score counter for correct answers.
 * A progress bar so that the user can see how far through the quiz they are.
 * Choose your house, the questions correlate to which house is chosen.
-* Background music that can be toggled on and off, which changes depending on which page you're on.
+* Background audio that can be toggled on and off.
 * A timer that ends the quiz if the time runs out.
 
 ### Audio
@@ -139,7 +139,7 @@ I created wireframes for desktop, mobile and tablet for this project [which you 
 #### Font Awesome:
 [Font Awesome](https://fontawesome.com/) was used on all pages to add the instructions, home, settings and copyright icons.
 #### Git:
-Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+Git was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
 #### GitHub:
 GitHub is used to store the code for this project after being pushed from Git.
 #### Balsamiq:
@@ -152,27 +152,29 @@ Google DevTools was used to help me find what code correlated to what feature.
 [Am I Responsive Design](http://ami.responsivedesign.is/#) was used to check the responsive design of the quiz.
 #### Shields.io:
 [Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
+#### Audacity:
+Audacity was used to record the 'I solemnly swear' audio, and to edit it to sound more within the theme.
 
 ## Deployment
-### Initial Deployment IMPROVE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+### Initial Deployment
 This site was deployed to GitHub Pages by following these steps:
-1. Login or Sign Up to GitHub.
+1. Login or Sign Up to [GitHub](www.github.com).
 2. Create a new repository named "milestone2-harry-potter-quiz".
-3. Once created, click on "Settings" on the main navigation bar under the repository title.
+3. Once created, click on "Settings" on the navigation bar under the repository title.
 4. Scroll down to "GitHub Pages".
-5. Under "Source", choose which branch to deploy (I chose "master", which can also be named "main").
+5. Under "Source", choose which branch to deploy. I chose "master", but this is sometimes shown as "main".
 6. Choose which folder to deploy from, usually "/root".
-7. Click "Save", then wait for it to be deployed.
-8. Your URL will be displayed above "Source". It can take some time for the page to be fully deployed.
+7. Click "Save", then wait for it to be deployed. It can take some time for the page to be fully deployed.
+8. Your URL will be displayed above "Source".
 
 ### How to Fork it
-1. Login or Sign Up to GitHub.
-2. On GitHub, go to Abibubble/milestone2-harry-potter-quiz.
+1. Login or Sign Up to [GitHub](www.github.com).
+2. On GitHub, go to [Abibubble/milestone2-harry-potter-quiz](https://github.com/Abibubble/milestone2-harry-potter-quiz).
 3. In the top right, click "Fork".
 
 ### How to Clone it
-1. Login or Sign Up to GitHub
-2. Fork the repository Abibubble/milestone2-harry-potter-quiz.
+1. Login or Sign Up to [GitHub](www.github.com).
+2. Fork the repository Abibubble/milestone2-harry-potter-quiz using the steps above in [How to Fork it](#how-to-fork-it).
 3. Above the file list, click "Code".
 4. Choose if you want to clone using HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
 5. Open Git Bash.
@@ -250,7 +252,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * On every page, there is a button to take the user to Home, Instructions, or to toggle the audio on or off.
 * All other buttons and links are clearly defined and easy to see.
 
-##### I want to be able to turn the audio on or off.
+##### I want to be able to turn the audio on or off at any point in the quiz.
 * There is an audio button in the top right of the page, which the text changes depending on if the audio is on or off.
 * If the audio is off (as default), the button says 'Audio on' with a volume up icon.
 * If the audio is on, the button says 'Audio off' with a mute volume icon.
@@ -269,13 +271,13 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * All tested and working correctly
 
 2. Edge
-    * 
+    * All tested and working correctly
 
 3. Firefox
-    * 
+    * All tested and working correctly
 
 4. Internet Explorer
-    * 
+    * All tested and working correctly
 
 #### Tablet
 1. Chrome
@@ -286,10 +288,10 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * All tested and working correctly
 
 2. Safari
-    * 
+    * All tested and working correctly
 
 3. Samsung Internet
-    * 
+    * All tested and working correctly
 
 ### Further Testing
 The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
@@ -309,19 +311,18 @@ The website was viewed on a variety of devices, including:
 * Samsung A20
 
 A large amount of testing was done to ensure that all pages were visible or hidden, all buttons worked as they should, and the quiz played out as it should.
-Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues.
+Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
 1. The setHouse function wasn't acting on the second page, so it didn't change the colour scheme as it should
     * I searched Google and Stack Overflow and tested out a few fixes that I saw suggested there, but none of them worked.
     * I used console.log on all of my variables after they were created, and discovered that 'this' wasn't being targeted properly.
-    * The houseChosen variable was collecting the correct id, and the answers variable was collecting an HTML collection.
-    * I searched on Stack Overflow, and saw that as I was using multiple scripts and multiple html documents, I'd need to use a post request to access the data fully.
+    * The houseChosen variable was collecting the correct id, and the answers variable was collecting an HTML collection instead of the answers.
+    * I searched on Stack Overflow, and saw that as I was using multiple scripts and multiple html documents, I'd need to use a GET or POST request to access the data fully.
     * This added more complications than was necessary, making my code longer than required, so I changed the set up of my documents.
     * I added all scripts into one script, with different sections clearly defined.
     * I added all HTML pages into one page, using a hide/show function to access whichever part of the page needs to be visible to the user.
     * I was then able to simplify my setHouse function, which fixed this bug, and improved the performance of my site.
-    * ADD IMAGES
 
 2. The houseChosen variable contained a string, so when I was trying to use it to cycle through an array of objects, it was just bringing up each index of that string (a single letter).
     * I searched Google and Stack Overflow, and found eval(), which fixed my problem.
