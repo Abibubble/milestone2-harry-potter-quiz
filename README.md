@@ -60,24 +60,25 @@ This is a Harry Potter quiz, made with fully interactive elements, music and sou
 ## User Experience (UX)
 ### Initial Discussion
 My initial requirements for this project was to create a fun, interactive quiz that could be enjoyed by anyone.
-
+My target audience is Harry Potter fans and their friends and family. Luckily, this covers a large part of the population.
 The target demographic is incredibly mixed, as Harry Potter is enjoyed by people of all ages and genders.
 
 The main features that I wanted to include are:
 * Interactive quiz elements.
 * A score counter for correct answers.
 * A progress bar so that the user can see how far through the quiz they are.
-* Choose your house, the questions correlate to which house is chosen.
+* Choose your house, and the questions correlate to which house is chosen.
 * Audio that can be toggled on and off, which changes depending on which page you're on.
 * A timer that ends the quiz if the time runs out.
 
 ### User Stories
 #### Client Goals
-* The quiz needs to be easily accessible, with instructions and audio settings available.
+* The quiz needs to be easily accessible, with instructions and audio settings available throughout.
 * The quiz needs to be personalised to each user.
 * It needs to be easy to see how many questions there are, and how many correct answers have been made throughout the quiz.
 * It needs to be instantly engaging to enourage the user to play the game.
 * Questions needs to be randomised and drawn from a large bank of available questions.
+* It must be easy to see how much time the user has left to complete the quiz.
 * Manouvering around the site needs to be straightforward.
 * The user must be able to give up on the quiz if they wish to, and return to the homepage.
 
@@ -228,6 +229,9 @@ The only errors found were due to 'let', 'const' and template literals only bein
 ##### Questions needs to be randomised and drawn from a large bank of available questions.
 * There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
 * The question set is fully randomised, without allowing questions to be repeated.
+
+##### It must be easy to see how much time the user has left to complete the quiz.
+* Underneath the answer boxes is a timer. It's positioned next to the progress bar and the score counter, which makes it very easy to spot.
 
 ##### Manouvering around the site needs to be straightforward.
 * On every page, there is a button to take the user to Home, Instructions, and to toggle the audio.
