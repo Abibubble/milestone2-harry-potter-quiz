@@ -93,24 +93,11 @@ The main features that I wanted to include are:
 ## Design
 ### Colour Scheme
 * Basic color scheme uses rgb(218,165,32) for the gold and #07080c for the off-black.
-
-![Goldenrod color](assets/images/docs/goldenrod.png) ![Off black color](assets/images/docs/offblack.png)
-
 * Gryffindor house uses #d74f40 as the primary color, with #fbb928 as the secondary.
-
-![Gryffindor primary](assets/images/docs/gprim.png) ![Gryffindor secondary](assets/images/docs/gsec.png)
-
 * Hufflepuff house uses #fbb92f as the primary color, with #07080c as the secondary.
-
-![Hufflepuff primary](assets/images/docs/hprim.png) ![Hufflepuff secondary](assets/images/docs/offblack.png)
-
 * Ravenclaw house uses #203268 as the primary color, with #886031 as the secondary.
-
-![GRavenclaw primary](assets/images/docs/rprim.png) ![Ravenclaw secondary](assets/images/docs/rsec.png)
-
 * Slytherin house uses #005d4a as the primary color, with #a7acaf as the secondary.
-
-![Slytherin primary](assets/images/docs/sprim.png) ![Slytherin secondary](assets/images/docs/ssec.png)
+![Colors used](assets/images/docs/colors.png)
 
 All of these colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
 
@@ -463,3 +450,7 @@ Some relevant user stories are covered under test procedures, but coverage not s
 With manual tests of the user stories, perhaps add some screenshots of the finished product as mockups. This could demonstrate responsive behaviour and browser compatibility.
 Try to incorporate more in terms of manual tests, such as screenshots perhaps.
 Manual tests could also include documentation related to the minor overflow-x issues found, and the issue with some of the contact form spilling over into the grey section below.
+Solemnly audio?
+Colours in README.md
+Fix final bug
+Test site, include images of testing happening
