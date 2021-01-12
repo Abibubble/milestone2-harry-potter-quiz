@@ -350,33 +350,30 @@ Friends, family members, and other developers were asked to review the site and 
     * Changed my questions into a nested array, but neither of the above worked still
     * I also tried using .splice(), which also didn't work. It was just removing index 1, rather than getting the index number from the currentQuestion variable.
     * I did a bit more research into .splice(), and got it removing the final index of the questionsSet.
-    * Finally, I realised I was using currentQuestion.indexOf(); instead of questionsSet.indexOf(currentQuestion), which corrected my reference to the correct index.
-    * This then solved this bug.
+    * Finally, I realised I was using currentQuestion.indexOf(); instead of questionsSet.indexOf(currentQuestion).
+    * I corrected my reference to the correct index, which solved this bug.
 
 5. The quiz wouldn't let you get to 10 answered questions, it refused to count higher than 9, meaning the only way to end the quiz is to let the timer run out.
     * As I had just changed the endTimer() function, I double checked my code for that.
     * I changed the condition to questionsAnswered <= 10, but that caused it to stop at 8.
     * I checked my code again, and added an else statement that I'd forgotten, for if the answer isn't correct.
-    * I also moved the endTimer() and endQuiz() functions above the checkAnswer() function, because they're used inside it.
-    * This fixed this bug.
+    * I also moved the endTimer() and endQuiz() functions above the checkAnswer() function, because they're used inside it, which fixed this bug.
 
 6. Once the user has completed the quiz and got to the results page, the timer kept going, giving an alert after 120 seconds, even if the user had completed the quiz.
     * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
-    * This didn't fix the issue for some reason.
-    * Probably linked to bug 7.
-    * I did more reading into how setInterval and clearInterval works, and refactored my code.
-    * This also had the pleasant side effect of making my code shorter and easier to read.
+    * This didn't fix the issue, at which point I realised it was likely to be linked to bug #7.
+    * I did more reading into how setInterval and clearInterval works, and refactored my code, making my code shorter and easier to read.
     * I'd been using clearInterval with my function name in the brackets, which I learned was incorrect.
-    * I replaced the function name with the variable name which fixed this bug.
+    * I replaced the function name with the variable name to fix this bug.
 
 7. Timer isn't stopping when you click the navigation links.
-    * I tried to update counter to blank in the navigation functions, but that just cause it to bring up the score page as well as home page.
+    * I tried to update counter to blank in the navigation functions, but that caused it to bring up the score page as well as home page.
     * To correct that, I added code to add the hide class to all pages as the quiz ends.
-    * Whilst researching to fix bug #6, I learned how to use clearInterval().
+    * Whilst researching to fix bug #6, I learned how to use clearInterval() properly.
     * I added the correct use of clearInterval() into my navigation click functions, which fixed this bug.
 
 8. The progress bar wasn't updating after each question was answered.
-    * I checked my code, and realised I'd used .innerHTML instead of .value (as that was what I needed to update).
+    * I checked my code, and realised I'd used .innerHTML instead of .value, which was what I needed to update.
     * I was still getting an error that getElementById wasn't defined.
     * On a second read through, I realised I'd forgotten to include document. at the start.
     * I updated this, which fixed my bug.
