@@ -113,8 +113,7 @@ The large background hero image is designed to be striking and catch the user's 
 It directly correlates to the aesthetic of the Harry Potter series, using an image of Gloucester cloisters, which was used in the filming of the Harry Potter films.
 
 ### Wireframes
-I created wireframes for desktop, mobile and tablet, and a user navigation map for the movements a user can make.
-[Here is a link to the Wireframes and User Navigation Map](assets/images/docs/wireframes.pdf)
+I created wireframes for desktop, mobile and tablet for this project [which you can see if you click here](wireframes.pdf).
 
 ### Features
 * Interactive quiz elements.
