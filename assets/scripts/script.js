@@ -77,9 +77,8 @@ function navbarMovement() {
 
 // ---------------------------------------------------------------- Fading in front page
 
-solemnlyAudio.play();
-
 function enterQuiz() {
+    solemnlyAudio.play();
     navbar.classList.remove("hide"); // Show navbar
     bodyPage.classList.add("background-image"); // Add normal background image
     bodyPage.classList.remove("black-background"); // Remove black background
