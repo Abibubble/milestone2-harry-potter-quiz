@@ -385,6 +385,11 @@ Friends, family members, and other developers were asked to review the site and 
     * I tried setting questionsSet to 0 in the startQuiz function, but no luck
     * currentQuestion is returning undefined when going through the quiz the second time around.
     * Changing the house doesn't stop the bug, so it's not house-specific, and not linked to choosing the same house twice in a row.
+    * The const questions was being changed when questionsSet was changed, because it's got nested arrays in it.
+    * I checked on StackOverflow, and on Google and found [this article on Medium](https://medium.com/javascript-in-plain-english/how-to-deep-copy-objects-and-arrays-in-javascript-7c911359b089)
+    * I checked every step it suggests, and none of the shallow copy methods worked.
+    * I continued into the deep copy methods, and as I wanted to avoid importing things from external sources, I didn't use Lodash or Ramda.
+    * I did a deep copy of it using JSON.parse(JSON.stringify(questions));, which fixed the bug.
 
 10. Upon refactoring my code, the quiz wasn't getting to question 6.
     * I used console.log to see what was happening at what time, and realised that questionsSet.length was changing each time a question was answered.
@@ -393,7 +398,7 @@ Friends, family members, and other developers were asked to review the site and 
     * I then used this as my variable, instead of questionsSet.length, which fixed this bug.
 
 ### Known Bugs
-* Bug #9
+* 
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and got these results:
