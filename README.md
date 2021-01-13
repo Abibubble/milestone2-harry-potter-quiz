@@ -386,6 +386,12 @@ Friends, family members, and other developers were asked to review the site and 
     * currentQuestion is returning undefined when going through the quiz the second time around.
     * Changing the house doesn't stop the bug, so it's not house-specific, and not linked to choosing the same house twice in a row.
 
+10. Upon refactoring my code, the quiz wasn't getting to question 6.
+    * I used console.log to see what was happening at what time, and realised that questionsSet.length was changing each time a question was answered.
+    * I wanted it to stay at the original questionsSet length, so that if more questions are added in the future, it can update automatically.
+    * I created a questionsSetLength variable, which got the length of the chosen questionsSet when it was created.
+    * I then used this as my variable, instead of questionsSet.length, which fixed this bug.
+
 ### Known Bugs
 * Bug #9
 
