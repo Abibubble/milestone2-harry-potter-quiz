@@ -434,6 +434,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ### Code
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
 * [CSS Tricks](https://css-tricks.com/html5-progress-element/): The base code for the progress bar during the quiz.
+* [This article on Medium](https://medium.com/javascript-in-plain-english/how-to-deep-copy-objects-and-arrays-in-javascript-7c911359b089) for help with fixing bug #9.
 
 ### Audio
 * [No Copyright Sound](https://www.youtube.com/watch?v=QDgnFDiyXEk): The dramatic music for during the quiz.
