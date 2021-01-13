@@ -184,6 +184,7 @@ function chooseQuestionSet() {
         alert("That's not a valid house. Please return to the home page and choose again.");
     }
     questionsSetLength = questionsSet.length;
+    document.getElementById("progress-bar").max = questionsSetLength;
 }
 
 // ---------------------------------------------------------------- Randomises the order of the questions
@@ -262,7 +263,7 @@ function newQuestion() {
     } else if (questionsAnswered === questionsSetLength) { // If the current question is the final question, end the quiz
        endQuiz();
     } else {
-        alert("Oh no! Something went wrong! Please return to the homepage and try again."); // GETTING THIS ALERT AFTER QUESTION 6!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        alert("Oh no! Something went wrong! Please return to the homepage and try again.");
     }
 }
 
