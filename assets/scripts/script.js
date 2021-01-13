@@ -172,35 +172,33 @@ function resetQuiz(house) { // Reset the house at the start, so if the user is p
 // ---------------------------------------------------------------- Chooses question set depending on which house was chosen
 
 function chooseQuestionSet() {
+    const fullQuestions = JSON.parse(JSON.stringify(questions));
     if (houseChosen === "gryffindor") {
-        questionsSet = questions[0];
+        questionsSet = fullQuestions[0];
     } else if (houseChosen === "slytherin") {
-        questionsSet = questions[1];
+        questionsSet = fullQuestions[1];
     } else if (houseChosen === "hufflepuff") {
-        questionsSet = questions[2];
+        questionsSet = fullQuestions[2];
     } else if (houseChosen === "ravenclaw") {
-        questionsSet = questions[3];
+        questionsSet = fullQuestions[3];
     } else {
         alert("That's not a valid house. Please return to the home page and choose again.");
     }
-    questionsSetLength = questionsSet.length;
-    document.getElementById("progress-bar").max = questionsSetLength;
+    questionsSetLength = questionsSet.length; // Set a variable to include the total number of questions in that set, which doesn't change as the questionPool decreases
+    document.getElementById("progress-bar").max = questionsSetLength; // Set the progress bar max to the number of questions in the total question set
 }
 
 // ---------------------------------------------------------------- Randomises the order of the questions
 
 function randomiseQuestionOrder() {
     questionPool = questionsSet.length;
-    let randomNumber = Math.floor(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
+    let randomNumber = Math.floor(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions remaining in the question pool
     currentQuestion = questionsSet[`${randomNumber}`]; // Finds a question in the question set with that index number
-    console.log(currentQuestion); // undefined the second time around!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 function populateQuestion() { // Fills in the text for question and answer chosen by the randomiseQuestionOrder function
     let questionText = document.getElementById("question-text");
-    console.log(questionText);
-    questionText.innerText = currentQuestion[0]; // THIS IS THE PROBLEM LINE
-    console.log(currentQuestion);
+    questionText.innerText = currentQuestion[0];
 
     let answerOne = document.getElementById("answer-one");
     answerOne.innerText = currentQuestion[1];
