@@ -79,13 +79,15 @@ function navbarMovement() {
 
 function enterQuiz() {
     solemnlyAudio.play();
-    navbar.classList.remove("hide"); // Show navbar
-    bodyPage.classList.add("background-image"); // Add normal background image
-    bodyPage.classList.remove("black-background"); // Remove black background
-    footerPage.classList.remove("hide"); // Show footer
-    toHomePage();
-    navbarMovement();
-    whichMusic();
+    setTimeout(function() {
+        navbar.classList.remove("hide"); // Show navbar
+        bodyPage.classList.add("background-image"); // Add normal background image
+        bodyPage.classList.remove("black-background"); // Remove black background
+        footerPage.classList.remove("hide"); // Show footer
+        toHomePage();
+        navbarMovement();
+        whichMusic();
+    }, 4100);
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Quiz functions
