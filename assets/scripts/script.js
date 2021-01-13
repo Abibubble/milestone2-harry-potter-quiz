@@ -40,6 +40,7 @@ let resultQuote = document.getElementById("result-quote");
 // ---------------------------------------------------------------- Audio variables
 
 let music = "off";
+const solemnlyAudio = new Audio('assets/audio/solemnly.mp3');
 const fireAudio = new Audio('assets/audio/fire-sound.mp3');
 const quizAudio = new Audio('assets/audio/quiz-music.mp3');
 
@@ -76,7 +77,7 @@ function navbarMovement() {
 
 // ---------------------------------------------------------------- Fading in front page
 
-// solemnlyAudio.play(); THIS NEEDS TO BE ADDED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+solemnlyAudio.play();
 
 function enterQuiz() {
     navbar.classList.remove("hide"); // Show navbar
