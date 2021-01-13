@@ -124,9 +124,11 @@ It directly correlates to the aesthetic of the Harry Potter series, using an ima
 * A timer that ends the quiz if the time runs out.
 
 ### Audio
-* On the Home page, a crackling fire sound can be heard, giving the atmosphere of a common room at Hogwarts.
-* Once the quiz starts, a Harry Potter-style theme is played as background music, adding to the experience and the intensity of the quiz.
-* When the user gets to the results page, the crackling fire sound returns, bringing it full circle so that there is no dramatic stop in the audio.
+* In the Harry Potter universe, a witch or wizard has to utter the phrase 'I solemnly swear that I am up to no good' for the Marauders Map to reveal the map.
+* Because of this, I've got the phrase displayed, and once the user clicks to enter the quiz, the audio will play, as if they're speaking the phrase to reveal the quiz.
+* On the Home page, once the audio is turned on, a crackling fire sound can be heard, giving the atmosphere of a common room at Hogwarts.
+* Once the quiz starts, if the audio is turned on, a Harry Potter-style theme is played as background music, adding to the experience and the intensity of the quiz.
+* When the user gets to the results page, the crackling fire sound returns if the audio is turned on, bringing it full circle so that there is no dramatic stop in the audio.
 ---
 
 ## Technologies Used
