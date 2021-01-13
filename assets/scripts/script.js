@@ -30,7 +30,8 @@ let countTimer;
 
 let questionsSet;
 let currentQuestion;
-let questionPool = 10;
+let questionPool;
+let questionsSetLength;
 
 // ---------------------------------------------------------------- Results variables
 
@@ -182,11 +183,13 @@ function chooseQuestionSet() {
     } else {
         alert("That's not a valid house. Please return to the home page and choose again.");
     }
+    questionsSetLength = questionsSet.length;
 }
 
 // ---------------------------------------------------------------- Randomises the order of the questions
 
 function randomiseQuestionOrder() {
+    questionPool = questionsSet.length;
     let randomNumber = Math.floor(Math.random() * questionPool); // Gets a random number between 1 and the total number of questions in the question pool
     currentQuestion = questionsSet[`${randomNumber}`]; // Finds a question in the question set with that index number
     console.log(currentQuestion); // undefined the second time around!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -249,15 +252,17 @@ function checkAnswer(num) {
 }
 
 function newQuestion() {
-    if (questionsAnswered < 10) { // If the current question isn't the final question
+    if (questionsAnswered < questionsSetLength) { // If the current question isn't the final question
         questionPool--; // Decrement the question pool for the RNG
+        console.log(questionPool);
         removeOldQuestion();
+        console.log(questionsSet);
         randomiseQuestionOrder();
         populateQuestion();
-    } else if (questionsAnswered === 10) { // If the current question is the final question, end the quiz
+    } else if (questionsAnswered === questionsSetLength) { // If the current question is the final question, end the quiz
        endQuiz();
     } else {
-        alert("Oh no! Something went wrong! Please return to the homepage and try again.");
+        alert("Oh no! Something went wrong! Please return to the homepage and try again."); // GETTING THIS ALERT AFTER QUESTION 6!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
 }
 
