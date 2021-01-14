@@ -220,10 +220,69 @@ On every device and browser listed in the README.md file, I tested the following
 * All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
 
 ## Images
-### Desktop
+### Desktop / Laptop
+#### Chrome
+![Solemnly page](assets/images/docs/testing/solemnlypagedchrome.png)
+![Click page](assets/images/docs/testing/clickpagedchrome.png)
+![Home page](assets/images/docs/testing/homepagedchrome.png)
+![Quiz page](assets/images/docs/testing/quizpagedchrome.png)
+![Instructions page](assets/images/docs/testing/instructionspagedchrome.png)
+![Results page](assets/images/docs/testing/resultspagedchrome.png)
 
+#### Edge
+![Solemnly page](assets/images/docs/testing/solemnlypagededge.png)
+![Click page](assets/images/docs/testing/clickpagededge.png)
+![Home page](assets/images/docs/testing/homepagededge.png)
+![Quiz page](assets/images/docs/testing/quizpagededge.png)
+![Instructions page](assets/images/docs/testing/instructionspagededge.png)
+![Results page](assets/images/docs/testing/resultspagededge.png)
+
+#### Firefox
+![Solemnly page](assets/images/docs/testing/solemnlypagedfirefox.png)
+![Click page](assets/images/docs/testing/clickpagedfirefox.png)
+![Home page](assets/images/docs/testing/homepagedfirefox.png)
+![Quiz page](assets/images/docs/testing/quizpagedfirefox.png)
+![Instructions page](assets/images/docs/testing/instructionspagedfirefox.png)
+![Results page](assets/images/docs/testing/resultspagedfirefox.png)
+
+#### Internet Explorer
+![Solemnly page](assets/images/docs/testing/solemnlypagedie.png)
+![Click page](assets/images/docs/testing/clickpagedie.png)
+![Home page](assets/images/docs/testing/homepagedie.png)
+![Quiz page](assets/images/docs/testing/quizpagedie.png)
+![Instructions page](assets/images/docs/testing/instructionspagedie.png)
+![Results page](assets/images/docs/testing/resultspagedie.png)
 
 ### Tablet
-
+#### Chrome
+![Solemnly page](assets/images/docs/testing/solemnlypagetchrome.png)
+![Click page](assets/images/docs/testing/clickpagetchrome.png)
+![Home page](assets/images/docs/testing/homepagetchrome.png)
+![Quiz page](assets/images/docs/testing/quizpagetchrome.png)
+![Instructions page](assets/images/docs/testing/instructionspagetchrome.png)
+![Results page](assets/images/docs/testing/resultspagetchrome.png)
 
 ### Mobile
+#### Chrome
+![Solemnly page](assets/images/docs/testing/solemnlypagemchrome.png)
+![Click page](assets/images/docs/testing/clickpagemchrome.png)
+![Home page](assets/images/docs/testing/homepagemchrome.png)
+![Quiz page](assets/images/docs/testing/quizpagemchrome.png)
+![Instructions page](assets/images/docs/testing/instructionspagemchrome.png)
+![Results page](assets/images/docs/testing/resultspagemchrome.png)
+
+#### Safari
+![Solemnly page](assets/images/docs/testing/solemnlypagemsafari.png)
+![Click page](assets/images/docs/testing/clickpagemsafari.png)
+![Home page](assets/images/docs/testing/homepagemsafari.png)
+![Quiz page](assets/images/docs/testing/quizpagemsafari.png)
+![Instructions page](assets/images/docs/testing/instructionspagemsafari.png)
+![Results page](assets/images/docs/testing/resultspagemsafari.png)
+
+#### Samsung Internet
+![Solemnly page](assets/images/docs/testing/solemnlypagemsamsung.png)
+![Click page](assets/images/docs/testing/clickpagemsamsung.png)
+![Home page](assets/images/docs/testing/homepagemsamsung.png)
+![Quiz page](assets/images/docs/testing/quizpagemsamsung.png)
+![Instructions page](assets/images/docs/testing/instructionspagemsamsung.png)
+![Results page](assets/images/docs/testing/resultspagemsamsung.png)
