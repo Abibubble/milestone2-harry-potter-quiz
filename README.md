@@ -266,7 +266,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * The user can choose any house they like, and the quiz takes you back to the Home page once you've completed the quiz. This allows for easy choosing of a new house.
 
 ### Full Testing
-[Click here to view the full testing steps that were completed on every device and browser](testing.md)
+[Click here to view the full testing steps that were completed on every device and browser, and screenshots of testing.](testing.md)
 
 #### Desktop / Laptop
 1. Chrome
@@ -468,7 +468,4 @@ Some relevant user stories are covered under test procedures, but coverage not s
 With manual tests of the user stories, perhaps add some screenshots of the finished product as mockups. This could demonstrate responsive behaviour and browser compatibility.
 Try to incorporate more in terms of manual tests, such as screenshots perhaps.
 Manual tests could also include documentation related to the minor overflow-x issues found, and the issue with some of the contact form spilling over into the grey section below.
-Solemnly audio?
-Colours in README.md
-Fix final bug
 Test site, include images of testing happening
