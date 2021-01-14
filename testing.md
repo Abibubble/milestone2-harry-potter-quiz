@@ -221,6 +221,9 @@ On every device and browser listed in the README.md file, I tested the following
 
 ## Images
 ### Desktop / Laptop
+![Audio on](assets/images/docs/testing/audioon.png)
+![Audio off](assets/images/docs/testing/audiooff.png)
+
 #### Chrome
 ![Solemnly page](assets/images/docs/testing/solemnlypagedchrome.png)
 ![Click page](assets/images/docs/testing/clickpagedchrome.png)
@@ -244,14 +247,6 @@ On every device and browser listed in the README.md file, I tested the following
 ![Quiz page](assets/images/docs/testing/quizpagedfirefox.png)
 ![Instructions page](assets/images/docs/testing/instructionspagedfirefox.png)
 ![Results page](assets/images/docs/testing/resultspagedfirefox.png)
-
-#### Internet Explorer
-![Solemnly page](assets/images/docs/testing/solemnlypagedie.png)
-![Click page](assets/images/docs/testing/clickpagedie.png)
-![Home page](assets/images/docs/testing/homepagedie.png)
-![Quiz page](assets/images/docs/testing/quizpagedie.png)
-![Instructions page](assets/images/docs/testing/instructionspagedie.png)
-![Results page](assets/images/docs/testing/resultspagedie.png)
 
 ### Tablet
 #### Chrome
