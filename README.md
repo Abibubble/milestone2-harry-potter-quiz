@@ -283,17 +283,18 @@ The only errors found were due to 'let', 'const' and template literals only bein
 
 #### Tablet
 1. Chrome
-    * All tested and working correctly
+    * 
 
 #### Mobile
 1. Chrome
     * All tested and working correctly
 
 2. Safari
-    * All tested and working correctly
+    * 
 
 3. Samsung Internet
-    * All tested and working correctly
+    * Very strange color adjustments
+    * Otherwise, all working correctly
 
 ### Further Testing
 The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
