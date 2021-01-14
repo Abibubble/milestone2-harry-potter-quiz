@@ -136,11 +136,11 @@ const questions = [
     [ // Ravenclaw
         ["Which animal represents your house?", "Lion", "Snake", "Badger", "Eagle", "Eagle"],
         ["What are your house colours?", "Scarlet and Gold", "Silver and Green", "Yellow and Black", "Blue and Silver", "Blue and Silver"],
-        ["What qualities does a Slytherin possess?", "Patience and Loyalty", "Wit and Learning", "Cunning and Deceit", "Daring and Nerve", "Wit and Learning"],
+        ["What qualities does a Ravenclaw possess?", "Patience and Loyalty", "Wit and Learning", "Cunning and Deceit", "Daring and Nerve", "Wit and Learning"],
         ["Which gem is contained in the Ravenclaw house points hourglass?", "Amythests", "Emeralds", "Sapphires", "Rubies", "Sapphires"],
         ["What does Felix Felicis do?", "Poisons you", "Gives you good luck", "Makes you fall in love", "Ressurects someone", "Gives you good luck"],
         ["Who is the Seeker of the Ravenclaw Quiddich team?", "Padma Patil", "Luna Lovegood", "Terry Boot", "Cho Chang", "Cho Chang"],
-        ["Who is the resident ghost of Hufflepuff?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Grey Lady"],
+        ["Who is the resident ghost of Ravenclaw?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Grey Lady"],
         ["Where is the common room of your house?", "In the dungeons", "In the kitchen", "Under the stairs", "In a tower", "In a tower"],
         ["How do you get into the Ravenclaw common room?", "Hum a tune", "Tap out a rhythm", "Perform a poem", "Answer a riddle", "Answer a riddle"],
         ["Who is the head of Ravenclaw house?", "Professor McGonegal", "Professor Flitwick", "Professor Snape", "Professor Sprout", "Professor Flitwick"],
