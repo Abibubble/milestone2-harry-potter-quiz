@@ -276,10 +276,10 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * All tested and working correctly
 
 3. Firefox
-    * All tested and working correctly
+    * Progress bar has sharp edges and is blue
 
 4. Internet Explorer
-    * All tested and working correctly
+    * Won't do the click to enter, so is not accessible.
 
 #### Tablet
 1. Chrome
