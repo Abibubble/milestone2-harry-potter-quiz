@@ -217,7 +217,7 @@ a {
     color: #886031;
 }
 
-#question-text, #settings-text, #how-to-play-text {
+#question-text, #how-to-play-text {
     font-size: 250%;
     color: #07080c;
     text-shadow: 2px 2px 3px white;
