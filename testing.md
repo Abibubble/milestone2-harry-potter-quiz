@@ -16,6 +16,7 @@
     * [Mobile](#mobile)
     * [Tablet](#tablet)
     * [Computer](#computer)
+* [Images](#images)
 
 On every device and browser listed in the README.md file, I tested the following:
 
@@ -217,3 +218,12 @@ On every device and browser listed in the README.md file, I tested the following
 * All the font sizes aren't too big or too small for the screen size.
 * All fonts are easy to read.
 * All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
+
+## Images
+### Desktop
+
+
+### Tablet
+
+
+### Mobile
