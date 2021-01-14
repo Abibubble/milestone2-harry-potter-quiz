@@ -266,7 +266,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * The user can choose any house they like, and the quiz takes you back to the Home page once you've completed the quiz. This allows for easy choosing of a new house.
 
 ### Full Testing
-[Click here to view the full testing steps that were completed on every device and browser, and screenshots of testing.](testing.md)
+[Click here](testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
 
 #### Desktop / Laptop
 1. Chrome
