@@ -306,7 +306,7 @@ progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/ht
 .result-text {
     font-size: 250%;
     color: #07080c;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 3px white;
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 15px;
