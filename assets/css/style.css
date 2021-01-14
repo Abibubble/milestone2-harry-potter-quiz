@@ -340,7 +340,7 @@ h2 {
 }
 
 .result-image {
-    width: 50%;
+    width: 40%;
     height: auto;
     border-radius: 25px;
 }
@@ -476,6 +476,9 @@ footer p {
     }
     .score {
         margin-bottom: 5%;
+    }
+    .result-image {
+        width: 50%;
     }
     .result-image-container {
         margin-bottom: 5%;
