@@ -470,3 +470,9 @@ With manual tests of the user stories, perhaps add some screenshots of the finis
 Try to incorporate more in terms of manual tests, such as screenshots perhaps.
 Manual tests could also include documentation related to the minor overflow-x issues found, and the issue with some of the contact form spilling over into the grey section below.
 Test site, include images of testing happening
+Including local deployment, like on https://github.com/Code-Institute-Solutions/SampleREADME
+Lower audio volume
+Create a button to turn the solemnly audio on on the solemnly page (banner? "Enable audio for a better experience")
+Landscape responsiveness
+Test with Responsinator and show screenshots in testing
+Get it peer reviewed
