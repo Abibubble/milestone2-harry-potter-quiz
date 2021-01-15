@@ -79,8 +79,18 @@ function navbarMovement() {
 // ---------------------------------------------------------------- Fading in front page
 
 function enterQuiz() {
-    solemnlyAudio.play();
-    setTimeout(function() {
+    if (music == "on") { // If music is on, play solemnly audio and delay the page transition
+        solemnlyAudio.play();
+        setTimeout(function() {
+            navbar.classList.remove("hide"); // Show navbar
+            bodyPage.classList.add("background-image"); // Add normal background image
+            bodyPage.classList.remove("black-background"); // Remove black background
+            footerPage.classList.remove("hide"); // Show footer
+            toHomePage();
+            navbarMovement();
+            whichMusic();
+        }, 4100);
+    } else { // If music is off, don't play the audio and don't delay the new page
         navbar.classList.remove("hide"); // Show navbar
         bodyPage.classList.add("background-image"); // Add normal background image
         bodyPage.classList.remove("black-background"); // Remove black background
@@ -88,7 +98,7 @@ function enterQuiz() {
         toHomePage();
         navbarMovement();
         whichMusic();
-    }, 4100);
+    }
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Quiz functions
@@ -345,17 +355,19 @@ quizAudio.loop = true;
 function whichMusic() { // Decide which audio to play depending on if they're on the quiz page or not
 
     if (music === "on") {
-        if (quizpage.classList.contains("hide")) {
+        if (solemnlypage.classList.contains("hide") && quizpage.classList.contains("hide")) {
             fireAudio.play();
             quizAudio.pause();
-        } else {
-            quizAudio.play();
+            solemnlyAudio.pause();
+        } else if (homepage.classList.contains("hide") && quizpage.classList.contains("hide")) {
             fireAudio.pause();
+            quizAudio.pause();
+            solemnlyAudio.play();
+        } else if (homepage.classList.contains("hide") && solemnlypage.classList.contains("hide")) {
+            fireAudio.pause();
+            quizAudio.play();
+            solemnlyAudio.pause();
         }
-
-    } else {
-        fireAudio.pause();
-        quizAudio.pause();
     }
 }
 
@@ -366,6 +378,17 @@ function toggleMusic() { // So that the user can toggle the music off or on
     } else {
         music = "off";
         document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`; // Changes the text of the button once clicked
+    }
+    whichMusic();
+}
+
+function toggleIntroAudio() { // So that the user can toggle the intro audio off or on
+    if (music === "off") {
+        music = "on";
+        document.getElementById("solemnly-audio").innerHTML = `<i class="fas fa-volume-mute"></i>`; // Changes the text of the button once clicked
+    } else {
+        music = "off";
+        document.getElementById("solemnly-audio").innerHTML = `<i class="fas fa-volume-up">`; // Changes the text of the button once clicked
     }
     whichMusic();
 }
