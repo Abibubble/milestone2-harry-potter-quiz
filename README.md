@@ -36,6 +36,7 @@ This is a Harry Potter quiz, made with fully interactive elements, music and sou
     * [Initial Deployment](#initial-deployment)
     * [How to Fork it](#how-to-fork-it)
     * [How to Clone it](#how-to-clone-it)
+    * [Making a Local Clone](#making-a-local-clone)
 
 * [Testing](#testing)
     * [W3C Validator](#w3c-validator)
@@ -183,6 +184,18 @@ This site was deployed to GitHub Pages by following these steps:
 6. Change the directory to where you want your clone to go.
 7. Type gitclone and then paste the URL you copied in step 4.
 8. Press Enter to create your clone.
+
+### Making a Local Clone
+1. Log in to [GitHub](www.github.com) and locate the [GitHub Repository](https://github.com/Abibubble/milestone2-harry-potter-quiz) for this quiz.
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL that was copied in Step 3.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+7. Press Enter. Your local clone will be created.
+
+EDIT THIS TO MORE MY OWN WORDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ---
 ## Testing
@@ -472,7 +485,7 @@ Manual tests could also include documentation related to the minor overflow-x is
 Test site, include images of testing happening
 Including local deployment, like on https://github.com/Code-Institute-Solutions/SampleREADME
 Lower audio volume
-Create a button to turn the solemnly audio on on the solemnly page (banner? "Enable audio for a better experience")
 Landscape responsiveness
 Test with Responsinator and show screenshots in testing
 Get it peer reviewed
+Edit 'Making a local clone'
