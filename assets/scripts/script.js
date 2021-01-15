@@ -367,6 +367,10 @@ function whichMusic() { // Decide which audio to play depending on if they're on
             fireAudio.pause();
             quizAudio.play();
             solemnlyAudio.pause();
+        } else {
+            fireAudio.play();
+            quizAudio.pause();
+            solemnlyAudio.pause();
         }
     }
 }
