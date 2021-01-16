@@ -9,9 +9,8 @@
 
 [Here is a link to the final project](https://abibubble.github.io/milestone2-harry-potter-quiz/)
 
-This is a Harry Potter quiz, made with fully interactive elements, music and sound effects to match.
+This is a Harry Potter quiz, made with fully interactive elements, music and sound effects to match. It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through.
 
-![Final project image introduction page](assets/images/docs/amiresponsive.png)
 ![Final project image home page](assets/images/docs/finalpage.png)
 
 ## Contents
@@ -91,6 +90,9 @@ The main features that I wanted to include are:
 #### Returning Visitor Goals
 * I want to have different questions depending on which house I choose, increasing replayability.
 
+#### Frequent Visitor Goals
+* I want to be able to play the quiz again with new questions.
+
 ---
 ## Design
 ### Colour Scheme
@@ -117,12 +119,13 @@ It directly correlates to the aesthetic of the Harry Potter series, using an ima
 [Here are the wireframes for desktop, mobile and tablet for this project](wireframes.pdf).
 
 ### Features
-* Interactive quiz elements.
-* A score counter for correct answers.
-* A progress bar so that the user can see how far through the quiz they are.
-* Choose your house, the questions correlate to which house is chosen.
-* Background audio that can be toggled on and off.
-* A timer that ends the quiz if the time runs out.
+* Interactive quiz elements, including:
+    * A score counter for correct answers.
+    * A progress bar so that the user can see how far through the quiz they are.
+    * Choose your house, the questions correlate to which house is chosen.
+    * Background audio that can be toggled on and off.
+    * A timer that ends the quiz if the time runs out.
+* Responsive on all devices.
 
 ### Audio
 * In the Harry Potter universe, a witch or wizard has to utter the phrase 'I solemnly swear that I am up to no good' for the Marauders Map to reveal the map.
@@ -157,7 +160,7 @@ Google DevTools was used to help me find what code correlated to what feature.
 #### Shields.io:
 [Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
 #### Audacity:
-Audacity was used to record the 'I solemnly swear' audio, and to edit it to sound more within the theme.
+Audacity was used to record the 'I solemnly swear' audio, and to edit it to sound more within the theme. It was also used to reduce the volume on the other two audio tracks.
 
 ## Deployment
 ### Initial Deployment
@@ -201,7 +204,7 @@ EDIT THIS TO MORE MY OWN WORDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ---
 ## Testing
 ### W3C Validator
-The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site.
 The only errors found were due to 'let', 'const' and template literals only being available in ES6 within the JavaScript code.
 
 1. W3C Markup Validator
@@ -263,6 +266,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * There is a clear Instructions page, that details exactly how the quiz works.
 * This is easily accessible from every page.
 * The instructions on the main pages themselves are clear to read and easy to understand.
+* Every page is fully visible on a browser window, nothing requires scrolling down to view it.
 
 ##### I want to be able to easily navigate throughout the site.
 * On every page, there is a button to take the user to Home, Instructions, or to toggle the audio on or off.
@@ -278,6 +282,12 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
 * The question set is fully randomised, without allowing questions to be repeated. This allows the user to replay any house without having the same experience.
 * The user can choose any house they like, and the quiz takes you back to the Home page once you've completed the quiz. This allows for easy choosing of a new house.
+
+#### Frequent Visitor Goals
+##### I want to be able to play the quiz again with new questions.
+* The code is designed so that questions can be changed at any time in the questions variable.
+* The code is designed so that additional questions can be added at any time into the questions variable.
+* The progress bar and score will then update to the new total amount of questions, and remain functional.
 
 ### Full Testing
 [Click here](testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
@@ -307,8 +317,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * 
 
 3. Samsung Internet
-    * Very strange color adjustments
-    * Otherwise, all working correctly
+    * All tested and working correctly
 
 ### Further Testing
 The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
@@ -419,10 +428,10 @@ Friends, family members, and other developers were asked to review the site and 
 I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop
-![Lighthouse desktop first try](assets/images/lighthouse.png)
+![Lighthouse desktop first try](assets/images/docs/lighthouse.png)
 
 #### Mobile
-![Lighthouse mobile first try](assets/images/lighthousemobile.png)
+![Lighthouse mobile first try](assets/images/docs/lighthousemobile.png)
 
 #### Performance:
 * I decided to use vanilla CSS and JavaScript, rather than utilising Bootstrap or jQuery due to the performance trade-offs caused by those libraries.
@@ -484,8 +493,6 @@ With manual tests of the user stories, perhaps add some screenshots of the finis
 Try to incorporate more in terms of manual tests, such as screenshots perhaps.
 Manual tests could also include documentation related to the minor overflow-x issues found, and the issue with some of the contact form spilling over into the grey section below.
 Test site, include images of testing happening
-Including local deployment, like on https://github.com/Code-Institute-Solutions/SampleREADME
-Lower audio volume
 Landscape responsiveness
 Test with Responsinator and show screenshots in testing
 Get it peer reviewed
