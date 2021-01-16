@@ -295,13 +295,13 @@ The only errors found were due to 'let', 'const' and template literals only bein
 
 #### Desktop / Laptop
 1. Google Chrome
-    * All tested and working correctly
+    * All tested and working correctly.
 
 2. Microsoft Edge
-    * All tested and working correctly
+    * All tested and working correctly.
 
 3. Mozilla Firefox
-    * Progress bar has sharp edges and is blue
+    * Progress bar has sharp edges and is blue.
 
 4. Internet Explorer
     * Won't do the click to enter, so is not accessible.
@@ -312,13 +312,14 @@ The only errors found were due to 'let', 'const' and template literals only bein
 
 #### Mobile
 1. Google Chrome
-    * All tested and working correctly
+    * All tested and working correctly.
 
 2. Safari
     * 
 
 3. Samsung Internet
-    * All tested and working correctly
+    * On dark mode, all of the colours invert, as shown in [my testing file](testing.md).
+    * Everything else tested and working correctly.
 
 ### Further Testing
 The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
@@ -497,4 +498,3 @@ Test site, include images of testing happening
 Landscape responsiveness
 Test with Responsinator and show screenshots in testing
 Get it peer reviewed
-Edit 'Making a local clone'
