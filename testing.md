@@ -275,9 +275,18 @@ On every device and browser listed in the README.md file, I tested the following
 ![Results page](assets/images/docs/testing/resultspagemsafari.png)
 
 #### Samsung Internet
+##### Light mode
 ![Solemnly page](assets/images/docs/testing/solemnlypagemsamsung.png)
 ![Click page](assets/images/docs/testing/clickpagemsamsung.png)
 ![Home page](assets/images/docs/testing/homepagemsamsung.png)
 ![Quiz page](assets/images/docs/testing/quizpagemsamsung.png)
 ![Instructions page](assets/images/docs/testing/instructionspagemsamsung.png)
 ![Results page](assets/images/docs/testing/resultspagemsamsung.png)
+
+##### Dark mode
+![Solemnly page](assets/images/docs/testing/solemnlypagemsamsungd.png)
+![Click page](assets/images/docs/testing/clickpagemsamsungd.png)
+![Home page](assets/images/docs/testing/homepagemsamsungd.png)
+![Quiz page](assets/images/docs/testing/quizpagemsamsungd.png)
+![Instructions page](assets/images/docs/testing/instructionspagemsamsungd.png)
+![Results page](assets/images/docs/testing/resultspagemsamsungd.png)
