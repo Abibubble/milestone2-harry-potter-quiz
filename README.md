@@ -101,6 +101,7 @@ The main features that I wanted to include are:
 * Hufflepuff house uses #fbb92f as the primary color, with #07080c as the secondary.
 * Ravenclaw house uses #203268 as the primary color, with #886031 as the secondary.
 * Slytherin house uses #005d4a as the primary color, with #a7acaf as the secondary.
+
 ![Colors used](assets/images/docs/colors.png)
 
 All of these colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
@@ -304,7 +305,8 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * Progress bar has sharp edges and is blue.
 
 4. Internet Explorer
-    * Won't do the click to enter, so is not accessible.
+    * Internet Explorer doesn't support the click to enter, so is not accessible on this browser.
+    * However, Internet Explorer has been replaced by Microsoft Edge, which fully supports this site.
 
 #### Tablet
 1. Google Chrome
@@ -491,8 +493,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * The team at Code Institute, for teaching me the necessary skills to create this site.
 
 With manual tests of the user stories, perhaps add some screenshots of the finished product as mockups. This could demonstrate responsive behaviour and browser compatibility.
-Manual tests could also include documentation related to the minor overflow-x issues found, and the issue with some of the contact form spilling over into the grey section below.
-Landscape responsiveness
+Manual tests could also include documentation related to known bugs, responsiveness issues, etc.
 Test on iPhone and iPad and images
-Test with Responsinator and show screenshots in testing
+Use Responsinator screenshots in testing
 Get it peer reviewed
