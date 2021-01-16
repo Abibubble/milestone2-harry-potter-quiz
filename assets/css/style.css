@@ -433,6 +433,10 @@ footer p {
 
 /* ------------------------------------------------------------------------------------------- Responsive design */
 
+/* width 1053 and landscape
+house names and answers text smaller
+instructions main text a TINY bit smaller */
+
 @media screen and (max-width: 1200px) { /* Media queries for smaller computer screens */
     #logo {
         margin-top: 2%;
@@ -445,7 +449,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 992px) { /* Media queries for tablet */
+@media screen and (max-width: 992px) and (orientation: portrait) { /* Media queries for portrait tablet */
     .solemnly-overlay {
         margin-top: 40%;
     }
@@ -507,7 +511,79 @@ footer p {
     }
 }
 
-@media screen and (max-width: 600px) { /* Media queries for mobile */
+@media screen and (max-width: 800px) and (orientation: landscape) { /* Media queries for landscape mobile */
+    #solemnly {
+        font-size: 125%;
+    }
+    .solemnly-overlay {
+        margin-top: 10%;
+    }
+    #enter {
+        font-size: 100%;
+    }
+    .house-text, .answer-text {
+        font-size: 75%;
+    }
+    .button {
+        font-size: 45%;
+    }
+    .overlay {
+        height: 50px;
+        margin-top: 10px;
+    }
+    .choose-house, .question-text {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 150%;
+    }
+    #question-text, #settings-text, #how-to-play-text {
+        font-size: 100%;
+        margin-bottom: 2%;
+    }
+    .house-selector, .answer-selector {
+        height: 100%;
+    }
+    #score, #timer {
+        font-size: 60%;
+        height: 100%;
+    }
+    .score {
+        padding: 0;
+        margin-bottom: 0;
+        height: 40px;
+    }
+    figure {
+        margin: 2px;
+    }
+    .result-text {
+        font-size: 100%;
+        padding: 10px;
+    }
+    h2 {
+        font-size: 100%;
+        padding-top: 5%;
+    }
+    .result-quote {
+        font-size: 75%;
+    }
+    .quote {
+        padding: 1px;
+    }
+    .result-image {
+        width: 45%;
+    }
+    .how-to-play-p {
+        font-size: 60%;
+    }
+    #how-to-play-overlay {
+        padding: 7px;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) { /* Media queries for portrait mobile */
     #solemnly {
         font-size: 125%;
     }
