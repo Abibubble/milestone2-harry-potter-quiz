@@ -475,7 +475,7 @@ instructions main text a TINY bit smaller */
         font-size: 200%;
         width: 80%;
     }
-    #question-text, #settings-text, #how-to-play-text {
+    #question-text, #how-to-play-text {
         font-size: 200%;
         margin-top: 5%;
     }
@@ -521,6 +521,9 @@ instructions main text a TINY bit smaller */
     #enter {
         font-size: 100%;
     }
+    #logo {
+        width: 50%;
+    }
     .house-text, .answer-text {
         font-size: 75%;
     }
@@ -536,9 +539,10 @@ instructions main text a TINY bit smaller */
         margin-bottom: 0;
         font-size: 150%;
     }
-    #question-text, #settings-text, #how-to-play-text {
+    #question-text, #how-to-play-text {
         font-size: 100%;
         margin-bottom: 2%;
+        padding: 10px;
     }
     .house-selector, .answer-selector {
         height: 100%;
@@ -568,6 +572,7 @@ instructions main text a TINY bit smaller */
     }
     .quote {
         padding: 1px;
+        width: 100%;
     }
     .result-image {
         width: 45%;
@@ -604,7 +609,7 @@ instructions main text a TINY bit smaller */
         margin-bottom: 5%;
         font-size: 150%;
     }
-    #question-text, #settings-text, #how-to-play-text {
+    #question-text, #how-to-play-text {
         font-size: 100%;
         margin-bottom: 5%;
     }
