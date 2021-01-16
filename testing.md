@@ -272,12 +272,12 @@ On every device and browser listed in the README.md file, I tested the following
 
 ### Mobile
 #### Chrome
-![Solemnly page](assets/images/docs/testing/solemnlypagemchrome.png)
-![Click page](assets/images/docs/testing/clickpagemchrome.png)
-![Home page](assets/images/docs/testing/homepagemchrome.png)
-![Quiz page](assets/images/docs/testing/quizpagemchrome.png)
-![Instructions page](assets/images/docs/testing/instructionspagemchrome.png)
-![Results page](assets/images/docs/testing/resultspagemchrome.png)
+![Solemnly page](assets/images/docs/testing/solemnlypagemchrome.jpg)
+![Click page](assets/images/docs/testing/clickpagemchrome.jpg)
+![Home page](assets/images/docs/testing/homepagemchrome.jpg)
+![Quiz page](assets/images/docs/testing/quizpagemchrome.jpg)
+![Instructions page](assets/images/docs/testing/instructionspagemchrome.jpg)
+![Results page](assets/images/docs/testing/resultspagemchrome.jpg)
 
 ---
 
@@ -293,19 +293,19 @@ On every device and browser listed in the README.md file, I tested the following
 
 #### Samsung Internet
 ##### Light mode
-![Solemnly page](assets/images/docs/testing/solemnlypagemsamsung.png)
-![Click page](assets/images/docs/testing/clickpagemsamsung.png)
-![Home page](assets/images/docs/testing/homepagemsamsung.png)
-![Quiz page](assets/images/docs/testing/quizpagemsamsung.png)
-![Instructions page](assets/images/docs/testing/instructionspagemsamsung.png)
-![Results page](assets/images/docs/testing/resultspagemsamsung.png)
+![Solemnly page](assets/images/docs/testing/solemnlypagemsamsungl.jpg)
+![Click page](assets/images/docs/testing/clickpagemsamsungl.jpg)
+![Home page](assets/images/docs/testing/homepagemsamsungl.jpg)
+![Quiz page](assets/images/docs/testing/quizpagemsamsungl.jpg)
+![Instructions page](assets/images/docs/testing/instructionspagemsamsungl.jpg)
+![Results page](assets/images/docs/testing/resultspagemsamsungl.jpg)
 
 ---
 
 ##### Dark mode
-![Solemnly page](assets/images/docs/testing/solemnlypagemsamsungd.png)
-![Click page](assets/images/docs/testing/clickpagemsamsungd.png)
-![Home page](assets/images/docs/testing/homepagemsamsungd.png)
-![Quiz page](assets/images/docs/testing/quizpagemsamsungd.png)
-![Instructions page](assets/images/docs/testing/instructionspagemsamsungd.png)
-![Results page](assets/images/docs/testing/resultspagemsamsungd.png)
+![Solemnly page](assets/images/docs/testing/solemnlypagemsamsungd.jpg)
+![Click page](assets/images/docs/testing/clickpagemsamsungd.jpg)
+![Home page](assets/images/docs/testing/homepagemsamsungd.jpg)
+![Quiz page](assets/images/docs/testing/quizpagemsamsungd.jpg)
+![Instructions page](assets/images/docs/testing/instructionspagemsamsungd.jpg)
+![Results page](assets/images/docs/testing/resultspagemsamsungd.jpg)
