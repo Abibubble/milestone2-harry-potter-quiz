@@ -227,6 +227,8 @@ On every device and browser listed in the README.md file, I tested the following
 ![Audio on](assets/images/docs/testing/audioon.png)
 ![Audio off](assets/images/docs/testing/audiooff.png)
 
+---
+
 #### Chrome
 ![Solemnly page](assets/images/docs/testing/solemnlypagedchrome.png)
 ![Click page](assets/images/docs/testing/clickpagedchrome.png)
@@ -234,6 +236,8 @@ On every device and browser listed in the README.md file, I tested the following
 ![Quiz page](assets/images/docs/testing/quizpagedchrome.png)
 ![Instructions page](assets/images/docs/testing/instructionspagedchrome.png)
 ![Results page](assets/images/docs/testing/resultspagedchrome.png)
+
+---
 
 #### Edge
 ![Solemnly page](assets/images/docs/testing/solemnlypagededge.png)
@@ -243,6 +247,8 @@ On every device and browser listed in the README.md file, I tested the following
 ![Instructions page](assets/images/docs/testing/instructionspagededge.png)
 ![Results page](assets/images/docs/testing/resultspagededge.png)
 
+---
+
 #### Firefox
 ![Solemnly page](assets/images/docs/testing/solemnlypagedfirefox.png)
 ![Click page](assets/images/docs/testing/clickpagedfirefox.png)
@@ -250,6 +256,8 @@ On every device and browser listed in the README.md file, I tested the following
 ![Quiz page](assets/images/docs/testing/quizpagedfirefox.png)
 ![Instructions page](assets/images/docs/testing/instructionspagedfirefox.png)
 ![Results page](assets/images/docs/testing/resultspagedfirefox.png)
+
+---
 
 ### Tablet
 #### Chrome !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -260,6 +268,8 @@ On every device and browser listed in the README.md file, I tested the following
 ![Instructions page](assets/images/docs/testing/instructionspagetchrome.png)
 ![Results page](assets/images/docs/testing/resultspagetchrome.png)
 
+---
+
 ### Mobile
 #### Chrome
 ![Solemnly page](assets/images/docs/testing/solemnlypagemchrome.png)
@@ -269,6 +279,8 @@ On every device and browser listed in the README.md file, I tested the following
 ![Instructions page](assets/images/docs/testing/instructionspagemchrome.png)
 ![Results page](assets/images/docs/testing/resultspagemchrome.png)
 
+---
+
 #### Safari !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ![Solemnly page](assets/images/docs/testing/solemnlypagemsafari.png)
 ![Click page](assets/images/docs/testing/clickpagemsafari.png)
@@ -276,6 +288,8 @@ On every device and browser listed in the README.md file, I tested the following
 ![Quiz page](assets/images/docs/testing/quizpagemsafari.png)
 ![Instructions page](assets/images/docs/testing/instructionspagemsafari.png)
 ![Results page](assets/images/docs/testing/resultspagemsafari.png)
+
+---
 
 #### Samsung Internet
 ##### Light mode
@@ -285,6 +299,8 @@ On every device and browser listed in the README.md file, I tested the following
 ![Quiz page](assets/images/docs/testing/quizpagemsamsung.png)
 ![Instructions page](assets/images/docs/testing/instructionspagemsamsung.png)
 ![Results page](assets/images/docs/testing/resultspagemsamsung.png)
+
+---
 
 ##### Dark mode
 ![Solemnly page](assets/images/docs/testing/solemnlypagemsamsungd.png)
