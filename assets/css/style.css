@@ -433,10 +433,6 @@ footer p {
 
 /* ------------------------------------------------------------------------------------------- Responsive design */
 
-/* width 1053 and landscape
-house names and answers text smaller
-instructions main text a TINY bit smaller */
-
 @media screen and (max-width: 1200px) { /* Media queries for smaller computer screens */
     #logo {
         margin-top: 2%;
@@ -449,7 +445,69 @@ instructions main text a TINY bit smaller */
     }
 }
 
-/* GET RID OF SOME SPACING ON HOME PAGE AND QUESTION TEXT NEEDS TO BE SMALLER */
+@media screen and (max-width: 1200px) and (orientation: landscape) { /* Media queries for landscape tablet */
+    .solemnly-overlay {
+        margin-top: 40%;
+    }
+    #solemnly {
+        font-size: 200%;
+    }
+    #enter {
+        font-size: 150%;
+    }
+    #logo {
+        margin-top: 5%;
+        width: 80%;
+    }
+    .house-text, .answer-text {
+        font-size: 125%;
+    }
+    .overlay {
+        height: 125px;
+    }
+    .choose-house, .question-text {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 150%;
+        width: 80%;
+    }
+    #question-text, #how-to-play-text {
+        font-size: 200%;
+        margin-top: 5%;
+    }
+    .house-selector, .answer-selector {
+        width: 100%;
+        height: 55%;
+        margin-bottom: 3px;
+    }
+    #score, #timer {
+        font-size: 80%;
+    }
+    .progress-position {
+        margin-top: 35%;
+    }
+    .progress-overlay {
+        height: 150%;
+    }
+    .result-text {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 200%;
+    }
+    .score {
+        margin-bottom: 5%;
+    }
+    .result-image {
+        width: 70%;
+    }
+    .result-image-container {
+        margin-bottom: 5%;
+    }
+    .how-to-play-p {
+        font-size: 90%;
+    }
+}
+
 @media screen and (max-width: 992px) and (orientation: portrait) { /* Media queries for portrait tablet */
     .solemnly-overlay {
         margin-top: 40%;
@@ -524,7 +582,7 @@ instructions main text a TINY bit smaller */
         font-size: 100%;
     }
     #logo {
-        width: 50%;
+        width: 45%;
     }
     .house-text, .answer-text {
         font-size: 75%;
