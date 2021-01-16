@@ -249,7 +249,7 @@ On every device and browser listed in the README.md file, I tested the following
 ![Results page](assets/images/docs/testing/resultspagedfirefox.png)
 
 ### Tablet
-#### Chrome
+#### Chrome !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ![Solemnly page](assets/images/docs/testing/solemnlypagetchrome.png)
 ![Click page](assets/images/docs/testing/clickpagetchrome.png)
 ![Home page](assets/images/docs/testing/homepagetchrome.png)
@@ -266,7 +266,7 @@ On every device and browser listed in the README.md file, I tested the following
 ![Instructions page](assets/images/docs/testing/instructionspagemchrome.png)
 ![Results page](assets/images/docs/testing/resultspagemchrome.png)
 
-#### Safari
+#### Safari !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ![Solemnly page](assets/images/docs/testing/solemnlypagemsafari.png)
 ![Click page](assets/images/docs/testing/clickpagemsafari.png)
 ![Home page](assets/images/docs/testing/homepagemsafari.png)
