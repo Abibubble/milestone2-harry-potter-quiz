@@ -17,6 +17,9 @@
     * [Tablet](#tablet)
     * [Computer](#computer)
 * [Images](#images)
+    * [Desktop and Laptop](#desktop-and-laptop)
+    * [Tablet](#tablet)
+    * [Mobile](#mobile)
 
 On every device and browser listed in the README.md file, I tested the following:
 
@@ -220,7 +223,7 @@ On every device and browser listed in the README.md file, I tested the following
 * All images are scaled to the screen size, whilst maintaining the correct aspect ratio.
 
 ## Images
-### Desktop / Laptop
+### Desktop and Laptop
 ![Audio on](assets/images/docs/testing/audioon.png)
 ![Audio off](assets/images/docs/testing/audiooff.png)
 
