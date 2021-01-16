@@ -464,6 +464,8 @@ footer p {
     }
     .overlay {
         height: 125px;
+        width: 50%;
+        margin: auto;
     }
     .choose-house, .question-text {
         margin-top: 2%;
