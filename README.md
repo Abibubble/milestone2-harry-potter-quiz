@@ -190,16 +190,16 @@ This site was deployed to GitHub Pages by following these steps:
 8. Press Enter to create your clone.
 
 ### Making a Local Clone
-1. Log in to [GitHub](www.github.com) and locate the [GitHub Repository](https://github.com/Abibubble/milestone2-harry-potter-quiz) for this quiz.
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type git clone, and then paste the URL that was copied in Step 3.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-7. Press Enter. Your local clone will be created.
+1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/Abibubble/milestone2-harry-potter-quiz) for this quiz.
+2. Under the repository name, above the list of files, click "Code".
+3. Here you can either Clone or Download the repository.
+4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
+5. Open Git Bash
+6. Change the current working directory to the new location, where you want the cloned directory to be.
+6. Type git clone, and then paste the URL that was copied in Step 4.
+7. Press Enter, and your local clone will be created.
 
-EDIT THIS TO MORE MY OWN WORDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+For a more detailed version of these steps, go to the [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) page on this topic.
 
 ---
 ## Testing
@@ -273,7 +273,8 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * All other buttons and links are clearly defined and easy to see.
 
 ##### I want to be able to turn the audio on or off at any point in the quiz.
-* There is an audio button in the top right of the page, which the text changes depending on if the audio is on or off.
+* On the solemnly page, there is a banner at the top allowing them to turn the audio on, and the image on the button changes depending on if the audio is on or off.
+* There is an audio button in the top right of every other page, in which the text changes depending on if the audio is on or off.
 * If the audio is off (as default), the button says 'Audio on' with a volume up icon.
 * If the audio is on, the button says 'Audio off' with a mute volume icon.
 
@@ -293,24 +294,24 @@ The only errors found were due to 'let', 'const' and template literals only bein
 [Click here](testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
 
 #### Desktop / Laptop
-1. Chrome
+1. Google Chrome
     * All tested and working correctly
 
-2. Edge
+2. Microsoft Edge
     * All tested and working correctly
 
-3. Firefox
+3. Mozilla Firefox
     * Progress bar has sharp edges and is blue
 
 4. Internet Explorer
     * Won't do the click to enter, so is not accessible.
 
 #### Tablet
-1. Chrome
+1. Google Chrome
     * 
 
 #### Mobile
-1. Chrome
+1. Google Chrome
     * All tested and working correctly
 
 2. Safari
