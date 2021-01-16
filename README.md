@@ -107,14 +107,14 @@ The main features that I wanted to include are:
 All of these colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
 
 ### Typography
-For the opening page, I used the font monospace, as it's got quite a bit of character, and it links with the feeling of entering into something. It's also very similar to a typewriter font, which matches the theme of novels quite nicely.
-I used sans-serif throughout the quiz. It's a clean and easy to read font, whilst also being bold and eye catching. 
-Both of these fonts also don't distract the user from the main theme, and have the added bonus that they're staple fonts with HTML, so all browsers will be able to display them.
+* For the opening page, I used the font monospace, as it's got quite a bit of character, and it links with the feeling of entering into something. It's also very similar to a typewriter font, which matches the theme of novels quite nicely.
+* I used sans-serif throughout the quiz. It's a clean and easy to read font, whilst also being bold and eye catching. 
+* Both of these fonts also don't distract the user from the main theme, and have the added bonus that they're staple fonts with HTML, so all browsers will be able to display them.
 
 ### Imagery
-The opening quote page is a direct line from the books, which immediately captures the attention of the user, sets the theme for the quiz, and encourages immersion as soon as they enter the site.
-The large background hero image is designed to be striking and catch the user's attention, making it clear at first glance what the quiz is related to. 
-It directly correlates to the aesthetic of the Harry Potter series, using an image of Gloucester cloisters, which was used in the filming of the Harry Potter films.
+* The opening quote page is a direct line from the books, which immediately captures the attention of the user, sets the theme for the quiz, and encourages immersion as soon as they enter the site.
+* The large background hero image is designed to be striking and catch the user's attention, making it clear at first glance what the quiz is related to. 
+* It directly correlates to the aesthetic of the Harry Potter series, using an image of Gloucester cloisters, which was used in the filming of the Harry Potter films.
 
 ### Wireframes
 [Here are the wireframes for desktop, mobile and tablet for this project](wireframes.pdf).
@@ -340,7 +340,7 @@ The website was viewed on a variety of devices, including:
 * Samsung Galaxy S10+
 * Samsung A20
 
-A large amount of testing was done to ensure that all pages were visible or hidden, all buttons worked as they should, and the quiz played out as it should.
+A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
