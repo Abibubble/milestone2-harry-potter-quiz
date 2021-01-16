@@ -490,11 +490,9 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * Tom Crabb, for his advice on how to make my code cleaner.
 * The team at Code Institute, for teaching me the necessary skills to create this site.
 
-Some relevant user stories are covered under test procedures, but coverage not sufficient
 With manual tests of the user stories, perhaps add some screenshots of the finished product as mockups. This could demonstrate responsive behaviour and browser compatibility.
-Try to incorporate more in terms of manual tests, such as screenshots perhaps.
 Manual tests could also include documentation related to the minor overflow-x issues found, and the issue with some of the contact form spilling over into the grey section below.
-Test site, include images of testing happening
 Landscape responsiveness
+Test on iPhone and iPad and images
 Test with Responsinator and show screenshots in testing
 Get it peer reviewed
