@@ -308,16 +308,21 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * Internet Explorer doesn't support the click to enter, so is not accessible on this browser.
     * However, Internet Explorer has been replaced by Microsoft Edge, which fully supports this site.
 
+5. Safari
+    * The overlay on the score and the timer on the quiz page is shrunken, so it doesn't fully cover the text.
+    * This appears to be only with the MacBook Air, when using responsive screen sizes and other devices with the same screen size, there is no problem.
+    * Everything else tested and working correctly.
+
 #### Tablet
-1. Google Chrome
-    * 
+1. Safari
+    * All tested and working correctly.
 
 #### Mobile
 1. Google Chrome
     * All tested and working correctly.
 
 2. Safari
-    * 
+    * All tested and working correctly.
 
 3. Samsung Internet
     * On dark mode, all of the colours invert, as shown in [my testing file](testing.md).
