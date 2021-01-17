@@ -238,11 +238,11 @@ The only errors found were due to 'let', 'const' and template literals only bein
 ##### It needs to be easy to see how many questions there are, and how many correct answers have been made throughout the quiz.
 * Underneath the answers boxes, there is a tally showing x / 10, with x being their current score. This is updated after each question.
 * There is also a progress bar underneath, that shows how far through the quiz they are.
-![Image of progress bar and score tally](assets/images/docs/testing/progress.jpg)
+![Image of progress bar and score tally](assets/images/docs/testing/progress.png)
 
 ##### It needs to be easy to see how much time is left to complete the questions.
 * Underneath the answers boxes, there is a clear timer that counts down from 180 seconds.
-![Image of the timer underneath the answers](assets/images/docs/testing/timer.jpg)
+![Image of the timer underneath the answers](assets/images/docs/testing/timer.png)
 
 ##### It needs to be instantly engaging to enourage the user to play the game.
 * The user is immediately greeted with a well-known quote from the Harry Potter books, which then prompts them to click to enter, causing them to interact with the quiz before the quiz even starts.
@@ -259,7 +259,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 
 ##### It must be easy to see how much time the user has left to complete the quiz.
 * Underneath the answer boxes is a timer. It's positioned next to the progress bar and the score counter, which makes it very easy to spot.
-![Image of the timer](assets/images/docs/testing/timer.jpg)
+![Image of the timer](assets/images/docs/testing/timer.png)
 
 ##### Manouvering around the site needs to be straightforward.
 * On every page, there is a button to take the user to Home, Instructions, and to toggle the audio.
@@ -277,33 +277,33 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * This is easily accessible from every page.
 * The instructions on the main pages themselves are clear to read and easy to understand.
 * Every page is fully visible on a browser window, nothing requires scrolling down to view it, other than when the user is in landscape orientation on a mobile or tablet.
-![Image of a quiz personalised to the house chosen](assets/images/docs/testing/instructionspagemchrome.jpg)
+![Image of the instructions](assets/images/docs/testing/instructionspagemchrome.jpg)
 
 ##### I want to be able to easily navigate throughout the site.
 * On every page, there is a button to take the user to Home, Instructions, or to toggle the audio on or off.
 * All other buttons and links are clearly defined and easy to see.
-![Image of a quiz personalised to the house chosen](assets/images/docs/testing/audioon.jpg)
+![Image of the audio button](assets/images/docs/testing/audioon.png)
 
 ##### I want to be able to turn the audio on or off at any point in the quiz.
 * On the solemnly page, there is a banner at the top allowing them to turn the audio on, and the image on the button changes depending on if the audio is on or off.
 * There is an audio button in the top right of every other page, in which the text changes depending on if the audio is on or off.
 * If the audio is off (as default), the button says 'Audio on' with a volume up icon.
 * If the audio is on, the button says 'Audio off' with a mute volume icon.
-![Image of a quiz personalised to the house chosen](assets/images/docs/testing/solemnlypagemchrome.jpg)
+![Image of the solemnly page](assets/images/docs/testing/solemnlypagemchrome.jpg)
 
 #### Returning Visitor Goals
 ##### I want to have different questions depending on which house I choose, increasing replayability.
 * There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
 * The question set is fully randomised, without allowing questions to be repeated. This allows the user to replay any house without having the same experience.
 * The user can choose any house they like, and the quiz takes you back to the Home page once you've completed the quiz. This allows for easy choosing of a new house.
-![Image of a quiz personalised to the house chosen](assets/images/docs/testing/quizpagemchrome.jpg)
+![Image of a random quiz question](assets/images/docs/testing/quizpagemchrome.jpg)
 
 #### Frequent Visitor Goals
 ##### I want to be able to play the quiz again with new questions.
 * The code is designed so that questions can be changed at any time in the questions variable.
 * The code is designed so that additional questions can be added at any time into the questions variable.
 * The progress bar and score will then update to the new total amount of questions, and remain functional.
-![Image of a quiz personalised to the house chosen](assets/images/docs/testing/progressandtimer.jpg)
+![Image of the progress bar and timer](assets/images/docs/testing/progressandtimer.png)
 
 ### Full Testing
 [Click here](testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
