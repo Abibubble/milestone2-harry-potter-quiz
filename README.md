@@ -225,7 +225,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * From every page, you can return to the Home page via a button. This cancels the current quiz and allows the user to restart.
 * Basic instructions are available on every page, with more information on the Instructions page.
 
-![Image of the instructions page](assets/images/docs/testing/instructionspagemchrome.jpg)
+![Image of the instructions page](assets/images/docs/testing/instructionspage.png)
 
 ##### The quiz needs to be personalised to each user.
 * On the Home page, the user selects their house.
@@ -235,7 +235,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * If they've scored 5 points or less, they get a character and quote displayed from a not so smart character from their house.
 * If they've scored 6 points or more, they get a character and quote displayed from a smart character from their house.
 
-![Image of a quiz personalised to the house chosen](assets/images/docs/testing/homepagemchrome.jpg)
+![Image of a quiz personalised to the house chosen](assets/images/docs/testing/homepage.png)
 
 ##### It needs to be easy to see how many questions there are, and how many correct answers have been made throughout the quiz.
 * Underneath the answers boxes, there is a tally showing x / 10, with x being their current score. This is updated after each question.
@@ -255,13 +255,13 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * Each of the house buttons are bright, and coloured using the house colours, which are eye-catching.
 * Most people who know Harry Potter have a house that they consider 'their house'. The choosing house function allows them to feel like they're part of the quiz.
 
-![Image of the home page](assets/images/docs/testing/homepagemchrome.jpg)
+![Image of the home page](assets/images/docs/testing/homepage.png)
 
 ##### Questions needs to be randomised and drawn from a large bank of available questions.
 * There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
 * The question set is fully randomised, without allowing questions to be repeated.
 
-![Image of the quiz page showing an example of a question](assets/images/docs/testing/quizpagemchrome.jpg)
+![Image of the quiz page showing an example of a question](assets/images/docs/testing/quizpage.png)
 
 ##### It must be easy to see how much time the user has left to complete the quiz.
 * Underneath the answer boxes is a timer. It's positioned next to the progress bar and the score counter, which makes it very easy to spot.
@@ -273,7 +273,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * On the Home page, there are simple instructions for the user to choose their house, with brightly colored buttons to match the house colors.
 * Within the quiz, the question and answers are bright and eye-catching, making it obvious what to do.
 
-![Image of the home page to show the buttons](assets/images/docs/testing/homepagemchrome.jpg)
+![Image of the home page to show the buttons](assets/images/docs/testing/homepage.png)
 
 ##### The user must be able to give up on the quiz if they wish to, and return to the homepage.
 * On every page, there is a button to take the user to Home or to Instructions, which resets their house, score, and timer back to default.
@@ -287,7 +287,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * The instructions on the main pages themselves are clear to read and easy to understand.
 * Every page is fully visible on a browser window, nothing requires scrolling down to view it, other than when the user is in landscape orientation on a mobile or tablet.
 
-![Image of the instructions](assets/images/docs/testing/instructionspagemchrome.jpg)
+![Image of the instructions](assets/images/docs/testing/instructionspage.png)
 
 ##### I want to be able to easily navigate throughout the site.
 * On every page, there is a button to take the user to Home, Instructions, or to toggle the audio on or off.
@@ -301,7 +301,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * If the audio is off (as default), the button says 'Audio on' with a volume up icon.
 * If the audio is on, the button says 'Audio off' with a mute volume icon.
 
-![Image of the solemnly page](assets/images/docs/testing/solemnlypagemchrome.jpg)
+![Image of the solemnly page](assets/images/docs/testing/solemnlypage.png)
 
 #### Returning Visitor Goals
 ##### I want to have different questions depending on which house I choose, increasing replayability.
@@ -309,7 +309,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * The question set is fully randomised, without allowing questions to be repeated. This allows the user to replay any house without having the same experience.
 * The user can choose any house they like, and the quiz takes you back to the Home page once you've completed the quiz. This allows for easy choosing of a new house.
 
-![Image of a random quiz question](assets/images/docs/testing/quizpagemchrome.jpg)
+![Image of a random quiz question](assets/images/docs/testing/quizpage.png)
 
 #### Frequent Visitor Goals
 ##### I want to be able to play the quiz again with new questions.
