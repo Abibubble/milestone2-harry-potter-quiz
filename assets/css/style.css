@@ -440,6 +440,9 @@ footer p {
     .choose-house, .question-text {
         font-size: 200%;
     }
+    .house-text, .answer-text {
+        font-size: 150%;
+    }
     .overlay {
         height: 150px;
     }
