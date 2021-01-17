@@ -259,14 +259,24 @@ On every device and browser listed in the README.md file, I tested the following
 
 ---
 
+#### Safari
+![Solemnly page](assets/images/docs/testing/solemnlypagemac.png)
+![Click page](assets/images/docs/testing/clickpagemac.png)
+![Home page](assets/images/docs/testing/homepagemac.png)
+![Quiz page](assets/images/docs/testing/quizpagemac.png)
+![Instructions page](assets/images/docs/testing/instructionspagemac.png)
+![Results page](assets/images/docs/testing/resultspagemac.png)
+
+---
+
 ### Tablet
-#### Chrome !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-![Solemnly page](assets/images/docs/testing/solemnlypagetchrome.png)
-![Click page](assets/images/docs/testing/clickpagetchrome.png)
-![Home page](assets/images/docs/testing/homepagetchrome.png)
-![Quiz page](assets/images/docs/testing/quizpagetchrome.png)
-![Instructions page](assets/images/docs/testing/instructionspagetchrome.png)
-![Results page](assets/images/docs/testing/resultspagetchrome.png)
+#### Safari
+![Solemnly page](assets/images/docs/testing/solemnlypaget.png)
+![Click page](assets/images/docs/testing/clickpaget.png)
+![Home page](assets/images/docs/testing/homepaget.png)
+![Quiz page](assets/images/docs/testing/quizpaget.png)
+![Instructions page](assets/images/docs/testing/instructionspaget.png)
+![Results page](assets/images/docs/testing/resultspaget.png)
 
 ---
 
@@ -281,13 +291,13 @@ On every device and browser listed in the README.md file, I tested the following
 
 ---
 
-#### Safari !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-![Solemnly page](assets/images/docs/testing/solemnlypagemsafari.png)
-![Click page](assets/images/docs/testing/clickpagemsafari.png)
-![Home page](assets/images/docs/testing/homepagemsafari.png)
-![Quiz page](assets/images/docs/testing/quizpagemsafari.png)
-![Instructions page](assets/images/docs/testing/instructionspagemsafari.png)
-![Results page](assets/images/docs/testing/resultspagemsafari.png)
+#### Safari
+![Solemnly page](assets/images/docs/testing/solemnlypagemsafari.jpeg)
+![Click page](assets/images/docs/testing/clickpagemsafari.jpeg)
+![Home page](assets/images/docs/testing/homepagemsafari.jpeg)
+![Quiz page](assets/images/docs/testing/quizpagemsafari.jpeg)
+![Instructions page](assets/images/docs/testing/instructionspagemsafari.jpeg)
+![Results page](assets/images/docs/testing/resultspagemsafari.jpeg)
 
 ---
 
