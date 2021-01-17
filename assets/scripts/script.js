@@ -355,7 +355,7 @@ quizAudio.loop = true;
 function whichMusic() { // Decide which audio to play depending on if they're on the quiz page or not
 
     if (music === "on") {
-        if (solemnlypage.classList.contains("hide") && quizpage.classList.contains("hide")) {
+        if (solemnlyPage.classList.contains("hide") && quizpage.classList.contains("hide")) {
             fireAudio.play();
             quizAudio.pause();
             solemnlyAudio.pause();
@@ -363,7 +363,7 @@ function whichMusic() { // Decide which audio to play depending on if they're on
             fireAudio.pause();
             quizAudio.pause();
             solemnlyAudio.play();
-        } else if (homepage.classList.contains("hide") && solemnlypage.classList.contains("hide")) {
+        } else if (homepage.classList.contains("hide") && solemnlyPage.classList.contains("hide")) {
             fireAudio.pause();
             quizAudio.play();
             solemnlyAudio.pause();
