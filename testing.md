@@ -231,53 +231,53 @@ On every device and browser listed in the README.md file, I tested the following
 ---
 
 #### Chrome
-![Solemnly page](assets/images/docs/testing/solemnlypagedchrome.png)
-![Click page](assets/images/docs/testing/clickpagedchrome.png)
-![Home page](assets/images/docs/testing/homepagedchrome.png)
-![Quiz page](assets/images/docs/testing/quizpagedchrome.png)
-![Instructions page](assets/images/docs/testing/instructionspagedchrome.png)
-![Results page](assets/images/docs/testing/resultspagedchrome.png)
+![Solemnly page](assets/images/docs/testing/solemnlypagedchrome.jpg)
+![Click page](assets/images/docs/testing/clickpagedchrome.jpg)
+![Home page](assets/images/docs/testing/homepagedchrome.jpg)
+![Quiz page](assets/images/docs/testing/quizpagedchrome.jpg)
+![Instructions page](assets/images/docs/testing/instructionspagedchrome.jpg)
+![Results page](assets/images/docs/testing/resultspagedchrome.jpg)
 
 ---
 
 #### Edge
-![Solemnly page](assets/images/docs/testing/solemnlypagededge.png)
-![Click page](assets/images/docs/testing/clickpagededge.png)
-![Home page](assets/images/docs/testing/homepagededge.png)
-![Quiz page](assets/images/docs/testing/quizpagededge.png)
-![Instructions page](assets/images/docs/testing/instructionspagededge.png)
-![Results page](assets/images/docs/testing/resultspagededge.png)
+![Solemnly page](assets/images/docs/testing/solemnlypagededge.jpg)
+![Click page](assets/images/docs/testing/clickpagededge.jpg)
+![Home page](assets/images/docs/testing/homepagededge.jpg)
+![Quiz page](assets/images/docs/testing/quizpagededge.jpg)
+![Instructions page](assets/images/docs/testing/instructionspagededge.jpg)
+![Results page](assets/images/docs/testing/resultspagededge.jpg)
 
 ---
 
 #### Firefox
-![Solemnly page](assets/images/docs/testing/solemnlypagedfirefox.png)
-![Click page](assets/images/docs/testing/clickpagedfirefox.png)
-![Home page](assets/images/docs/testing/homepagedfirefox.png)
-![Quiz page](assets/images/docs/testing/quizpagedfirefox.png)
-![Instructions page](assets/images/docs/testing/instructionspagedfirefox.png)
-![Results page](assets/images/docs/testing/resultspagedfirefox.png)
+![Solemnly page](assets/images/docs/testing/solemnlypagedfirefox.jpg)
+![Click page](assets/images/docs/testing/clickpagedfirefox.jpg)
+![Home page](assets/images/docs/testing/homepagedfirefox.jpg)
+![Quiz page](assets/images/docs/testing/quizpagedfirefox.jpg)
+![Instructions page](assets/images/docs/testing/instructionspagedfirefox.jpg)
+![Results page](assets/images/docs/testing/resultspagedfirefox.jpg)
 
 ---
 
 #### Safari
-![Solemnly page](assets/images/docs/testing/solemnlypagemac.png)
-![Click page](assets/images/docs/testing/clickpagemac.png)
-![Home page](assets/images/docs/testing/homepagemac.png)
-![Quiz page](assets/images/docs/testing/quizpagemac.png)
-![Instructions page](assets/images/docs/testing/instructionspagemac.png)
-![Results page](assets/images/docs/testing/resultspagemac.png)
+![Solemnly page](assets/images/docs/testing/solemnlypagemac.jpg)
+![Click page](assets/images/docs/testing/clickpagemac.jpg)
+![Home page](assets/images/docs/testing/homepagemac.jpg)
+![Quiz page](assets/images/docs/testing/quizpagemac.jpg)
+![Instructions page](assets/images/docs/testing/instructionspagemac.jpg)
+![Results page](assets/images/docs/testing/resultspagemac.jpg)
 
 ---
 
 ### Tablet
 #### Safari
-![Solemnly page](assets/images/docs/testing/solemnlypaget.png)
-![Click page](assets/images/docs/testing/clickpaget.png)
-![Home page](assets/images/docs/testing/homepaget.png)
-![Quiz page](assets/images/docs/testing/quizpaget.png)
-![Instructions page](assets/images/docs/testing/instructionspaget.png)
-![Results page](assets/images/docs/testing/resultspaget.png)
+![Solemnly page](assets/images/docs/testing/solemnlypaget.jpg)
+![Click page](assets/images/docs/testing/clickpaget.jpg)
+![Home page](assets/images/docs/testing/homepaget.jpg)
+![Quiz page](assets/images/docs/testing/quizpaget.jpg)
+![Instructions page](assets/images/docs/testing/instructionspaget.jpg)
+![Results page](assets/images/docs/testing/resultspaget.jpg)
 
 ---
 
@@ -293,12 +293,12 @@ On every device and browser listed in the README.md file, I tested the following
 ---
 
 #### Safari
-![Solemnly page](assets/images/docs/testing/solemnlypagemsafari.jpeg)
-![Click page](assets/images/docs/testing/clickpagemsafari.jpeg)
-![Home page](assets/images/docs/testing/homepagemsafari.jpeg)
-![Quiz page](assets/images/docs/testing/quizpagemsafari.jpeg)
-![Instructions page](assets/images/docs/testing/instructionspagemsafari.jpeg)
-![Results page](assets/images/docs/testing/resultspagemsafari.jpeg)
+![Solemnly page](assets/images/docs/testing/solemnlypagemsafari.jpg)
+![Click page](assets/images/docs/testing/clickpagemsafari.jpg)
+![Home page](assets/images/docs/testing/homepagemsafari.jpg)
+![Quiz page](assets/images/docs/testing/quizpagemsafari.jpg)
+![Instructions page](assets/images/docs/testing/instructionspagemsafari.jpg)
+![Results page](assets/images/docs/testing/resultspagemsafari.jpg)
 
 ---
 
