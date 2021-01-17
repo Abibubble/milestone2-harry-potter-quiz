@@ -267,7 +267,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * There is a clear Instructions page, that details exactly how the quiz works.
 * This is easily accessible from every page.
 * The instructions on the main pages themselves are clear to read and easy to understand.
-* Every page is fully visible on a browser window, nothing requires scrolling down to view it.
+* Every page is fully visible on a browser window, nothing requires scrolling down to view it, other than when the user is in landscape orientation on a mobile or tablet.
 
 ##### I want to be able to easily navigate throughout the site.
 * On every page, there is a button to take the user to Home, Instructions, or to toggle the audio on or off.
@@ -500,5 +500,4 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 With manual tests of the user stories, perhaps add some screenshots of the finished product as mockups. This could demonstrate responsive behaviour and browser compatibility.
 Manual tests could also include documentation related to known bugs, responsiveness issues, etc.
-Use Responsinator screenshots in testing
 Get it peer reviewed
