@@ -278,7 +278,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 ##### The user must be able to give up on the quiz if they wish to, and return to the homepage.
 * On every page, there is a button to take the user to Home or to Instructions, which resets their house, score, and timer back to default.
 
-![Image of the buttons on every page](assets/images/docs/buttons.png)
+![Image of the buttons on every page](assets/images/docs/testing/buttons.png)
 
 #### First Time Visitor Goals
 ##### I want it to be easy to understand what to do.
