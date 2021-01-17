@@ -500,6 +500,5 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 With manual tests of the user stories, perhaps add some screenshots of the finished product as mockups. This could demonstrate responsive behaviour and browser compatibility.
 Manual tests could also include documentation related to known bugs, responsiveness issues, etc.
-Test on iPhone and iPad and images
 Use Responsinator screenshots in testing
 Get it peer reviewed
