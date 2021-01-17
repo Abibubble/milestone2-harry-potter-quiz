@@ -263,9 +263,7 @@ function checkAnswer(num) {
 function newQuestion() {
     if (questionsAnswered < questionsSetLength) { // If the current question isn't the final question
         questionPool--; // Decrement the question pool for the RNG
-        console.log(questionPool);
         removeOldQuestion();
-        console.log(questionsSet);
         randomiseQuestionOrder();
         populateQuestion();
     } else if (questionsAnswered === questionsSetLength) { // If the current question is the final question, end the quiz
