@@ -95,8 +95,8 @@ The main features that I wanted to include are:
 
 ---
 ## Design
-### Colour Scheme
-* Basic color scheme uses rgb(218,165,32) for the gold and #07080c for the off-black.
+### Color Scheme
+* Basic color scheme uses rgb(218,165,32) for the gold (also known as goldenrod) and #07080c for the off-black.
 * Gryffindor house uses #d74f40 as the primary color, with #fbb928 as the secondary.
 * Hufflepuff house uses #fbb92f as the primary color, with #07080c as the secondary.
 * Ravenclaw house uses #203268 as the primary color, with #886031 as the secondary.
@@ -231,9 +231,10 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * On the Home page, the user selects their house.
 * This updates the color scheme for the entire quiz, changing the answers boxes to their house colors.
 * It also gives them a pool of questions related to their chosen house.
-* When they complete the quiz, the results screen is different depending on which house they chose, using a character from their house, and a quote from that character.
-* If they've scored 5 points or less, they get a character and quote displayed from a not so smart character from their house.
-* If they've scored 6 points or more, they get a character and quote displayed from a smart character from their house.
+* If the user answers 0 - 2 questions correctly, they get the galleons results page.
+* If the user answers 3 - 5 questions correctly, they get the remembrall results page.
+* If the user answers 6 - 8 questions correctly, they get the letters results page.
+* If the user answers 9 - 10 questions correctly, they get the ticket results page.
 
 ![Image of a quiz personalised to the house chosen](assets/images/docs/testing/homepage.png)
 
@@ -250,9 +251,9 @@ The only errors found were due to 'let', 'const' and template literals only bein
 
 ##### It needs to be instantly engaging to enourage the user to play the game.
 * The user is immediately greeted with a well-known quote from the Harry Potter books, which then prompts them to click to enter, causing them to interact with the quiz before the quiz even starts.
-* The Home page is bright and interesting, with bright colours to draw their eye in, and encourage them to play the quiz.
-* The navigation buttons are bright and right at the top, drawing thie eye to the 'Audio on' button. Upon clicking this, the audio adds more immersion to the website.
-* Each of the house buttons are bright, and coloured using the house colours, which are eye-catching.
+* The Home page is bright and interesting, with bright colors to draw their eye in, and encourage them to play the quiz.
+* The navigation buttons are bright and right at the top, drawing thier eye to the 'Audio on' button. Upon clicking this, the audio adds more immersion to the website.
+* Each of the house buttons are bright, and colored using the house colors, which are eye-catching.
 * Most people who know Harry Potter have a house that they consider 'their house'. The choosing house function allows them to feel like they're part of the quiz.
 
 ![Image of the home page](assets/images/docs/testing/homepage.png)
@@ -331,6 +332,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
 
 3. Mozilla Firefox
     * Progress bar has sharp edges and is blue.
+    * Everything else tested and working correctly.
 
 4. Internet Explorer
     * Internet Explorer doesn't support the click to enter, so is not accessible on this browser.
@@ -353,7 +355,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * All tested and working correctly.
 
 3. Samsung Internet
-    * On dark mode, all of the colours invert, as shown in [my testing file](testing.md).
+    * On dark mode, all of the colors invert, as shown in [my testing file](testing.md).
     * Everything else tested and working correctly.
 
 ### Further Testing
@@ -378,7 +380,7 @@ A large amount of testing was done to ensure that all pages were visible or hidd
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. The setHouse function wasn't acting on the second page, so it didn't change the colour scheme as it should
+1. The setHouse function wasn't acting on the second page, so it didn't change the color scheme as it should
     * I searched Google and Stack Overflow and tested out a few fixes that I saw suggested there, but none of them worked.
     * I used console.log on all of my variables after they were created, and discovered that 'this' wasn't being targeted properly.
     * The houseChosen variable was collecting the correct id, and the answers variable was collecting an HTML collection instead of the answers.
@@ -460,7 +462,10 @@ Friends, family members, and other developers were asked to review the site and 
     * I then used this as my variable, instead of questionsSet.length, which fixed this bug.
 
 ### Known Bugs
-* 
+* This quiz is not supported on Internet Explorer
+* On Safari on MacBook Air, the overlay for the score and timer on the quiz page aren't big enough to cover the text. This is not an issue on other devices using the same screen size.
+* On Samsung Internet, their version of dark mode just inverts all the colors, including the color scheme of the entire quiz.
+* On Mozilla Firefox, the progress bar has sharp edges and is blue, as the styling isn't supported.
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and got these results:
@@ -480,7 +485,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * I was very careful when writing my code to ensure it was fully accessible.
 * I used semantic code wherever possible to help any users that use screen readers.
 * Every image has relevant alt text, including the images that are populated depending on the result. Each image is populated with relevant alt text.
-* All text has good visibility on whichever background it's on, so it shouldn't cause issues for any colour blind users.
+* All text has good visibility on whichever background it's on, so it shouldn't cause issues for any color blind users.
+* I also checked this site with a friend who has Deuteranopia color blindness, and he had no issues with the site.
 
 #### Best Practices:
 * As I avoided code libraries, I also avoided any security vulerabilities associated with those libraries.
@@ -496,7 +502,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ### Code
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
 * [CSS Tricks](https://css-tricks.com/html5-progress-element/): The base code for the progress bar during the quiz.
-* [This article on Medium](https://medium.com/javascript-in-plain-english/how-to-deep-copy-objects-and-arrays-in-javascript-7c911359b089) for help with fixing bug #9.
+* [This article on Medium](https://medium.com/javascript-in-plain-english/how-to-deep-copy-objects-and-arrays-in-javascript-7c911359b089): Help with fixing bug #9.
 
 ### Audio
 * [No Copyright Sound](https://www.youtube.com/watch?v=QDgnFDiyXEk): The dramatic music for during the quiz.
@@ -525,3 +531,4 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * Eve Crabb, for her support through my learning, and for being a sounding board for bug fixes.
 * Tom Crabb, for his advice on how to make my code cleaner.
 * The team at Code Institute, for teaching me the necessary skills to create this site.
+* Conor Nye, for helping me check about color blind accessibility, and for recording a lot of takes of the solemnly audio until I was happy.
