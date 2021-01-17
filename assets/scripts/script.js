@@ -43,7 +43,7 @@ let resultQuote = document.getElementById("result-quote");
 let music = "off";
 const solemnlyAudio = new Audio('assets/audio/solemnly.mp3');
 const fireAudio = new Audio('assets/audio/fire-sound.mp3');
-const quizAudio = new Audio('assets/audio/quiz-music.mp3');
+const quizAudio = new Audio('assets/audio/quiz-audio.mp3');
 
 // ----------------------------------------------------------------------------------------------------------------------------------------- Page functions
 
