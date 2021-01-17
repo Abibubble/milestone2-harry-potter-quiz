@@ -20,6 +20,7 @@
     * [Desktop and Laptop](#desktop-and-laptop)
     * [Tablet](#tablet)
     * [Mobile](#mobile)
+    * [Responsinator](#responsinator)
 
 On every device and browser listed in the README.md file, I tested the following:
 
@@ -319,3 +320,17 @@ On every device and browser listed in the README.md file, I tested the following
 ![Quiz page](assets/images/docs/testing/quizpagemsamsungd.jpg)
 ![Instructions page](assets/images/docs/testing/instructionspagemsamsungd.jpg)
 ![Results page](assets/images/docs/testing/resultspagemsamsungd.jpg)
+
+---
+
+### Responsinator
+![Responsinator test](assets/images/docs/testing/responsinator1.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator2.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator3.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator4.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator5.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator6.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator7.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator8.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator9.jpg)
+![Responsinator test](assets/images/docs/testing/responsinator10.jpg)
