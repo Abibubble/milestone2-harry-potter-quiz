@@ -137,7 +137,7 @@ const questions = [
         ["What colour ink are Hogwarts invitation letters written in?", "Red", "Blue", "Green", "Black", "Green"],
         ["Which Quiddich position did Captain Cedric Diggory play?", "Keeper", "Seeker", "Chaser", "Beater", "Seeker"],
         ["Which dragon did Cedric Diggory face in the Triwizard Tournament?", "Hungarian Horntail", "Swedish Short-Snout", "Chinese Fireball", "Common Welsh Green", "Swedish Short-Snout"],
-        ["What was the password to the prefect's bathroom?", "A", "B", "C", "Sherbet lemons", "Sherbet lemons"],
+        ["What was the password to the prefect's bathroom?", "Chocolate frogs", "Acid pops", "Cauldron cakes", "Sherbet lemons", "Sherbet lemons"],
         ["Who is the head of Hufflepuff house?", "Professor McGonegal", "Professor Flitwick", "Professor Snape", "Professor Sprout", "Professor Sprout"],
         ["Where is the common room of your house?", "In the dungeons", "In the kitchen", "Under the stairs", "In a tower", "In the kitchen"],
         ["Who is the resident ghost of Hufflepuff?", "Nearly Headless Nick", "The Bloody Baron", "The Fat Friar", "The Grey Lady", "The Fat Friar"],
