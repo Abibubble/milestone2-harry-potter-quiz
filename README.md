@@ -525,6 +525,3 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * Eve Crabb, for her support through my learning, and for being a sounding board for bug fixes.
 * Tom Crabb, for his advice on how to make my code cleaner.
 * The team at Code Institute, for teaching me the necessary skills to create this site.
-
-Manual tests could also include documentation related to known bugs, responsiveness issues, etc.
-Get it peer reviewed
