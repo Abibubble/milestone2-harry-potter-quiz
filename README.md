@@ -331,7 +331,7 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * All tested and working correctly.
 
 3. Mozilla Firefox
-    * Progress bar has sharp edges and is blue.
+    * Progress bar backing cannot be styled, so it's white instead of goldenrod.
     * Everything else tested and working correctly.
 
 4. Internet Explorer
@@ -464,8 +464,14 @@ Friends, family members, and other developers were asked to review the site and 
 ### Known Bugs
 * This quiz is not supported on Internet Explorer
 * On Safari on MacBook Air, the overlay for the score and timer on the quiz page aren't big enough to cover the text. This is not an issue on other devices using the same screen size.
-* On Samsung Internet, their version of dark mode just inverts all the colors, including the color scheme of the entire quiz.
-* On Mozilla Firefox, the progress bar has sharp edges and is blue, as the styling isn't supported.
+
+![MacBook Air overlay bug](assets/images/docs/macoverlayscore.png)
+![MacBook Air overlay bug](assets/images/docs/macoverlaytimer.png)
+
+* On Samsung Internet, their version of dark mode just inverts all the colors, including the color scheme of the entire quiz, as shown in [my testing file](testing.md).
+* On Mozilla Firefox, the progress bar backing cannot be styled, so it's white instead of goldenrod.
+
+![Mozilla Firefox progress bar bug](assets/images/docs/firefoxprogress.png)
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and got these results:
