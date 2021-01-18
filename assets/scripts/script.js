@@ -370,27 +370,39 @@ function whichMusic() { // Decide which audio to play depending on if they're on
             quizAudio.pause();
             solemnlyAudio.pause();
         }
+    } else {
+        fireAudio.pause();
+        quizAudio.pause();
+        solemnlyAudio.pause();
+    }
+}
+
+function checkAudioButtons() {
+    if (music === "on") {
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`; // Changes the text of the button once clicked
+        document.getElementById("solemnly-audio").innerHTML = `<i class="fas fa-volume-mute"></i>`; // Changes the text of the button once clicked
+    } else {
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`; // Changes the text of the button once clicked
+        document.getElementById("solemnly-audio").innerHTML = `<i class="fas fa-volume-up">`; // Changes the text of the button once clicked
     }
 }
 
 function toggleMusic() { // So that the user can toggle the music off or on
     if (music === "off") {
         music = "on";
-        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`; // Changes the text of the button once clicked
     } else {
         music = "off";
-        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`; // Changes the text of the button once clicked
     }
+    checkAudioButtons();
     whichMusic();
 }
 
 function toggleIntroAudio() { // So that the user can toggle the intro audio off or on
     if (music === "off") {
         music = "on";
-        document.getElementById("solemnly-audio").innerHTML = `<i class="fas fa-volume-mute"></i>`; // Changes the text of the button once clicked
     } else {
         music = "off";
-        document.getElementById("solemnly-audio").innerHTML = `<i class="fas fa-volume-up">`; // Changes the text of the button once clicked
     }
+    checkAudioButtons();
     whichMusic();
 }
