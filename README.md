@@ -377,6 +377,7 @@ The website was viewed on a variety of devices, including:
 * Samsung Galaxy S9
 * Samsung Galaxy S10+
 * Samsung A20
+* xBox One
 
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
