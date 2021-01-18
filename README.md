@@ -195,7 +195,7 @@ This site was deployed to GitHub Pages by following these steps:
 2. Under the repository name, above the list of files, click "Code".
 3. Here you can either Clone or Download the repository.
 4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
-5. Open Git Bash
+5. Open Git Bash.
 6. Change the current working directory to the new location, where you want the cloned directory to be.
 6. Type git clone, and then paste the URL that was copied in Step 4.
 7. Press Enter, and your local clone will be created.
@@ -380,7 +380,7 @@ A large amount of testing was done to ensure that all pages were visible or hidd
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. The setHouse function wasn't acting on the second page, so it didn't change the color scheme as it should
+1. The setHouse function wasn't acting on the second page, so it didn't change the color scheme as it should.
     * I searched Google and Stack Overflow and tested out a few fixes that I saw suggested there, but none of them worked.
     * I used console.log on all of my variables after they were created, and discovered that 'this' wasn't being targeted properly.
     * The houseChosen variable was collecting the correct id, and the answers variable was collecting an HTML collection instead of the answers.
@@ -413,7 +413,7 @@ Friends, family members, and other developers were asked to review the site and 
     * I changed my questions to be a nested array inside an array, which made my referencing each question much simpler, requiring less code.
     * However, when I needed to delete the currentQuestion from the current questionsSet, it wasn't being deleted.
     * I tried delete questionsSet.currentQuestion and delete questionsSet[currentQuestion ], but neither worked.
-    * Changed my questions into a nested array, but neither of the above worked still
+    * Changed my questions into a nested array, but neither of the above worked still.
     * I also tried using .splice(), which also didn't work. It was just removing index 1, rather than getting the index number from the currentQuestion variable.
     * I did a bit more research into .splice(), and got it removing the final index of the questionsSet.
     * Finally, I realised I was using currentQuestion.indexOf(); instead of questionsSet.indexOf(currentQuestion).
@@ -441,16 +441,16 @@ Friends, family members, and other developers were asked to review the site and 
 8. The progress bar wasn't updating after each question was answered.
     * I checked my code, and realised I'd used .innerHTML instead of .value, which was what I needed to update.
     * I was still getting an error that getElementById wasn't defined.
-    * On a second read through, I realised I'd forgotten to include document. at the start.
+    * On a second read through, I realised I'd forgotten to include 'document.' at the start.
     * I updated this, which fixed my bug.
 
-9. TypeError: Cannot read property '0' of undefined at script.js.193 after finishing the quiz once
-    * It's not re-setting the questionsSet for some reason
-    * I tried setting questionsSet to 0 in the startQuiz function, but no luck
+9. TypeError: Cannot read property '0' of undefined at script.js.193 after finishing the quiz once.
+    * It's not re-setting the questionsSet for some reason.
+    * I tried setting questionsSet to 0 in the startQuiz function, but no luck.
     * currentQuestion is returning undefined when going through the quiz the second time around.
     * Changing the house doesn't stop the bug, so it's not house-specific, and not linked to choosing the same house twice in a row.
     * The const questions was being changed when questionsSet was changed, because it's got nested arrays in it.
-    * I checked on StackOverflow, and on Google and found [this article on Medium](https://medium.com/javascript-in-plain-english/how-to-deep-copy-objects-and-arrays-in-javascript-7c911359b089)
+    * I checked on StackOverflow, and on Google and found [this article on Medium](https://medium.com/javascript-in-plain-english/how-to-deep-copy-objects-and-arrays-in-javascript-7c911359b089).
     * I checked every step it suggests, and none of the shallow copy methods worked.
     * I continued into the deep copy methods, and as I wanted to avoid importing things from external sources, I didn't use Lodash or Ramda.
     * I did a deep copy of it using JSON.parse(JSON.stringify(questions));, which fixed the bug.
@@ -519,13 +519,13 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * Introduction quote is from the Harry Potter novels.
 * All other text content written by the developer, Abi Harrison.
 * All other code was written by the developer, Abi Harrison.
-* Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/)
-* [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg)
-* [Colour picker](https://imagecolorpicker.com/en/)
-* [Galleons image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(7415385922).jpg)
-* [Letters image](https://pixabay.com/da/photos/harry-potter-hogwarts-accept-brev-4455031/)
-* [Remembrall image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(Remembrall).jpg)
-* [Ticket image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(7415391168).jpg)
+* Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/).
+* [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg).
+* [Colour picker](https://imagecolorpicker.com/en/).
+* [Galleons image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(7415385922).jpg).
+* [Letters image](https://pixabay.com/da/photos/harry-potter-hogwarts-accept-brev-4455031/).
+* [Remembrall image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(Remembrall).jpg).
+* [Ticket image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(7415391168).jpg).
 
 ### Media
 * All media belongs to J.K. Rowling & Warner Bros Entertainment Inc.
