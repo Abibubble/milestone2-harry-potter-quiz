@@ -282,12 +282,31 @@ a {
 
 progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
+    border: none;
     z-index: 2;
     height: 70%;
     width: 90%;
     border-radius: 15px;
     align-self: center;
+}
+
+
+progress[value]::-moz-progress-bar { /* EDIT THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  background-image:
+    -moz-linear-gradient(
+      135deg, 
+      transparent 33%, 
+      rgba(0, 0, 0, 0.1) 33%, 
+      rgba(0, 0, 0, 0.1) 66%, 
+      transparent 66% 
+    ),
+    -moz-linear-gradient(
+      top, 
+      rgba(255, 255, 255, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    )
 }
 
 progress[value]::-webkit-progress-bar { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
