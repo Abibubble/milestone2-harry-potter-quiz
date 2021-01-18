@@ -9,7 +9,9 @@
 
 [Here is a link to the final project](https://abibubble.github.io/milestone2-harry-potter-quiz/)
 
-This is a Harry Potter quiz, made with fully interactive elements, music and sound effects to match. It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through.
+This is a Harry Potter quiz, made with fully interactive elements, music and sound effects to match. 
+It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through. 
+I chose this project as the Harry Potter novels were a huge inspiration to myself and many others from a young age.
 
 ![Final project image home page](assets/images/docs/finalpage.png)
 
