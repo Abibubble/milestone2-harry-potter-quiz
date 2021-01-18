@@ -293,21 +293,19 @@ progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the p
 }
 
 
-progress[value]::-moz-progress-bar { /* EDIT THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  background-image:
-    -moz-linear-gradient(
-      135deg, 
-      transparent 33%, 
-      rgba(0, 0, 0, 0.1) 33%, 
-      rgba(0, 0, 0, 0.1) 66%, 
-      transparent 66% 
-    ),
-    -moz-linear-gradient(
-      top, 
-      rgba(255, 255, 255, 0.25), 
-      rgba(0, 0, 0, 0.25)
-    )
-}
+progress[value]::-moz-progress-bar { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
+    background-image:
+        -moz-linear-gradient(-45deg, 
+	                        transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                        rgba(0,0, 0, .1) 66%, transparent 66%),
+	    -moz-linear-gradient(top, 
+	                        rgba(255, 255, 255, .25), 
+	                        rgba(0, 0, 0, .25)),
+	    -moz-linear-gradient(left, #07080c, #000);
+
+    border-radius: 15px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}   
 
 progress[value]::-webkit-progress-bar { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
   background-color: #a0a150;
@@ -316,16 +314,16 @@ progress[value]::-webkit-progress-bar { /* Thanks to https://css-tricks.com/html
 }
 
 progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
-  background-image:
-	   -webkit-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	   -webkit-linear-gradient(top, 
-	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #07080c, #000);
+    background-image:
+	    -webkit-linear-gradient(-45deg, 
+	                        transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                        rgba(0,0, 0, .1) 66%, transparent 66%),
+	    -webkit-linear-gradient(top, 
+	                        rgba(255, 255, 255, .25), 
+	                        rgba(0, 0, 0, .25)),
+	    -webkit-linear-gradient(left, #07080c, #000);
 
-    border-radius: 152px; 
+    border-radius: 15px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
