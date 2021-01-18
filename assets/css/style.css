@@ -12,7 +12,7 @@ body {
 .background-image {
     width: 100%;
     height: auto;
-    background: url("https://i.imgur.com/GmbJoQx.jpg") no-repeat bottom right fixed; /* Background image */
+    background: url("https://i.imgur.com/GmbJoQx.jpg") no-repeat bottom right fixed; /* Background image, hosted on Imgur to save load times */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -161,6 +161,7 @@ a {
     justify-content: center;
     align-content: center;
     height: 100%;
+    margin-bottom: 50px;
 }
 
 .page-content {
@@ -438,7 +439,7 @@ footer {
 }
 
 .copyright {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 10px;
 }
