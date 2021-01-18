@@ -462,7 +462,7 @@ Friends, family members, and other developers were asked to review the site and 
     * I then used this as my variable, instead of questionsSet.length, which fixed this bug.
 
 ### Known Bugs
-* This quiz is not supported on Internet Explorer
+* This quiz is not supported on Internet Explorer.
 * On Safari on MacBook Air, the overlay for the score and timer on the quiz page aren't big enough to cover the text. This is not an issue on other devices using the same screen size.
 
 ![MacBook Air overlay bug](assets/images/docs/macoverlayscore.png)
