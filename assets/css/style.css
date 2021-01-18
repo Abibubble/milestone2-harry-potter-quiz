@@ -280,7 +280,9 @@ a {
     justify-content: center;
 }
 
-progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
+/* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
+
+progress {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -292,8 +294,7 @@ progress { /* Thanks to https://css-tricks.com/html5-progress-element/ for the p
     align-self: center;
 }
 
-
-progress[value]::-moz-progress-bar { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
+progress[value]::-moz-progress-bar { /* Edit styling on Mozilla Firebox web browser */
     background-image:
         -moz-linear-gradient(-45deg, 
 	                        transparent 33%, rgba(0, 0, 0, .1) 33%, 
@@ -307,13 +308,13 @@ progress[value]::-moz-progress-bar { /* Thanks to https://css-tricks.com/html5-p
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }   
 
-progress[value]::-webkit-progress-bar { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
+progress[value]::-webkit-progress-bar { /* Edit outer styling on other web browsers */
   background-color: #a0a150;
   border-radius: 15px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
 }
 
-progress[value]::-webkit-progress-value { /* Thanks to https://css-tricks.com/html5-progress-element/ for the progress bar */
+progress[value]::-webkit-progress-value { /* Edit inner styling on other web browsers */
     background-image:
 	    -webkit-linear-gradient(-45deg, 
 	                        transparent 33%, rgba(0, 0, 0, .1) 33%, 
